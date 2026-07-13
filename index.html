@@ -128,9 +128,9 @@
   .carousel-outer { position: relative; }
   .carousel {
     display: grid; grid-auto-flow: column;
-    grid-template-rows: repeat(2, auto);
-    grid-auto-columns: min(60vw, 250px);
-    column-gap: 30px; row-gap: 46px;
+    grid-template-rows: auto;
+    grid-auto-columns: min(70vw, 260px);
+    column-gap: 30px;
     overflow-x: auto;
     scroll-snap-type: x mandatory; padding: 4px 2px 16px;
     scrollbar-width: none;
@@ -294,26 +294,6 @@
         <h2 data-k="colH">ジュエリー</h2>
       </div>
     </div>
-    <div class="featured">
-      <figure class="feat">
-        <div class="fimg"><img src="img/jb01.jpg" alt="ダイヤモンド ペンダントヘッド 0.70ct D IF"></div>
-        <figcaption>
-          <p class="tag">PENDANT HEAD</p>
-          <p class="name" data-k="f1name">ダイヤモンド ペンダントヘッド</p>
-          <p class="spec" data-k="f1spec">D COLOR · IF · 0.70ct · チェーン付</p>
-          <p class="price">¥2,100,000</p>
-        </figcaption>
-      </figure>
-      <figure class="feat">
-        <div class="fimg"><img src="img/jb02.jpg" alt="フラワー ダイヤモンド ペンダントヘッド 0.55ct"></div>
-        <figcaption>
-          <p class="tag">PENDANT HEAD</p>
-          <p class="name" data-k="f2name">フラワー ダイヤモンド ペンダントヘッド</p>
-          <p class="spec" data-k="f2spec">0.55ct</p>
-          <p class="price">¥390,000</p>
-        </figcaption>
-      </figure>
-    </div>
     <div class="carousel-outer">
       <button class="cnav prev" aria-label="Previous">‹</button>
       <div class="carousel" id="carousel"></div>
@@ -359,19 +339,12 @@
 <script>
   // JB実商品(2026-07-08受領・fujishiro sama.xlsx)。価格=上代。ct等はspecs(備考行)に分離。フィーチャー2点(jb01/jb02)はHTML側
   const ITEMS = [
-    { img: "img/jb03.jpg", price: "¥335,000", names: { ja: "サークル ペンダントヘッド", en: "Circle Pendant Head", zh: "圆环吊坠头", ko: "서클 펜던트 헤드" }, specs: { ja: "0.40ct", en: "0.40ct", zh: "0.40ct", ko: "0.40ct" } },
     { img: "img/jb04.jpg", price: "¥185,000", names: { ja: "クロス ペンダントヘッド", en: "Cross Pendant Head", zh: "十字吊坠头", ko: "크로스 펜던트 헤드" }, specs: { ja: "0.20ct", en: "0.20ct", zh: "0.20ct", ko: "0.20ct" } },
-    { img: "img/jb05.jpg", price: "¥366,000", names: { ja: "クッションハロー ペンダント", en: "Cushion Halo Diamond Pendant", zh: "枕形光环钻石吊坠", ko: "쿠션 헤일로 다이아몬드 펜던트" }, specs: { ja: "0.50ct · チェーン付", en: "0.50ct · with chain", zh: "0.50ct · 附链", ko: "0.50ct · 체인 포함" } },
     { img: "img/jb08.jpg", price: "¥230,000", names: { ja: "パヴェダイヤモンド ペンダント", en: "Pavé Diamond Pendant", zh: "密镶钻石吊坠", ko: "파베 다이아몬드 펜던트" }, specs: { ja: "0.30ct", en: "0.30ct", zh: "0.30ct", ko: "0.30ct" } },
-    { img: "img/jb07.jpg", price: "¥1,150,000", names: { ja: "イエローダイヤモンド ペンダント", en: "Yellow Diamond Pendant", zh: "浓彩黄钻吊坠", ko: "옐로 다이아몬드 펜던트" }, specs: { ja: "0.50ct · FIY · チェーン付", en: "0.50ct · Fancy Intense Yellow · with chain", zh: "0.50ct · 浓彩黄 · 附链", ko: "0.50ct · FIY · 체인 포함" } },
-    { img: "img/jb09.jpg", price: "¥484,000", names: { ja: "ダイヤモンド ペンダントヘッド", en: "Diamond Pendant Head", zh: "钻石吊坠头", ko: "다이아몬드 펜던트 헤드" }, specs: { ja: "0.95ct", en: "0.95ct", zh: "0.95ct", ko: "0.95ct" } },
-    { img: "img/jb06.jpg", price: "¥1,650,000", names: { ja: "ダイヤモンド クラスターペンダント", en: "Diamond Cluster Pendant", zh: "钻石群镶吊坠", ko: "다이아몬드 클러스터 펜던트" }, specs: { ja: "3.15ct", en: "3.15ct", zh: "3.15ct", ko: "3.15ct" } },
-    { img: "img/jb12.jpg", price: "¥1,150,000", names: { ja: "フラワー ダイヤモンドピアス", en: "Flower Diamond Earrings", zh: "花形钻石耳环", ko: "플라워 다이아몬드 귀걸이" }, specs: { ja: "3.30ct", en: "3.30ct", zh: "3.30ct", ko: "3.30ct" } },
-    { img: "img/jb11.jpg", price: "¥1,280,000", names: { ja: "バゲットダイヤモンド リング", en: "Baguette Diamond Ring", zh: "长方钻戒指", ko: "바게트 다이아몬드 링" }, specs: { ja: "2.25ct", en: "2.25ct", zh: "2.25ct", ko: "2.25ct" } },
-    { img: "img/jb13.jpg", price: "¥1,250,000", names: { ja: "フルパヴェ ダイヤモンドブローチ（Rabbit & Flower）", en: "Full Pavé Diamond Brooch (Rabbit & Flower)", zh: "全密镶钻石胸针（Rabbit & Flower）", ko: "풀 파베 다이아몬드 브로치 (Rabbit & Flower)" } },
-    { img: "img/jb14.jpg", price: "¥1,320,000", names: { ja: "シャンデリア ダイヤモンドピアス", en: "Chandelier Diamond Earrings", zh: "吊灯式钻石耳环", ko: "샹들리에 다이아몬드 귀걸이" }, specs: { ja: "2.50ct", en: "2.50ct", zh: "2.50ct", ko: "2.50ct" } },
-    { img: "img/jb15.jpg", price: "¥1,500,000", names: { ja: "バタフライ ペンダント", en: "Butterfly Diamond Pendant", zh: "蝴蝶钻石吊坠", ko: "버터플라이 다이아몬드 펜던트" }, specs: { ja: "4.42ct · チェーン付", en: "4.42ct · with chain", zh: "4.42ct · 附链", ko: "4.42ct · 체인 포함" } },
-    { img: "img/jb10.jpg", price: "¥3,000,000", names: { ja: "イエローダイヤモンド ブレスレット", en: "Yellow Diamond Bracelet", zh: "黄钻手链", ko: "옐로 다이아몬드 팔찌" }, specs: { ja: "7.80ct", en: "7.80ct", zh: "7.80ct", ko: "7.80ct" } }
+    { img: "img/jb03.jpg", price: "¥335,000", names: { ja: "サークル ペンダントヘッド", en: "Circle Pendant Head", zh: "圆环吊坠头", ko: "서클 펜던트 헤드" }, specs: { ja: "0.40ct", en: "0.40ct", zh: "0.40ct", ko: "0.40ct" } },
+    { img: "img/jb05.jpg", price: "¥366,000", names: { ja: "クッションハロー ペンダント", en: "Cushion Halo Diamond Pendant", zh: "枕形光环钻石吊坠", ko: "쿠션 헤일로 다이아몬드 펜던트" }, specs: { ja: "0.50ct · チェーン付", en: "0.50ct · with chain", zh: "0.50ct · 附链", ko: "0.50ct · 체인 포함" } },
+    { img: "img/jb02.jpg", price: "¥390,000", names: { ja: "フラワー ダイヤモンド ペンダントヘッド", en: "Flower Diamond Pendant Head", zh: "花形钻石吊坠头", ko: "플라워 다이아몬드 펜던트 헤드" }, specs: { ja: "0.55ct", en: "0.55ct", zh: "0.55ct", ko: "0.55ct" } },
+    { img: "img/jb09.jpg", price: "¥484,000", names: { ja: "ダイヤモンド ペンダントヘッド", en: "Diamond Pendant Head", zh: "钻石吊坠头", ko: "다이아몬드 펜던트 헤드" }, specs: { ja: "0.95ct", en: "0.95ct", zh: "0.95ct", ko: "0.95ct" } }
   ];
 
   const I18N = {
