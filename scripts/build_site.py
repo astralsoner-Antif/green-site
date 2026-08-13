@@ -499,7 +499,15 @@ def tri(key):
 
 def head(title, desc, depth, og_img=None):
     p = "../" * depth
-    og = ('<meta property="og:image" content="https://cumulus2026.com/%s">' % og_img) if og_img else ""
+    img = og_img or "img/og.jpg"
+    og = "\n".join([
+        f'<meta property="og:title" content="{html.escape(title)}">',
+        f'<meta property="og:description" content="{html.escape(desc)}">',
+        f'<meta property="og:image" content="https://cumulus2026.com/{img}">',
+        '<meta property="og:site_name" content="GReEN">',
+        '<meta property="og:type" content="website">',
+        '<meta name="twitter:card" content="summary_large_image">',
+    ])
     return f"""<!DOCTYPE html>
 <html lang="ja">
 <head>
