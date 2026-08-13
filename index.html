@@ -18,7 +18,7 @@
 <div class="brandbar"><a href="index.html"><img src="img/logo-bar.png" alt="GReEN"></a></div>
 <nav class="mainnav" id="mainnav"><button data-g="all" class="on" data-i data-ja="すべてのジュエリー" data-en="All Jewellery" data-zh="全部珠宝">すべてのジュエリー</button><button data-g="ring" class="" data-i data-ja="リング" data-en="Rings" data-zh="戒指">リング</button><button data-g="earrings" class="" data-i data-ja="ピアス" data-en="Earrings" data-zh="耳环">ピアス</button><button data-g="pendant" class="" data-i data-ja="ペンダント" data-en="Pendants" data-zh="吊坠">ペンダント</button><button data-g="necklace" class="" data-i data-ja="ネックレス" data-en="Necklaces" data-zh="项链">ネックレス</button><button data-g="bracelet" class="" data-i data-ja="ブレスレット" data-en="Bracelets" data-zh="手链">ブレスレット</button></nav>
 <section class="intro">
-  <p class="eyebrow">HIGASHI-NIHONBASHI · TOKYO</p>
+  <p class="script" id="introScript" aria-hidden="true">Jewellery</p>
   <h1 id="introH">ジュエリー</h1>
   <p class="lead" id="introLead"><span>かたちは、石のためにある。</span><span>ダイヤモンドのパヴェが光を放つモチーフペンダント、</span><span>照りで選び抜いたアコヤパールの連、</span><span>カラーダイヤモンドや南洋パールの一点物など、</span><span>プラチナとゴールドの地金で仕立てた</span><span>コレクションをご覧ください。</span></p>
 </section>
@@ -72,6 +72,7 @@ var INTROS = {"all":{"h":{"ja":"ジュエリー","en":"Jewellery","zh":"珠宝"}
   function updateIntro() {
     var l = window.GREEN_LANG || "ja";
     var d = INTROS[cat] || INTROS.all;
+    document.getElementById("introScript").textContent = d.h.en;
     document.getElementById("introH").innerHTML = d.h[l];
     document.getElementById("introLead").innerHTML = d.l[l];
   }

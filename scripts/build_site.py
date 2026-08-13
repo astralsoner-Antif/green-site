@@ -118,6 +118,7 @@ CSS = FONTFACE + """
   --serif: "Hiragino Mincho ProN", "Yu Mincho", "Songti SC", "Noto Serif JP", Palatino, Georgia, serif;
   --sans: "Hiragino Kaku Gothic ProN", "PingFang SC", -apple-system, "Helvetica Neue", Arial, sans-serif;
   --display: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Songti SC", serif;
+  --script: "Great Vibes", "Snell Roundhand", cursive;
 }
 html { -webkit-text-size-adjust: 100%; }
 body { background: var(--paper); color: var(--ink); font-family: var(--serif); line-height: 1.7; }
@@ -151,15 +152,18 @@ img { max-width: 100%; }
 .mainnav button.on { color: var(--emerald-deep); border-bottom-color: var(--emerald-deep); }
 @media (max-width: 760px) { .mainnav { gap: 22px; justify-content: flex-start; } }
 
-/* ---- listing intro (カテゴリ紹介パース) ---- */
-.intro { text-align: center; padding: 46px 24px 10px; }
-.intro .eyebrow { font-family: var(--sans); font-size: 10.5px; letter-spacing: 0.34em; color: var(--gold); margin-bottom: 14px; }
-.intro h1 { font-family: var(--display); font-weight: 600; font-size: 30px; letter-spacing: 0.22em; line-height: 1.6; }
-.intro .lead { font-family: var(--serif); font-size: 13.5px; letter-spacing: 0.06em; line-height: 2.1;
-  color: var(--ink); max-width: 640px; margin: 18px auto 0; }
+/* ---- listing intro (カテゴリ紹介パース) ----
+   階層: 筆記体アクセント(Great Vibes/金) → 見出し(しっぽり明朝) → リード(明朝) → 詳細(サンセリフ) */
+.intro { text-align: center; padding: 40px 24px 10px; }
+.intro .script { font-family: var(--script); font-size: 31px; font-weight: 400; color: var(--gold);
+  line-height: 1.25; margin-bottom: 4px; }
+.intro h1 { font-family: var(--display); font-weight: 600; font-size: 32px; letter-spacing: 0.24em; line-height: 1.6; }
+.intro .lead { font-family: var(--display); font-size: 15px; letter-spacing: 0.07em; line-height: 2.15;
+  color: var(--ink); max-width: 660px; margin: 20px auto 0; }
 .intro .lead span { display: inline-block; }
-@media (max-width: 700px) { .intro h1 { font-size: 23px; } .intro { padding-top: 34px; }
-  .intro .lead { font-size: 12.5px; } }
+html[lang="en"] .intro .script { display: none; } /* 英語時はH1と重複するため */
+@media (max-width: 700px) { .intro h1 { font-size: 24px; } .intro { padding-top: 30px; }
+  .intro .script { font-size: 25px; } .intro .lead { font-size: 13px; } }
 
 /* ---- chips ---- */
 .chipswrap { position: sticky; top: 0; z-index: 30; background: var(--paper);
@@ -381,7 +385,7 @@ def build_index():
     doc += topbars(0)
     doc += f"""<nav class="mainnav" id="mainnav">{nav_html}</nav>
 <section class="intro">
-  <p class="eyebrow">HIGASHI-NIHONBASHI · TOKYO</p>
+  <p class="script" id="introScript" aria-hidden="true">Jewellery</p>
   <h1 id="introH">{UI["introTitle"]["ja"]}</h1>
   <p class="lead" id="introLead">{UI["introLead"]["ja"]}</p>
 </section>
@@ -430,6 +434,7 @@ def build_index():
   function updateIntro() {
     var l = window.GREEN_LANG || "ja";
     var d = INTROS[cat] || INTROS.all;
+    document.getElementById("introScript").textContent = d.h.en;
     document.getElementById("introH").innerHTML = d.h[l];
     document.getElementById("introLead").innerHTML = d.l[l];
   }
