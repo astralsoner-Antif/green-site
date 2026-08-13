@@ -20,7 +20,13 @@
   },
   "gem": "dia",
   "new": true,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "DPC0479",
@@ -43,7 +49,13 @@
   },
   "gem": "dia",
   "new": true,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "JP4455",
@@ -66,7 +78,13 @@
   },
   "gem": "dia",
   "new": true,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "JP4776",
@@ -89,7 +107,13 @@
   },
   "gem": "dia",
   "new": true,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "DP0552",
@@ -112,7 +136,13 @@
   },
   "gem": "dia",
   "new": true,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "DP0594-M",
@@ -135,7 +165,13 @@
   },
   "gem": "dia",
   "new": true,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "イエローダイヤモンド",
+   "en": "Yellow Diamond",
+   "zh": "黄钻"
+  }
  },
  {
   "code": "DP0586",
@@ -158,7 +194,13 @@
   },
   "gem": "dia",
   "new": true,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "イエローダイヤモンド",
+   "en": "Yellow Diamond",
+   "zh": "黄钻"
+  }
  },
  {
   "code": "DP0562",
@@ -181,7 +223,13 @@
   },
   "gem": "dia",
   "new": true,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ピンクダイヤモンド",
+   "en": "Pink Diamond",
+   "zh": "粉钻"
+  }
  },
  {
   "code": "DP0491",
@@ -204,7 +252,13 @@
   },
   "gem": "dia",
   "new": true,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "トリートブルーダイヤモンド",
+   "en": "Treated Blue Diamond",
+   "zh": "处理蓝钻"
+  }
  },
  {
   "code": "JPC5378",
@@ -227,7 +281,13 @@
   },
   "gem": "dia",
   "new": true,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "エメラルド＆ダイヤモンド",
+   "en": "Emerald & Diamond",
+   "zh": "祖母绿与钻石"
+  }
  },
  {
   "code": "DP0577",
@@ -250,7 +310,13 @@
   },
   "gem": "dia",
   "new": true,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "JP5401",
@@ -274,6 +340,12 @@
   "gem": "dia",
   "new": true,
   "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  },
   "price_max": 110000
  },
  {
@@ -297,7 +369,13 @@
   },
   "gem": "dia",
   "new": true,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "JP5169",
@@ -320,7 +398,13 @@
   },
   "gem": "dia",
   "new": true,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ローズカットダイヤモンド",
+   "en": "Rose-cut Diamond",
+   "zh": "玫瑰式切割钻石"
+  }
  },
  {
   "code": "JE1712A",
@@ -343,7 +427,13 @@
   },
   "gem": "dia",
   "new": true,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "トリートブルーダイヤモンド",
+   "en": "Treated Blue Diamond",
+   "zh": "处理蓝钻"
+  }
  },
  {
   "code": "DE0159",
@@ -366,7 +456,13 @@
   },
   "gem": "dia",
   "new": true,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "DE0157",
@@ -389,7 +485,13 @@
   },
   "gem": "dia",
   "new": true,
-  "high": true
+  "high": true,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "DE0148",
@@ -412,7 +514,13 @@
   },
   "gem": "dia",
   "new": true,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "イエローダイヤモンド",
+   "en": "Yellow Diamond",
+   "zh": "黄钻"
+  }
  },
  {
   "code": "260899",
@@ -435,7 +543,16 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "12-13mm",
+   "0.74g"
+  ],
+  "gem_names": {
+   "ja": "ブラックパール",
+   "en": "Black Pearl",
+   "zh": "黑珍珠"
+  }
  },
  {
   "code": "260898",
@@ -458,7 +575,16 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [
+   "15-16mm",
+   "3.04g"
+  ],
+  "gem_names": {
+   "ja": "ブラックパール",
+   "en": "Black Pearl",
+   "zh": "黑珍珠"
+  }
  },
  {
   "code": "260905",
@@ -481,7 +607,16 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "11-12mm",
+   "0.81g"
+  ],
+  "gem_names": {
+   "ja": "ブラックパール",
+   "en": "Black Pearl",
+   "zh": "黑珍珠"
+  }
  },
  {
   "code": "260900",
@@ -504,7 +639,16 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "11-12mm",
+   "0.74g"
+  ],
+  "gem_names": {
+   "ja": "ブラックパール",
+   "en": "Black Pearl",
+   "zh": "黑珍珠"
+  }
  },
  {
   "code": "260895",
@@ -527,7 +671,16 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "12-13mm",
+   "2.15g"
+  ],
+  "gem_names": {
+   "ja": "ブラックパール",
+   "en": "Black Pearl",
+   "zh": "黑珍珠"
+  }
  },
  {
   "code": "260906",
@@ -550,7 +703,16 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "12-13mm",
+   "1.0g"
+  ],
+  "gem_names": {
+   "ja": "ブラックパール",
+   "en": "Black Pearl",
+   "zh": "黑珍珠"
+  }
  },
  {
   "code": "260918",
@@ -573,7 +735,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [
+   "13-14mm"
+  ],
+  "gem_names": {
+   "ja": "南洋白蝶パール",
+   "en": "White South Sea Pearl",
+   "zh": "南洋白珍珠"
+  }
  },
  {
   "code": "258459",
@@ -596,7 +766,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "1.3g"
+  ],
+  "gem_names": {
+   "ja": "南洋白蝶パール",
+   "en": "White South Sea Pearl",
+   "zh": "南洋白珍珠"
+  }
  },
  {
   "code": "289389",
@@ -619,7 +797,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "12mm"
+  ],
+  "gem_names": {
+   "ja": "南洋白蝶パール",
+   "en": "White South Sea Pearl",
+   "zh": "南洋白珍珠"
+  }
  },
  {
   "code": "289394",
@@ -642,7 +828,13 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "南洋白蝶パール",
+   "en": "White South Sea Pearl",
+   "zh": "南洋白珍珠"
+  }
  },
  {
   "code": "251257",
@@ -665,7 +857,13 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "南洋白蝶パール",
+   "en": "White South Sea Pearl",
+   "zh": "南洋白珍珠"
+  }
  },
  {
   "code": "288436",
@@ -688,7 +886,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "12.1mm"
+  ],
+  "gem_names": {
+   "ja": "淡水パール",
+   "en": "Freshwater Pearl",
+   "zh": "淡水珍珠"
+  }
  },
  {
   "code": "288435",
@@ -711,7 +917,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "12.2mm"
+  ],
+  "gem_names": {
+   "ja": "淡水パール",
+   "en": "Freshwater Pearl",
+   "zh": "淡水珍珠"
+  }
  },
  {
   "code": "273331",
@@ -734,7 +948,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "3-4.5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "227002",
@@ -757,7 +979,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "6.5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "224325",
@@ -780,7 +1010,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "6.5-7mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "249133",
@@ -803,7 +1041,13 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "271594",
@@ -826,7 +1070,13 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "278971",
@@ -849,7 +1099,13 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "278728",
@@ -872,7 +1128,13 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "278729",
@@ -895,7 +1157,13 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "277336",
@@ -918,7 +1186,13 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ブラックパール",
+   "en": "Black Pearl",
+   "zh": "黑珍珠"
+  }
  },
  {
   "code": "257301",
@@ -941,7 +1215,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "7-7.5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "272873",
@@ -964,7 +1246,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "4-4.5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "257639",
@@ -987,7 +1277,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "5-5.5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "272868",
@@ -1010,7 +1308,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "3-3.5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "272872",
@@ -1033,7 +1339,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "4-4.5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "257641",
@@ -1056,7 +1370,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "5-5.5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "272867",
@@ -1079,7 +1401,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "3-3.5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "272869",
@@ -1102,7 +1432,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "3-3.5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "265513",
@@ -1125,7 +1463,13 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ブラックパール",
+   "en": "Black Pearl",
+   "zh": "黑珍珠"
+  }
  },
  {
   "code": "294356",
@@ -1148,7 +1492,16 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "2.5-3mm",
+   "45cm"
+  ],
+  "gem_names": {
+   "ja": "淡水パール",
+   "en": "Freshwater Pearl",
+   "zh": "淡水珍珠"
+  }
  },
  {
   "code": "294355",
@@ -1171,7 +1524,16 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "2.5-3mm",
+   "45cm"
+  ],
+  "gem_names": {
+   "ja": "淡水パール",
+   "en": "Freshwater Pearl",
+   "zh": "淡水珍珠"
+  }
  },
  {
   "code": "294357",
@@ -1194,7 +1556,16 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "2.5-3mm",
+   "45cm"
+  ],
+  "gem_names": {
+   "ja": "淡水パール",
+   "en": "Freshwater Pearl",
+   "zh": "淡水珍珠"
+  }
  },
  {
   "code": "714911",
@@ -1217,7 +1588,13 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "649568LAL",
@@ -1240,7 +1617,13 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ブラックパール",
+   "en": "Black Pearl",
+   "zh": "黑珍珠"
+  }
  },
  {
   "code": "754929",
@@ -1263,7 +1646,13 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "722141",
@@ -1286,7 +1675,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "16x19mm"
+  ],
+  "gem_names": {
+   "ja": "淡水パール",
+   "en": "Freshwater Pearl",
+   "zh": "淡水珍珠"
+  }
  },
  {
   "code": "722141-353",
@@ -1309,7 +1706,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "13x16mm"
+  ],
+  "gem_names": {
+   "ja": "パープルパール",
+   "en": "Purple Pearl",
+   "zh": "紫珍珠"
+  }
  },
  {
   "code": "729287",
@@ -1332,7 +1737,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "50cm"
+  ],
+  "gem_names": {
+   "ja": "淡水パール",
+   "en": "Freshwater Pearl",
+   "zh": "淡水珍珠"
+  }
  },
  {
   "code": "273439",
@@ -1355,7 +1768,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "11-12mm"
+  ],
+  "gem_names": {
+   "ja": "淡水パール",
+   "en": "Freshwater Pearl",
+   "zh": "淡水珍珠"
+  }
  },
  {
   "code": "CBC1SCM1",
@@ -1378,7 +1799,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "10x12mm"
+  ],
+  "gem_names": {
+   "ja": "淡水パール",
+   "en": "Freshwater Pearl",
+   "zh": "淡水珍珠"
+  }
  },
  {
   "code": "SQ25291",
@@ -1401,7 +1830,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [
+   "7-7.5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "SQ25290",
@@ -1424,7 +1861,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "7-7.5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "SQ25324",
@@ -1447,7 +1892,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [
+   "7-8mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "SQ15239",
@@ -1470,7 +1923,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [
+   "7-8mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "SS151529",
@@ -1493,7 +1954,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [
+   "4.5-5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "SS151530",
@@ -1516,7 +1985,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [
+   "4.5-5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "MP-3KL2886",
@@ -1539,7 +2016,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "8-8.5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "JCP-16KL0901",
@@ -1562,7 +2047,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "8-8.5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "JCP-4CBL0705",
@@ -1585,7 +2078,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [
+   "8-8.5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "295736",
@@ -1608,7 +2109,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "7.5-8mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "265045",
@@ -1631,7 +2140,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [
+   "8-8.5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "576093",
@@ -1654,7 +2171,16 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [
+   "6.5-7mm",
+   "82cm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "254956",
@@ -1677,7 +2203,9 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": null
  },
  {
   "code": "252119",
@@ -1700,7 +2228,9 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": null
  },
  {
   "code": "212684",
@@ -1723,7 +2253,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "4mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "716300",
@@ -1746,7 +2284,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "7.5-8mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "KFPH00040",
@@ -1769,7 +2315,13 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "682525-976",
@@ -1792,7 +2344,15 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [
+   "8-8.5mm"
+  ],
+  "gem_names": {
+   "ja": "アコヤパール",
+   "en": "Akoya Pearl",
+   "zh": "Akoya珍珠"
+  }
  },
  {
   "code": "BKL1PA1P",
@@ -1815,7 +2375,13 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ブラックパール",
+   "en": "Black Pearl",
+   "zh": "黑珍珠"
+  }
  },
  {
   "code": "275657",
@@ -1838,7 +2404,13 @@
   },
   "gem": "pearl",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "淡水パール",
+   "en": "Freshwater Pearl",
+   "zh": "淡水珍珠"
+  }
  },
  {
   "code": "ABLP7500P-PT",
@@ -1861,7 +2433,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLP2026006N-WG",
@@ -1884,7 +2462,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLP23040044P-PT",
@@ -1907,7 +2491,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMKY48-LR09YG",
@@ -1930,7 +2520,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLP06148P-WG",
@@ -1953,7 +2549,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ピンクダイヤモンド",
+   "en": "Pink Diamond",
+   "zh": "粉钻"
+  }
  },
  {
   "code": "ABLMTV0241P-PT",
@@ -1976,7 +2578,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLM2208064P-PT",
@@ -1999,7 +2607,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "AB2604K828P-60",
@@ -2022,7 +2636,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLP58300P-PT1",
@@ -2045,7 +2665,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLP1410P-PT",
@@ -2068,7 +2694,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLPR0800P-WG",
@@ -2091,7 +2723,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLM20180BL-PG",
@@ -2114,7 +2752,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMGG-1475P-LUMI025",
@@ -2137,7 +2781,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLP277067P-PT",
@@ -2160,7 +2810,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMGG-1405P-LUMI025",
@@ -2183,7 +2839,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMTV0476P-PT",
@@ -2206,7 +2868,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLP00555P-YG",
@@ -2229,7 +2897,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLP00549P-YG",
@@ -2252,7 +2926,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMTV0600P-PT",
@@ -2275,7 +2955,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMTV0261P-PT01",
@@ -2298,7 +2984,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMTV0372P-PT",
@@ -2321,7 +3013,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMTV0395P-YG",
@@ -2344,7 +3042,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMTV0149P-PG",
@@ -2367,7 +3071,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMTV0395P-PT",
@@ -2390,7 +3100,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMTV0514P-PT",
@@ -2413,7 +3129,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMTV0413P-PT",
@@ -2436,7 +3158,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMTV0470P-PT07",
@@ -2459,7 +3187,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMTV0394P-PT",
@@ -2482,7 +3216,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLP29403P-PT",
@@ -2505,7 +3245,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMTV0146P-WG",
@@ -2528,7 +3274,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMTV0413N-PT",
@@ -2551,7 +3303,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMTV009OP-WG",
@@ -2574,7 +3332,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLPR0104P-PT",
@@ -2597,7 +3361,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLMWAKU-363P-PTBENE07",
@@ -2620,7 +3390,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLP62100P-PT",
@@ -2643,7 +3419,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "LMTV0403PE-YG",
@@ -2666,7 +3448,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLPR0506ME-YG",
@@ -2689,7 +3477,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "メタル",
+   "en": "Metal",
+   "zh": "金属"
+  }
  },
  {
   "code": "ABLPR0506LE-YG",
@@ -2712,7 +3506,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "メタル",
+   "en": "Metal",
+   "zh": "金属"
+  }
  },
  {
   "code": "LMTV0515PE-PT",
@@ -2735,7 +3535,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "LMTV0468PE-PT",
@@ -2758,7 +3564,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "LMTV0620PE-PT",
@@ -2781,7 +3593,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLM8197PE-PT",
@@ -2804,7 +3622,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "ABLPR060BR-YG",
@@ -2827,7 +3651,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "メタル",
+   "en": "Metal",
+   "zh": "金属"
+  }
  },
  {
   "code": "ABLPR0501E-PT.WG2",
@@ -2850,7 +3680,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "メタル",
+   "en": "Metal",
+   "zh": "金属"
+  }
  },
  {
   "code": "STG-115929",
@@ -2873,7 +3709,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "STG-113874",
@@ -2896,7 +3738,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "STG-114990",
@@ -2919,7 +3767,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "STG-117893",
@@ -2942,7 +3796,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "STG-123804",
@@ -2965,7 +3825,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "FINE-109700",
@@ -2988,7 +3854,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "STG-117888",
@@ -3011,7 +3883,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "FINE-115921",
@@ -3034,7 +3912,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "STG-114994",
@@ -3057,7 +3941,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "STG-121213",
@@ -3080,7 +3970,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "STG-118697",
@@ -3103,7 +3999,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "STG-115928",
@@ -3126,7 +4028,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "STG-117889",
@@ -3149,7 +4057,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "STG-117932",
@@ -3172,7 +4086,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "STG-118696",
@@ -3195,7 +4115,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": true
+  "high": true,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "STG-117881",
@@ -3218,7 +4144,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "STG-115004",
@@ -3241,7 +4173,13 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  },
  {
   "code": "STG-114987",
@@ -3264,6 +4202,12 @@
   },
   "gem": "dia",
   "new": false,
-  "high": false
+  "high": false,
+  "sizes": [],
+  "gem_names": {
+   "ja": "ダイヤモンド",
+   "en": "Diamond",
+   "zh": "钻石"
+  }
  }
 ]

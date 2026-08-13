@@ -160,6 +160,8 @@ def main():
             "names": names, "spec": spec_line(gem, ty, mat, ct, sizes),
             "gem": gemgrp, "new": sheet == "写真",
             "high": bool(price and price >= 500000),
+            "sizes": sizes,
+            "gem_names": {"ja": gem[0], "en": gem[1], "zh": gem[2]} if gem else None,
         }
     out = list(products.values())
     os.makedirs(os.path.join(ROOT, "data"), exist_ok=True)

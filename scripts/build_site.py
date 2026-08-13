@@ -59,6 +59,11 @@ UI = {
   "coContact":  {"ja": "お問い合わせ", "en": "Contact", "zh": "联系方式"},
   "backAll":    {"ja": "ジュエリー一覧", "en": "All jewellery", "zh": "全部珠宝"},
   "fxNote":     {"ja": "参考換算（%sレート）", "en": "Approx. conversion (rate as of %s)", "zh": "参考换算（%s汇率）"},
+  "annBar":     {"ja": "東京・東日本橋ショールーム ｜ ご来店・お問い合わせを承ります", "en": "Showroom in Higashi-Nihonbashi, Tokyo — visits and enquiries welcome", "zh": "东京·东日本桥陈列室 ｜ 欢迎到店与咨询"},
+  "gemRow":     {"ja": "宝石", "en": "Gemstone", "zh": "宝石"},
+  "sizeRow":    {"ja": "サイズ", "en": "Size", "zh": "尺寸"},
+  "stockOne":   {"ja": "在庫一点限りです。", "en": "One piece available.", "zh": "仅此一件。"},
+  "recent":     {"ja": "最近ご覧になったアイテム", "en": "Recently viewed", "zh": "最近浏览"},
 }
 
 # 大分類(メインナビ・Chopardのウォッチ/ジュエリー/アクセサリーに相当)
@@ -138,6 +143,11 @@ body { background: var(--paper); color: var(--ink); font-family: var(--serif); l
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; }
 
+/* ---- announcement bar (Chopard型の細いバー) ---- */
+.annbar { background: var(--emerald-deep); color: rgba(255,255,255,0.92);
+  font-family: var(--sans); font-size: 10px; letter-spacing: 0.14em;
+  text-align: center; padding: 7px 14px; }
+
 /* ---- top bar ---- */
 .topbar { display: flex; justify-content: space-between; align-items: center;
   padding: 9px 20px; border-bottom: 1px solid var(--hairline);
@@ -151,6 +161,9 @@ img { max-width: 100%; }
 /* ---- brand bar ---- */
 .brandbar { display: flex; justify-content: center; align-items: center;
   padding: 22px 20px 18px; border-bottom: 1px solid var(--hairline); background: var(--paper); }
+.brandbar { position: relative; }
+.brandbar::after { content: ""; position: absolute; left: 50%; bottom: -1px;
+  transform: translateX(-50%); width: 72px; height: 1px; background: var(--gold); }
 .brandbar img { height: 56px; width: auto; display: block; }
 @media (max-width: 700px) { .brandbar img { height: 44px; } .brandbar { padding: 16px 16px 13px; } }
 
@@ -273,6 +286,47 @@ html[lang="en"] .intro .accent { display: none; } /* 英語時はH1と重複す�
 .reco { max-width: 1380px; margin: 0 auto; padding: 26px 20px 60px; }
 .reco h2 { font-family: var(--display); font-size: 18px; font-weight: 600;
   letter-spacing: 0.16em; text-align: center; margin-bottom: 24px; }
+.reco h2::before { content: ""; display: block; width: 40px; height: 1px;
+  background: var(--gold); margin: 0 auto 14px; }
+
+/* ---- PDP 説明文 ---- */
+.pdesc { font-family: var(--serif); font-size: 13px; letter-spacing: 0.05em;
+  line-height: 2.05; margin-bottom: 16px; }
+
+/* ---- PDPスティッキーバー ---- */
+.stickybar { position: fixed; top: 0; left: 0; right: 0; z-index: 60;
+  background: rgba(254,254,254,0.96); backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--hairline);
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 10px 18px; transform: translateY(-110%); transition: transform 0.35s ease; }
+.stickybar.show { transform: translateY(0); }
+.stickybar .snm { font-family: var(--display); font-size: 13px; font-weight: 600;
+  letter-spacing: 0.06em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.stickybar .spr { font-family: var(--sans); font-size: 12.5px; letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums; white-space: nowrap; }
+.stickybar .scta { flex: 0 0 auto; font-family: var(--sans); font-size: 10.5px;
+  letter-spacing: 0.2em; padding: 9px 18px; background: var(--emerald-deep); color: #fff; }
+.stickybar .scta:hover { background: var(--emerald); }
+
+/* ---- ライトボックス ---- */
+.pdp .tile { cursor: zoom-in; }
+.lightbox { position: fixed; inset: 0; z-index: 100; background: rgba(254,254,254,0.97);
+  display: none; align-items: center; justify-content: center; cursor: zoom-out; }
+.lightbox.on { display: flex; }
+.lightbox img { max-width: 94vw; max-height: 92vh; object-fit: contain; }
+.lightbox .lbx { position: absolute; top: 16px; right: 22px; font-family: var(--sans);
+  font-size: 22px; color: var(--muted); cursor: pointer; }
+
+/* ---- 最近見たアイテム ---- */
+.recent { max-width: 1380px; margin: 0 auto; padding: 0 20px 56px; display: none; }
+.recent.on { display: block; }
+.recent h2 { font-family: var(--display); font-size: 16px; font-weight: 600;
+  letter-spacing: 0.16em; text-align: center; margin-bottom: 20px; }
+.recent h2::before { content: ""; display: block; width: 40px; height: 1px;
+  background: var(--gold); margin: 0 auto 12px; }
+.recentrow { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(150px, 190px);
+  gap: 16px; overflow-x: auto; scrollbar-width: none; justify-content: safe center; }
+.recentrow::-webkit-scrollbar { display: none; }
 .recorow { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(180px, 1fr);
   gap: 18px; overflow-x: auto; scrollbar-width: none; padding-bottom: 6px; }
 .recorow::-webkit-scrollbar { display: none; }
@@ -354,7 +408,8 @@ def head(title, desc, depth, og_img=None):
 
 def topbars(depth):
     p = "../" * depth
-    return f"""<div class="topbar">
+    return f"""<div class="annbar" {tri("annBar")}>{UI["annBar"]["ja"]}</div>
+<div class="topbar">
   <a href="mailto:info@cumulus2026.com" {tri("contact")}>お問い合わせ</a>
   {lang_buttons()}
 </div>
@@ -524,6 +579,47 @@ TYPE_LABEL = {"PD NECKLES": {"ja": "ペンダントネックレス", "en": "Pend
               "RING": {"ja": "リング", "en": "Ring", "zh": "戒指"},
               "BRACELET": {"ja": "ブレスレット", "en": "Bracelet", "zh": "手链"}}
 
+DESC_OPEN = {
+  "pendant":  {"ja": "胸もとに、{g}の光を添える一点。", "en": "A point of {g} light at the chest.", "zh": "为胸前添一点{g}之光。"},
+  "necklace": {"ja": "首もとに沿う、{g}の連なり。", "en": "A strand of {g} along the neckline.", "zh": "沿颈而下的{g}串连。"},
+  "earrings": {"ja": "耳もとで、動きとともに輝く{g}。", "en": "{g} that catches the light with every movement.", "zh": "随动作闪耀于耳畔的{g}。"},
+  "ring":     {"ja": "指もとに、{g}の存在感を。", "en": "The presence of {g} upon the hand.", "zh": "指间尽显{g}的存在感。"},
+  "bracelet": {"ja": "腕もとに、{g}の光を。", "en": "{g} light at the wrist.", "zh": "为腕间添上{g}之光。"},
+  "other":    {"ja": "{g}のジュエリー。", "en": "{g} jewellery.", "zh": "{g}珠宝。"},
+}
+
+def desc_texts(p):
+    gem = p.get("gem_names") or {"ja": p["names"]["ja"], "en": p["names"]["en"], "zh": p["names"]["zh"]}
+    op = DESC_OPEN.get(p["group"], DESC_OPEN["other"])
+    mm = [x for x in p.get("sizes", []) if x.endswith("mm")]
+    ln = [x for x in p.get("sizes", []) if x.endswith("cm")]
+    out = {}
+    for l in ("ja", "en", "zh"):
+        t = op[l].format(g=gem[l])
+        if l == "ja":
+            f = "地金は" + p["mat"] if p["mat"] else ""
+            if p["ct"]: f += "、総カラット%sct" % p["ct"]
+            if mm: f += "、サイズ%s" % mm[0]
+            if ln: f += "、長さ%s" % ln[0]
+            if f: t += " " + f + "。"
+            if p["stock"] == 1: t += "在庫一点限りです。"
+        elif l == "en":
+            f = ("Crafted in %s" % p["mat"]) if p["mat"] else ""
+            if p["ct"]: f += ", %sct total" % p["ct"]
+            if mm: f += ", %s" % mm[0]
+            if ln: f += ", length %s" % ln[0]
+            if f: t += " " + f + "."
+            if p["stock"] == 1: t += " One piece available."
+        else:
+            f = ("材质为" + p["mat"]) if p["mat"] else ""
+            if p["ct"]: f += "，总重%s克拉" % p["ct"]
+            if mm: f += "，尺寸%s" % mm[0]
+            if ln: f += "，长度%s" % ln[0]
+            if f: t += f + "。"
+            if p["stock"] == 1: t += "仅此一件。"
+        out[l] = t
+    return out
+
 def fx_block(p):
     if not p["price"]:
         return ""
@@ -560,6 +656,14 @@ def build_pdp(p):
     ct_row = ""
     if p["ct"]:
         ct_row = f'<tr><th {tri("carat")}>{UI["carat"]["ja"]}</th><td>{p["ct"]}ct</td></tr>'
+    gem_row = ""
+    if p.get("gem_names"):
+        gem_row = f'<tr><th {tri("gemRow")}>{UI["gemRow"]["ja"]}</th><td {tri_txt(p["gem_names"])}>{p["gem_names"]["ja"]}</td></tr>'
+    size_row = ""
+    sz = ", ".join(p.get("sizes", []))
+    if sz:
+        size_row = f'<tr><th {tri("sizeRow")}>{UI["sizeRow"]["ja"]}</th><td>{sz}</td></tr>'
+    desc = desc_texts(p)
     subject = f'?subject={code}%20{UI["contact"]["ja"]}'
     grp_href = f'../index.html#{p["group"]}' if p["group"] in GROUP_LABEL and p["group"] != "other" else "../index.html"
     doc += f"""<p class="crumbs"><a href="../index.html" {tri("backAll")}>{UI["backAll"]["ja"]}</a>
@@ -578,11 +682,14 @@ def build_pdp(p):
       <details open>
         <summary {tri("specH")}>{UI["specH"]["ja"]}</summary>
         <div class="accbody">
+          <p class="pdesc" {tri_txt(desc)}>{desc["ja"]}</p>
           <table class="spectable">
             <tr><th {tri("ref")}>{UI["ref"]["ja"]}</th><td>{code}</td></tr>
             <tr><th {tri("type")}>{UI["type"]["ja"]}</th><td {tri_txt(tyl)}>{tyl["ja"]}</td></tr>
             <tr><th {tri("mat")}>{UI["mat"]["ja"]}</th><td>{html.escape(p["mat"])}</td></tr>
+            {gem_row}
             {ct_row}
+            {size_row}
             <tr><th {tri("price")}>{UI["price"]["ja"]}</th><td>{price_disp(p)}</td></tr>
           </table>
           <p class="note" {tri("photoNote")}>{UI["photoNote"]["ja"]}</p>
@@ -612,7 +719,57 @@ def build_pdp(p):
                 f'<p class="sp" {tri_txt(q["spec"])}>{q["spec"]["ja"]}</p>'
                 f'<p class="pr">{price_disp(q)}</p></a>\n')
     doc += "</div>\n</section>\n"
+    doc += f"""<section class="recent" id="recent">
+  <h2 {tri("recent")}>{UI["recent"]["ja"]}</h2>
+  <div class="recentrow" id="recentrow"></div>
+</section>
+"""
     doc += FOOTER
+    me = {"c": code, "n": p["names"], "s": p["spec"], "p": price_disp(p),
+          "t": f"../img/products/t/{code}.jpg", "h": f"{code}.html"}
+    doc += f"""<div class="stickybar" id="stickybar">
+  <p class="snm" {tri_txt(p["names"])}>{p["names"]["ja"]}</p>
+  <p class="spr">{price_disp(p)}</p>
+  <a class="scta" href="mailto:info@cumulus2026.com{subject}" {tri("inquire")}>{UI["inquire"]["ja"]}</a>
+</div>
+<div class="lightbox" id="lightbox"><span class="lbx">×</span><img src="../img/products/{code}.jpg" alt=""></div>
+"""
+    doc += "<script>var ME = %s;</script>" % json.dumps(me, ensure_ascii=False, separators=(",", ":"))
+    doc += """<script>
+(function () {
+  var sb = document.getElementById("stickybar");
+  window.addEventListener("scroll", function () {
+    sb.classList.toggle("show", window.scrollY > 520);
+  }, {passive: true});
+  var lb = document.getElementById("lightbox");
+  var tileImg = document.querySelector(".pdp .tile img");
+  if (tileImg) tileImg.addEventListener("click", function () { lb.classList.add("on"); });
+  lb.addEventListener("click", function () { lb.classList.remove("on"); });
+  var KEY = "green-recent";
+  try {
+    var arr = JSON.parse(localStorage.getItem(KEY) || "[]");
+    arr = arr.filter(function (x) { return x.c !== ME.c; });
+    var show = arr.slice(0, 6);
+    arr.unshift(ME);
+    localStorage.setItem(KEY, JSON.stringify(arr.slice(0, 9)));
+    if (show.length) {
+      var row = document.getElementById("recentrow");
+      var render = function () {
+        var l = window.GREEN_LANG || "ja";
+        row.innerHTML = show.map(function (x) {
+          return '<a class="card" href="' + x.h + '"><div class="tile"><img src="' + x.t + '" loading="lazy" alt=""></div>' +
+            '<p class="nm">' + x.n[l] + '</p><p class="pr">' + x.p + "</p></a>";
+        }).join("");
+      };
+      render();
+      var prev = window.onLangChange;
+      window.onLangChange = function () { if (prev) prev(); render(); };
+      document.getElementById("recent").classList.add("on");
+    }
+  } catch (e) {}
+})();
+</script>
+"""
     doc += BEACON + "\n</body>\n</html>\n"
     open(os.path.join(ROOT, "products", f"{code}.html"), "w").write(doc)
 

@@ -11,6 +11,7 @@
 <script src="../assets/site.js"></script>
 </head>
 <body>
+<div class="annbar" data-i data-ja="東京・東日本橋ショールーム ｜ ご来店・お問い合わせを承ります" data-en="Showroom in Higashi-Nihonbashi, Tokyo — visits and enquiries welcome" data-zh="东京·东日本桥陈列室 ｜ 欢迎到店与咨询">東京・東日本橋ショールーム ｜ ご来店・お問い合わせを承ります</div>
 <div class="topbar">
   <a href="mailto:info@cumulus2026.com" data-i data-ja="お問い合わせ" data-en="Contact" data-zh="联系我们">お問い合わせ</a>
   <div class="langs"><button data-l="ja" onclick="setLang('ja')">日本語</button><button data-l="en" onclick="setLang('en')">English</button><button data-l="zh" onclick="setLang('zh')">简体中文</button></div>
@@ -33,11 +34,14 @@
       <details open>
         <summary data-i data-ja="説明および仕様" data-en="Description &amp; Specifications" data-zh="描述与规格">説明および仕様</summary>
         <div class="accbody">
+          <p class="pdesc" data-i data-ja="胸もとに、ダイヤモンドの光を添える一点。 地金はPT950、総カラット0.8ct。在庫一点限りです。" data-en="A point of Diamond light at the chest. Crafted in PT950, 0.8ct total. One piece available." data-zh="为胸前添一点钻石之光。材质为PT950，总重0.8克拉。仅此一件。">胸もとに、ダイヤモンドの光を添える一点。 地金はPT950、総カラット0.8ct。在庫一点限りです。</p>
           <table class="spectable">
             <tr><th data-i data-ja="品番" data-en="Reference" data-zh="编号">品番</th><td>ABLMTV0600P-PT</td></tr>
             <tr><th data-i data-ja="分類" data-en="Category" data-zh="类别">分類</th><td data-i data-ja="ペンダントネックレス" data-en="Pendant necklace" data-zh="吊坠项链">ペンダントネックレス</td></tr>
             <tr><th data-i data-ja="地金素材" data-en="Material" data-zh="材质">地金素材</th><td>PT950</td></tr>
+            <tr><th data-i data-ja="宝石" data-en="Gemstone" data-zh="宝石">宝石</th><td data-i data-ja="ダイヤモンド" data-en="Diamond" data-zh="钻石">ダイヤモンド</td></tr>
             <tr><th data-i data-ja="総カラット" data-en="Total carat" data-zh="总克拉">総カラット</th><td>0.8ct</td></tr>
+            
             <tr><th data-i data-ja="価格（税込）" data-en="Price (tax incl.)" data-zh="价格（含税）">価格（税込）</th><td>¥ 275,000</td></tr>
           </table>
           <p class="note" data-i data-ja="撮影環境により、実物と色味が異なる場合があります。" data-en="Colours may differ slightly from the actual piece due to photography conditions." data-zh="因拍摄环境，实物颜色可能略有差异。">撮影環境により、実物と色味が異なる場合があります。</p>
@@ -66,10 +70,54 @@
 <a class="card" href="DP0552.html"><div class="tile"><span class="badge" data-i data-ja="新作" data-en="New" data-zh="新品">新作</span><img src="../img/products/t/DP0552.jpg" alt="ダイヤモンド ペンダントネックレス" loading="lazy"></div><p class="nm" data-i data-ja="ダイヤモンド ペンダントネックレス" data-en="Diamond Pendant Necklace" data-zh="钻石吊坠项链">ダイヤモンド ペンダントネックレス</p><p class="sp" data-i data-ja="ペンダントネックレス、PT950/K18YG、ダイヤモンド" data-en="Pendant Necklace, PT950/K18YG, Diamond" data-zh="吊坠项链、PT950/K18YG、钻石">ペンダントネックレス、PT950/K18YG、ダイヤモンド</p><p class="pr">¥ 260,000</p></a>
 </div>
 </section>
+<section class="recent" id="recent">
+  <h2 data-i data-ja="最近ご覧になったアイテム" data-en="Recently viewed" data-zh="最近浏览">最近ご覧になったアイテム</h2>
+  <div class="recentrow" id="recentrow"></div>
+</section>
 <footer>
   <p class="mark">GReEN</p>
   <p>© 2026 GReEN — CUMULUS INC.</p>
 </footer>
+<div class="stickybar" id="stickybar">
+  <p class="snm" data-i data-ja="ダイヤモンド ペンダントネックレス" data-en="Diamond Pendant Necklace" data-zh="钻石吊坠项链">ダイヤモンド ペンダントネックレス</p>
+  <p class="spr">¥ 275,000</p>
+  <a class="scta" href="mailto:info@cumulus2026.com?subject=ABLMTV0600P-PT%20お問い合わせ" data-i data-ja="お問い合わせ" data-en="Inquire" data-zh="咨询">お問い合わせ</a>
+</div>
+<div class="lightbox" id="lightbox"><span class="lbx">×</span><img src="../img/products/ABLMTV0600P-PT.jpg" alt=""></div>
+<script>var ME = {"c":"ABLMTV0600P-PT","n":{"ja":"ダイヤモンド ペンダントネックレス","en":"Diamond Pendant Necklace","zh":"钻石吊坠项链"},"s":{"ja":"ペンダントネックレス、PT950、ダイヤモンド 0.8ct","en":"Pendant Necklace, PT950, Diamond 0.8ct","zh":"吊坠项链、PT950、钻石 0.8ct"},"p":"¥ 275,000","t":"../img/products/t/ABLMTV0600P-PT.jpg","h":"ABLMTV0600P-PT.html"};</script><script>
+(function () {
+  var sb = document.getElementById("stickybar");
+  window.addEventListener("scroll", function () {
+    sb.classList.toggle("show", window.scrollY > 520);
+  }, {passive: true});
+  var lb = document.getElementById("lightbox");
+  var tileImg = document.querySelector(".pdp .tile img");
+  if (tileImg) tileImg.addEventListener("click", function () { lb.classList.add("on"); });
+  lb.addEventListener("click", function () { lb.classList.remove("on"); });
+  var KEY = "green-recent";
+  try {
+    var arr = JSON.parse(localStorage.getItem(KEY) || "[]");
+    arr = arr.filter(function (x) { return x.c !== ME.c; });
+    var show = arr.slice(0, 6);
+    arr.unshift(ME);
+    localStorage.setItem(KEY, JSON.stringify(arr.slice(0, 9)));
+    if (show.length) {
+      var row = document.getElementById("recentrow");
+      var render = function () {
+        var l = window.GREEN_LANG || "ja";
+        row.innerHTML = show.map(function (x) {
+          return '<a class="card" href="' + x.h + '"><div class="tile"><img src="' + x.t + '" loading="lazy" alt=""></div>' +
+            '<p class="nm">' + x.n[l] + '</p><p class="pr">' + x.p + "</p></a>";
+        }).join("");
+      };
+      render();
+      var prev = window.onLangChange;
+      window.onLangChange = function () { if (prev) prev(); render(); };
+      document.getElementById("recent").classList.add("on");
+    }
+  } catch (e) {}
+})();
+</script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "ac6972d86f8941fc8c3107604cccd97c"}'></script>
 </body>
 </html>

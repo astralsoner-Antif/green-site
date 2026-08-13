@@ -11,6 +11,7 @@
 <script src="../assets/site.js"></script>
 </head>
 <body>
+<div class="annbar" data-i data-ja="東京・東日本橋ショールーム ｜ ご来店・お問い合わせを承ります" data-en="Showroom in Higashi-Nihonbashi, Tokyo — visits and enquiries welcome" data-zh="东京·东日本桥陈列室 ｜ 欢迎到店与咨询">東京・東日本橋ショールーム ｜ ご来店・お問い合わせを承ります</div>
 <div class="topbar">
   <a href="mailto:info@cumulus2026.com" data-i data-ja="お問い合わせ" data-en="Contact" data-zh="联系我们">お問い合わせ</a>
   <div class="langs"><button data-l="ja" onclick="setLang('ja')">日本語</button><button data-l="en" onclick="setLang('en')">English</button><button data-l="zh" onclick="setLang('zh')">简体中文</button></div>
@@ -33,11 +34,14 @@
       <details open>
         <summary data-i data-ja="説明および仕様" data-en="Description &amp; Specifications" data-zh="描述与规格">説明および仕様</summary>
         <div class="accbody">
+          <p class="pdesc" data-i data-ja="耳もとで、動きとともに輝くアコヤパール。 地金はK14WG、サイズ7-7.5mm。在庫一点限りです。" data-en="Akoya Pearl that catches the light with every movement. Crafted in K14WG, 7-7.5mm. One piece available." data-zh="随动作闪耀于耳畔的Akoya珍珠。材质为K14WG，尺寸7-7.5mm。仅此一件。">耳もとで、動きとともに輝くアコヤパール。 地金はK14WG、サイズ7-7.5mm。在庫一点限りです。</p>
           <table class="spectable">
             <tr><th data-i data-ja="品番" data-en="Reference" data-zh="编号">品番</th><td>257301</td></tr>
             <tr><th data-i data-ja="分類" data-en="Category" data-zh="类别">分類</th><td data-i data-ja="ピアス" data-en="Pierced earrings" data-zh="耳环">ピアス</td></tr>
             <tr><th data-i data-ja="地金素材" data-en="Material" data-zh="材质">地金素材</th><td>K14WG</td></tr>
+            <tr><th data-i data-ja="宝石" data-en="Gemstone" data-zh="宝石">宝石</th><td data-i data-ja="アコヤパール" data-en="Akoya Pearl" data-zh="Akoya珍珠">アコヤパール</td></tr>
             
+            <tr><th data-i data-ja="サイズ" data-en="Size" data-zh="尺寸">サイズ</th><td>7-7.5mm</td></tr>
             <tr><th data-i data-ja="価格（税込）" data-en="Price (tax incl.)" data-zh="价格（含税）">価格（税込）</th><td>¥ 45,000</td></tr>
           </table>
           <p class="note" data-i data-ja="撮影環境により、実物と色味が異なる場合があります。" data-en="Colours may differ slightly from the actual piece due to photography conditions." data-zh="因拍摄环境，实物颜色可能略有差异。">撮影環境により、実物と色味が異なる場合があります。</p>
@@ -66,10 +70,54 @@
 <a class="card" href="272869.html"><div class="tile"><img src="../img/products/t/272869.jpg" alt="アコヤパール ピアス" loading="lazy"></div><p class="nm" data-i data-ja="アコヤパール ピアス" data-en="Akoya Pearl Pierced Earrings" data-zh="Akoya珍珠耳环">アコヤパール ピアス</p><p class="sp" data-i data-ja="ピアス、K10WG、アコヤパール 3-3.5mm" data-en="Pierced Earrings, K10WG, Akoya Pearl 3-3.5mm" data-zh="耳环、K10WG、Akoya珍珠 3-3.5mm">ピアス、K10WG、アコヤパール 3-3.5mm</p><p class="pr">¥ 20,000</p></a>
 </div>
 </section>
+<section class="recent" id="recent">
+  <h2 data-i data-ja="最近ご覧になったアイテム" data-en="Recently viewed" data-zh="最近浏览">最近ご覧になったアイテム</h2>
+  <div class="recentrow" id="recentrow"></div>
+</section>
 <footer>
   <p class="mark">GReEN</p>
   <p>© 2026 GReEN — CUMULUS INC.</p>
 </footer>
+<div class="stickybar" id="stickybar">
+  <p class="snm" data-i data-ja="アコヤパール ピアス" data-en="Akoya Pearl Pierced Earrings" data-zh="Akoya珍珠耳环">アコヤパール ピアス</p>
+  <p class="spr">¥ 45,000</p>
+  <a class="scta" href="mailto:info@cumulus2026.com?subject=257301%20お問い合わせ" data-i data-ja="お問い合わせ" data-en="Inquire" data-zh="咨询">お問い合わせ</a>
+</div>
+<div class="lightbox" id="lightbox"><span class="lbx">×</span><img src="../img/products/257301.jpg" alt=""></div>
+<script>var ME = {"c":"257301","n":{"ja":"アコヤパール ピアス","en":"Akoya Pearl Pierced Earrings","zh":"Akoya珍珠耳环"},"s":{"ja":"ピアス、K14WG、アコヤパール 7-7.5mm","en":"Pierced Earrings, K14WG, Akoya Pearl 7-7.5mm","zh":"耳环、K14WG、Akoya珍珠 7-7.5mm"},"p":"¥ 45,000","t":"../img/products/t/257301.jpg","h":"257301.html"};</script><script>
+(function () {
+  var sb = document.getElementById("stickybar");
+  window.addEventListener("scroll", function () {
+    sb.classList.toggle("show", window.scrollY > 520);
+  }, {passive: true});
+  var lb = document.getElementById("lightbox");
+  var tileImg = document.querySelector(".pdp .tile img");
+  if (tileImg) tileImg.addEventListener("click", function () { lb.classList.add("on"); });
+  lb.addEventListener("click", function () { lb.classList.remove("on"); });
+  var KEY = "green-recent";
+  try {
+    var arr = JSON.parse(localStorage.getItem(KEY) || "[]");
+    arr = arr.filter(function (x) { return x.c !== ME.c; });
+    var show = arr.slice(0, 6);
+    arr.unshift(ME);
+    localStorage.setItem(KEY, JSON.stringify(arr.slice(0, 9)));
+    if (show.length) {
+      var row = document.getElementById("recentrow");
+      var render = function () {
+        var l = window.GREEN_LANG || "ja";
+        row.innerHTML = show.map(function (x) {
+          return '<a class="card" href="' + x.h + '"><div class="tile"><img src="' + x.t + '" loading="lazy" alt=""></div>' +
+            '<p class="nm">' + x.n[l] + '</p><p class="pr">' + x.p + "</p></a>";
+        }).join("");
+      };
+      render();
+      var prev = window.onLangChange;
+      window.onLangChange = function () { if (prev) prev(); render(); };
+      document.getElementById("recent").classList.add("on");
+    }
+  } catch (e) {}
+})();
+</script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "ac6972d86f8941fc8c3107604cccd97c"}'></script>
 </body>
 </html>

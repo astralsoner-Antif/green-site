@@ -11,6 +11,7 @@
 <script src="../assets/site.js"></script>
 </head>
 <body>
+<div class="annbar" data-i data-ja="東京・東日本橋ショールーム ｜ ご来店・お問い合わせを承ります" data-en="Showroom in Higashi-Nihonbashi, Tokyo — visits and enquiries welcome" data-zh="东京·东日本桥陈列室 ｜ 欢迎到店与咨询">東京・東日本橋ショールーム ｜ ご来店・お問い合わせを承ります</div>
 <div class="topbar">
   <a href="mailto:info@cumulus2026.com" data-i data-ja="お問い合わせ" data-en="Contact" data-zh="联系我们">お問い合わせ</a>
   <div class="langs"><button data-l="ja" onclick="setLang('ja')">日本語</button><button data-l="en" onclick="setLang('en')">English</button><button data-l="zh" onclick="setLang('zh')">简体中文</button></div>
@@ -33,10 +34,13 @@
       <details open>
         <summary data-i data-ja="説明および仕様" data-en="Description &amp; Specifications" data-zh="描述与规格">説明および仕様</summary>
         <div class="accbody">
+          <p class="pdesc" data-i data-ja="耳もとで、動きとともに輝くメタル。 地金はPT/K18。在庫一点限りです。" data-en="Metal that catches the light with every movement. Crafted in PT/K18. One piece available." data-zh="随动作闪耀于耳畔的金属。材质为PT/K18。仅此一件。">耳もとで、動きとともに輝くメタル。 地金はPT/K18。在庫一点限りです。</p>
           <table class="spectable">
             <tr><th data-i data-ja="品番" data-en="Reference" data-zh="编号">品番</th><td>ABLPR0501E-PT.WG2</td></tr>
             <tr><th data-i data-ja="分類" data-en="Category" data-zh="类别">分類</th><td data-i data-ja="ピアス" data-en="Pierced earrings" data-zh="耳环">ピアス</td></tr>
             <tr><th data-i data-ja="地金素材" data-en="Material" data-zh="材质">地金素材</th><td>PT/K18</td></tr>
+            <tr><th data-i data-ja="宝石" data-en="Gemstone" data-zh="宝石">宝石</th><td data-i data-ja="メタル" data-en="Metal" data-zh="金属">メタル</td></tr>
+            
             
             <tr><th data-i data-ja="価格（税込）" data-en="Price (tax incl.)" data-zh="价格（含税）">価格（税込）</th><td>¥ 85,000</td></tr>
           </table>
@@ -66,10 +70,54 @@
 <a class="card" href="LMTV0468PE-PT.html"><div class="tile"><img src="../img/products/t/LMTV0468PE-PT.jpg" alt="ダイヤモンド ピアス" loading="lazy"></div><p class="nm" data-i data-ja="ダイヤモンド ピアス" data-en="Diamond Pierced Earrings" data-zh="钻石耳环">ダイヤモンド ピアス</p><p class="sp" data-i data-ja="ピアス、PT950、ダイヤモンド" data-en="Pierced Earrings, PT950, Diamond" data-zh="耳环、PT950、钻石">ピアス、PT950、ダイヤモンド</p><p class="pr">¥ 205,000</p></a>
 </div>
 </section>
+<section class="recent" id="recent">
+  <h2 data-i data-ja="最近ご覧になったアイテム" data-en="Recently viewed" data-zh="最近浏览">最近ご覧になったアイテム</h2>
+  <div class="recentrow" id="recentrow"></div>
+</section>
 <footer>
   <p class="mark">GReEN</p>
   <p>© 2026 GReEN — CUMULUS INC.</p>
 </footer>
+<div class="stickybar" id="stickybar">
+  <p class="snm" data-i data-ja="メタル ピアス" data-en="Metal Pierced Earrings" data-zh="金属耳环">メタル ピアス</p>
+  <p class="spr">¥ 85,000</p>
+  <a class="scta" href="mailto:info@cumulus2026.com?subject=ABLPR0501E-PT.WG2%20お問い合わせ" data-i data-ja="お問い合わせ" data-en="Inquire" data-zh="咨询">お問い合わせ</a>
+</div>
+<div class="lightbox" id="lightbox"><span class="lbx">×</span><img src="../img/products/ABLPR0501E-PT.WG2.jpg" alt=""></div>
+<script>var ME = {"c":"ABLPR0501E-PT.WG2","n":{"ja":"メタル ピアス","en":"Metal Pierced Earrings","zh":"金属耳环"},"s":{"ja":"ピアス、PT/K18、メタル","en":"Pierced Earrings, PT/K18, Metal","zh":"耳环、PT/K18、金属"},"p":"¥ 85,000","t":"../img/products/t/ABLPR0501E-PT.WG2.jpg","h":"ABLPR0501E-PT.WG2.html"};</script><script>
+(function () {
+  var sb = document.getElementById("stickybar");
+  window.addEventListener("scroll", function () {
+    sb.classList.toggle("show", window.scrollY > 520);
+  }, {passive: true});
+  var lb = document.getElementById("lightbox");
+  var tileImg = document.querySelector(".pdp .tile img");
+  if (tileImg) tileImg.addEventListener("click", function () { lb.classList.add("on"); });
+  lb.addEventListener("click", function () { lb.classList.remove("on"); });
+  var KEY = "green-recent";
+  try {
+    var arr = JSON.parse(localStorage.getItem(KEY) || "[]");
+    arr = arr.filter(function (x) { return x.c !== ME.c; });
+    var show = arr.slice(0, 6);
+    arr.unshift(ME);
+    localStorage.setItem(KEY, JSON.stringify(arr.slice(0, 9)));
+    if (show.length) {
+      var row = document.getElementById("recentrow");
+      var render = function () {
+        var l = window.GREEN_LANG || "ja";
+        row.innerHTML = show.map(function (x) {
+          return '<a class="card" href="' + x.h + '"><div class="tile"><img src="' + x.t + '" loading="lazy" alt=""></div>' +
+            '<p class="nm">' + x.n[l] + '</p><p class="pr">' + x.p + "</p></a>";
+        }).join("");
+      };
+      render();
+      var prev = window.onLangChange;
+      window.onLangChange = function () { if (prev) prev(); render(); };
+      document.getElementById("recent").classList.add("on");
+    }
+  } catch (e) {}
+})();
+</script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "ac6972d86f8941fc8c3107604cccd97c"}'></script>
 </body>
 </html>
