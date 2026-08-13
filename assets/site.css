@@ -35,7 +35,9 @@ img { max-width: 100%; }
   padding: 9px 20px; border-bottom: 1px solid var(--hairline);
   font-family: var(--sans); font-size: 11px; letter-spacing: 0.08em; color: var(--muted); }
 .topbar a:hover { color: var(--emerald-deep); }
-.topbar .tl { display: flex; gap: 18px; align-items: center; }
+.topbar .tl { display: flex; gap: 18px; align-items: center; overflow-x: auto;
+  scrollbar-width: none; white-space: nowrap; }
+.topbar .tl::-webkit-scrollbar { display: none; }
 .catlink:hover { color: var(--emerald-deep); }
 .catlink #catcount { color: var(--emerald-deep); margin-left: 2px; }
 .langs { display: flex; gap: 14px; }
@@ -201,6 +203,31 @@ html[lang="en"] .intro .accent { display: none; } /* 英語時はH1と重複す�
 .spectable td { font-family: var(--sans); letter-spacing: 0.05em; }
 .note { font-family: var(--sans); font-size: 10.5px; color: var(--muted);
   letter-spacing: 0.04em; margin-top: 12px; line-height: 1.9; }
+
+/* ---- インフォページ ---- */
+.infopage { max-width: 720px; margin: 0 auto; padding: 8px 24px 60px; }
+.infopage .photo { margin: 6px 0 30px; }
+.infopage .photo img { width: 100%; display: block; }
+.infopage p.body { font-family: var(--display); font-size: 14px; letter-spacing: 0.06em;
+  line-height: 2.2; margin-bottom: 26px; }
+.infopage p.body span { display: inline-block; }
+.infopage h2 { font-family: var(--display); font-size: 16px; font-weight: 600;
+  letter-spacing: 0.14em; margin: 34px 0 14px; }
+.infopage h2::before { content: ""; display: block; width: 32px; height: 1px;
+  background: var(--gold); margin-bottom: 12px; }
+.infopage .profile { margin-bottom: 26px; }
+.infopage .maplink { font-family: var(--sans); font-size: 11px; letter-spacing: 0.14em;
+  color: var(--emerald-deep); border-bottom: 1px solid var(--emerald-deep); padding-bottom: 1px; }
+.infopage .cta { display: block; text-align: center; font-family: var(--sans); font-size: 12px;
+  letter-spacing: 0.28em; padding: 15px 10px; margin-top: 10px;
+  background: var(--emerald-deep); color: #fff; }
+.infopage .cta:hover { background: var(--emerald); }
+
+/* ---- footer nav ---- */
+.fnav { display: flex; flex-wrap: wrap; gap: 10px 26px; justify-content: center;
+  font-family: var(--sans); font-size: 10.5px; letter-spacing: 0.16em;
+  padding: 0 20px 22px; color: var(--muted); }
+.fnav a:hover { color: var(--emerald-deep); }
 
 /* ---- recommendations ---- */
 .reco { max-width: 1380px; margin: 0 auto; padding: 26px 20px 60px; }

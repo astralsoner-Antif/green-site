@@ -70,6 +70,11 @@ UI = {
   "catLead":    {"ja": "気になる商品を集めて、まとめてお問い合わせいただけます。", "en": "Collect the pieces you are interested in and send a single enquiry.", "zh": "收藏感兴趣的商品，一键统一咨询。"},
   "catEmpty":   {"ja": "カタログはまだ空です。商品の ♡ から追加できます。", "en": "Your catalogue is empty. Tap ♡ on any piece to add it.", "zh": "目录还是空的。点击商品上的 ♡ 即可加入。"},
   "catMail":    {"ja": "まとめてお問い合わせ", "en": "Send enquiry for all", "zh": "一键咨询全部"},
+  "navAbout":   {"ja": "GReENについて", "en": "About GReEN", "zh": "关于GReEN"},
+  "navShowroom":{"ja": "ショールーム", "en": "Showroom", "zh": "陈列室"},
+  "navShip":    {"ja": "配送・海外発送", "en": "Shipping", "zh": "配送"},
+  "navHome":    {"ja": "ジュエリー一覧", "en": "All Jewellery", "zh": "全部珠宝"},
+  "mapLink":    {"ja": "Googleマップで見る", "en": "Open in Google Maps", "zh": "在Google地图中查看"},
 }
 
 # 大分類(メインナビ・Chopardのウォッチ/ジュエリー/アクセサリーに相当)
@@ -159,7 +164,9 @@ img { max-width: 100%; }
   padding: 9px 20px; border-bottom: 1px solid var(--hairline);
   font-family: var(--sans); font-size: 11px; letter-spacing: 0.08em; color: var(--muted); }
 .topbar a:hover { color: var(--emerald-deep); }
-.topbar .tl { display: flex; gap: 18px; align-items: center; }
+.topbar .tl { display: flex; gap: 18px; align-items: center; overflow-x: auto;
+  scrollbar-width: none; white-space: nowrap; }
+.topbar .tl::-webkit-scrollbar { display: none; }
 .catlink:hover { color: var(--emerald-deep); }
 .catlink #catcount { color: var(--emerald-deep); margin-left: 2px; }
 .langs { display: flex; gap: 14px; }
@@ -326,6 +333,31 @@ html[lang="en"] .intro .accent { display: none; } /* 英語時はH1と重複す�
 .note { font-family: var(--sans); font-size: 10.5px; color: var(--muted);
   letter-spacing: 0.04em; margin-top: 12px; line-height: 1.9; }
 
+/* ---- インフォページ ---- */
+.infopage { max-width: 720px; margin: 0 auto; padding: 8px 24px 60px; }
+.infopage .photo { margin: 6px 0 30px; }
+.infopage .photo img { width: 100%; display: block; }
+.infopage p.body { font-family: var(--display); font-size: 14px; letter-spacing: 0.06em;
+  line-height: 2.2; margin-bottom: 26px; }
+.infopage p.body span { display: inline-block; }
+.infopage h2 { font-family: var(--display); font-size: 16px; font-weight: 600;
+  letter-spacing: 0.14em; margin: 34px 0 14px; }
+.infopage h2::before { content: ""; display: block; width: 32px; height: 1px;
+  background: var(--gold); margin-bottom: 12px; }
+.infopage .profile { margin-bottom: 26px; }
+.infopage .maplink { font-family: var(--sans); font-size: 11px; letter-spacing: 0.14em;
+  color: var(--emerald-deep); border-bottom: 1px solid var(--emerald-deep); padding-bottom: 1px; }
+.infopage .cta { display: block; text-align: center; font-family: var(--sans); font-size: 12px;
+  letter-spacing: 0.28em; padding: 15px 10px; margin-top: 10px;
+  background: var(--emerald-deep); color: #fff; }
+.infopage .cta:hover { background: var(--emerald); }
+
+/* ---- footer nav ---- */
+.fnav { display: flex; flex-wrap: wrap; gap: 10px 26px; justify-content: center;
+  font-family: var(--sans); font-size: 10.5px; letter-spacing: 0.16em;
+  padding: 0 20px 22px; color: var(--muted); }
+.fnav a:hover { color: var(--emerald-deep); }
+
 /* ---- recommendations ---- */
 .reco { max-width: 1380px; margin: 0 auto; padding: 26px 20px 60px; }
 .reco h2 { font-family: var(--display); font-size: 18px; font-weight: 600;
@@ -464,6 +496,9 @@ def topbars(depth):
     return f"""<div class="annbar" {tri("annBar")}>{UI["annBar"]["ja"]}</div>
 <div class="topbar">
   <div class="tl">
+    <a href="{p}about.html" {tri("navAbout")}>GReENについて</a>
+    <a href="{p}showroom.html" {tri("navShowroom")}>ショールーム</a>
+    <a href="{p}shipping.html" {tri("navShip")}>配送・海外発送</a>
     <a href="mailto:info@cumulus2026.com" {tri("contact")}>お問い合わせ</a>
     <a class="catlink" href="{p}catalog.html"><span {tri("catalog")}>カタログ</span><span id="catcount"></span></a>
   </div>
@@ -489,7 +524,15 @@ def shop_section(depth):
 </section>
 """
 
-FOOTER = """<footer>
+def footer(depth):
+    pp = "../" * depth
+    links = [(f"{pp}index.html", "navHome"), (f"{pp}about.html", "navAbout"),
+             (f"{pp}showroom.html", "navShowroom"), (f"{pp}shipping.html", "navShip"),
+             (f"{pp}catalog.html", "catalog")]
+    row = "".join(f'<a href="{h}" {tri(k)}>{UI[k]["ja"]}</a>' for h, k in links)
+    row += '<a href="mailto:info@cumulus2026.com" ' + tri("contact") + f'>{UI["contact"]["ja"]}</a>'
+    return f"""<footer>
+  <nav class="fnav">{row}</nav>
   <p class="mark">GReEN</p>
   <p>© 2026 GReEN — CUMULUS INC.</p>
 </footer>
@@ -528,7 +571,7 @@ def build_index():
 <div class="pager" id="pager"></div>
 """
     doc += shop_section(0)
-    doc += FOOTER
+    doc += footer(0)
     intros = {"all": {"h": UI["introTitle"], "l": UI["introLead"]}}
     intros.update(CAT_INTROS)
     doc += "<script>var PRODUCTS = %s;\nvar INTROS = %s;\nvar FX = %s;</script>" % (
@@ -813,7 +856,7 @@ def build_pdp(p):
   <div class="recentrow" id="recentrow"></div>
 </section>
 """
-    doc += FOOTER
+    doc += footer(1)
     me = {"c": code, "n": p["names"], "s": p["spec"], "p": price_disp(p),
           "t": f"../img/products/t/{code}.jpg", "h": f"{code}.html"}
     doc += f"""<div class="stickybar" id="stickybar">
@@ -893,7 +936,7 @@ def build_catalog_page():
   <p class="catempty" id="catempty" {tri("catEmpty")}>{UI["catEmpty"]["ja"]}</p>
 </div>
 """
-    doc += FOOTER
+    doc += footer(0)
     doc += "<script>var PRODUCTS = %s;\nvar FX = %s;</script>" % (
         json.dumps(items, ensure_ascii=False, separators=(",", ":")), json.dumps(FX))
     doc += """<script>
@@ -952,6 +995,82 @@ def build_catalog_page():
     doc += BEACON + "\n</body>\n</html>\n"
     open(os.path.join(ROOT, "catalog.html"), "w").write(doc)
 
+INFO_PAGES = {
+  "about": {
+    "accent": "About",
+    "h": {"ja": "GReENについて", "en": "About GReEN", "zh": "关于GReEN"},
+    "paras": [
+      {"ja": "<span>かたちは、石のためにある。</span><span>GReENは、素材の表情を</span><span>最も美しく引き立てるデザインだけを見極め、</span><span>一点ずつコレクションに加える</span><span>ジュエリーショールームです。</span>",
+       "en": "<span>Form exists for the stone.</span> <span>GReEN is a jewellery showroom</span> <span>that selects only the designs</span> <span>that bring out each material's finest expression,</span> <span>one piece at a time.</span>",
+       "zh": "<span>造型，为宝石而生。</span><span>GReEN是一家珠宝陈列室，</span><span>只甄选最能衬托材质之美的设计，</span><span>逐一纳入系列。</span>"},
+      {"ja": "<span>ダイヤモンドのパヴェが光を放つモチーフペンダントから、</span><span>照りで選び抜いたアコヤパールの連、</span><span>カラーダイヤモンドや南洋パールの一点物まで。</span><span>プラチナとゴールドの確かな地金で仕立てた</span><span>コレクションを、</span><span>東京・東日本橋のショールームでご覧いただけます。</span>",
+       "en": "<span>From motif pendants paved with diamonds</span> <span>to strands of Akoya pearls chosen for their lustre,</span> <span>one-off coloured diamonds and South Sea pearls —</span> <span>a collection crafted in platinum and gold,</span> <span>at our showroom in Higashi-Nihonbashi, Tokyo.</span>",
+       "zh": "<span>从铺镶钻石的造型吊坠、</span><span>以光泽甄选的Akoya珍珠链，</span><span>到彩钻与南洋珍珠的独件之作——</span><span>以铂金与K金打造的系列，</span><span>尽在东京东日本桥陈列室。</span>"},
+      {"ja": "<span>すべての商品は、お問い合わせのうえ</span><span>ご来店またはオンラインでご相談いただけます。</span><span>海外への発送にも対応しています。</span>",
+       "en": "<span>Every piece can be viewed at the showroom</span> <span>or discussed online by enquiry.</span> <span>International shipping is available.</span>",
+       "zh": "<span>所有商品均可通过咨询</span><span>预约到店或在线洽谈。</span><span>支持海外配送。</span>"},
+    ],
+    "photo": True, "shop_dl": False, "map": False, "cta": True,
+  },
+  "showroom": {
+    "accent": "Showroom",
+    "h": {"ja": "ショールーム", "en": "Showroom", "zh": "陈列室"},
+    "paras": [
+      {"ja": "<span>コレクションのすべてを、</span><span>実際に手に取ってご覧いただける</span><span>ショールームです。</span><span>ご来店の際は、事前にお問い合わせより</span><span>ご連絡をお願いしています。</span>",
+       "en": "<span>Every piece in the collection</span> <span>can be seen in person at our showroom.</span> <span>Please contact us in advance</span> <span>to arrange your visit.</span>",
+       "zh": "<span>系列中的每一件商品，</span><span>都可在陈列室亲手鉴赏。</span><span>到店前请先与我们联系预约。</span>"},
+    ],
+    "photo": True, "shop_dl": True, "map": True, "cta": True,
+  },
+  "shipping": {
+    "accent": "Shipping",
+    "h": {"ja": "配送・海外発送", "en": "Shipping & Delivery", "zh": "配送与海外发货"},
+    "paras": [
+      {"ja": "<span>日本国内への配送に対応しています。</span><span>配送方法・送料は、</span><span>ご注文時にご案内します。</span>",
+       "en": "<span>We ship within Japan.</span> <span>Shipping methods and costs</span> <span>are confirmed at the time of order.</span>",
+       "zh": "<span>支持日本国内配送。</span><span>配送方式与运费</span><span>将在下单时为您确认。</span>"},
+      {"ja": "<span>海外への発送にも対応しています。</span><span>対応地域・配送方法・送料・関税のお取り扱いは、</span><span>商品とお届け先により異なるため、</span><span>お問い合わせの際にご案内します。</span>",
+       "en": "<span>International shipping is available.</span> <span>Destinations, methods, costs and customs handling</span> <span>vary by piece and delivery address —</span> <span>we will guide you when you enquire.</span>",
+       "zh": "<span>支持海外配送。</span><span>可送达地区、配送方式、运费及关税事宜</span><span>因商品与收货地而异，</span><span>咨询时将为您详细说明。</span>"},
+      {"ja": "<span>価格はすべて日本円（税込）で表示しています。</span><span>CNY・USDの表記は参考換算です。</span><span>お品物には、ギャランティカードを</span><span>添えてお届けします。</span>",
+       "en": "<span>All prices are shown in Japanese yen (tax included);</span> <span>CNY and USD figures are approximate conversions.</span> <span>Each piece is delivered</span> <span>with its guarantee card.</span>",
+       "zh": "<span>所有价格均以日元（含税）标示，</span><span>CNY与USD仅为参考换算。</span><span>每件商品都将附带保证卡寄出。</span>"},
+    ],
+    "photo": False, "shop_dl": False, "map": False, "cta": True,
+  },
+}
+
+def build_info_pages():
+    NL = chr(10)
+    for key, pg in INFO_PAGES.items():
+        doc = head(f'{pg["h"]["ja"]} | GReEN', pg["h"]["ja"] + " — GReEN", 0)
+        doc += topbars(0)
+        doc += f"""<section class="intro">
+  <p class="accent" aria-hidden="true">{pg["accent"]}</p>
+  <h1 {tri_txt(pg["h"])}>{pg["h"]["ja"]}</h1>
+</section>
+<div class="infopage">
+"""
+        if pg["photo"]:
+            doc += '<div class="photo"><img src="img/hero.jpg" alt="GReEN showroom"></div>' + NL
+        for para in pg["paras"]:
+            doc += f'<p class="body" {tri_txt(para)}>{para["ja"]}</p>' + NL
+        if pg["shop_dl"]:
+            doc += f"""<dl class="profile">
+<div><dt {tri("coShop")}>{UI["coShop"]["ja"]}</dt><dd>GReEN</dd></div>
+<div><dt {tri("coAddr")}>{UI["coAddr"]["ja"]}</dt><dd {tri("coAddrV")}>{UI["coAddrV"]["ja"]}</dd></div>
+<div><dt {tri("coContact")}>{UI["coContact"]["ja"]}</dt><dd>info@cumulus2026.com</dd></div>
+</dl>
+"""
+        if pg["map"]:
+            doc += f'<p style="margin-bottom:26px"><a class="maplink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%9D%B1%E6%97%A5%E6%9C%AC%E6%A9%8B2-11-5" {tri("mapLink")}>{UI["mapLink"]["ja"]}</a></p>' + NL
+        if pg["cta"]:
+            doc += f'<a class="cta" href="mailto:info@cumulus2026.com" {tri("contact")}>{UI["contact"]["ja"]}</a>' + NL
+        doc += "</div>" + NL
+        doc += footer(0)
+        doc += BEACON + NL + "</body>" + NL + "</html>" + NL
+        open(os.path.join(ROOT, f"{key}.html"), "w").write(doc)
+
 def main():
     os.makedirs(os.path.join(ROOT, "assets"), exist_ok=True)
     os.makedirs(os.path.join(ROOT, "products"), exist_ok=True)
@@ -959,6 +1078,7 @@ def main():
     open(os.path.join(ROOT, "assets", "site.js"), "w").write(JS)
     build_index()
     build_catalog_page()
+    build_info_pages()
     for p in PS:
         build_pdp(p)
     print(f"built index + {len(PS)} product pages")
