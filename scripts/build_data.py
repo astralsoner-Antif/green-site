@@ -4,12 +4,23 @@
 写真シート(写真/パール写真/DIA写真(C)/DIA写真(S))のアンカー位置から品番→画像と
 出所シート(=コレクション判定)を得る。管理台帳シートが商品マスタ。
 """
-import sys, os, re, json, zipfile, collections
+import sys, os, re, json, zipfile, collections, csv
 import openpyxl
 
 XLSX = sys.argv[1] if len(sys.argv) > 1 else os.path.expanduser(
     "~/Downloads/05_ジュエリーLC・GReEN/商品台帳_最新 (1).xlsx")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# 最新カタログCSV(存在すれば品番の絞り込み+ct上書きに使用)
+CATALOG_CSV = os.path.join(ROOT, "data", "catalog_20260813.csv")
+
+def load_catalog():
+    if not os.path.exists(CATALOG_CSV):
+        return None
+    m = {}
+    for r in csv.DictReader(open(CATALOG_CSV)):
+        m.setdefault(r["code"].strip(), []).append(r)
+    return m
 
 PHOTO_SHEETS = ["写真", "パール写真", "DIA写真(C)", "DIA写真(S)"]
 SHEET_COLLECTION = {"写真": "jb", "パール写真": "pearl", "DIA写真(C)": "dia", "DIA写真(S)": "dia"}
@@ -138,6 +149,7 @@ def badge_of(sheet, ja, gemgrp, price):
 
 def main():
     code_sheet = map_photo_sheets(XLSX)
+    catalog = load_catalog()
     wb = openpyxl.load_workbook(XLSX, data_only=True)
     ws = wb["管理台帳"]
     products = collections.OrderedDict()
@@ -146,6 +158,8 @@ def main():
         if not v[2]:
             continue
         code = str(v[2]).strip()
+        if catalog is not None and code not in catalog:
+            continue  # 最新カタログに無い品番は掲載しない
         price = v[7] if isinstance(v[7], (int, float)) else None
         if code in products:
             p = products[code]
@@ -162,6 +176,12 @@ def main():
             try: ct = float(ct)
             except ValueError: ct = None
         if isinstance(ct, float) and ct == 0: ct = None
+        # カタログCSVのct表記(複合表記含む)があれば優先
+        if catalog is not None:
+            c_ct = (catalog[code][0].get("ct") or "").strip()
+            if c_ct:
+                c_ct = c_ct[:-2] if c_ct.endswith("ct") else c_ct
+                ct = c_ct
         names, gem, ty, sizes = parse_name(raw, cat)
         sheet = code_sheet.get(code, "")
         coll = SHEET_COLLECTION.get(sheet, "dia")

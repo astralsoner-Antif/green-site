@@ -5,7 +5,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": 0.55,
+  "ct": "0.55",
   "price": 400000,
   "stock": 1,
   "names": {
@@ -35,7 +35,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": 0.45,
+  "ct": "0.45",
   "price": 460000,
   "stock": 1,
   "names": {
@@ -65,7 +65,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": 0.2,
+  "ct": "0.20",
   "price": 190000,
   "stock": 1,
   "names": {
@@ -74,9 +74,9 @@
    "zh": "钻石十字吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.2ct",
-   "en": "Pendant Necklace, PT950, Diamond 0.2ct",
-   "zh": "吊坠项链、PT950、钻石 0.2ct"
+   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.20ct",
+   "en": "Pendant Necklace, PT950, Diamond 0.20ct",
+   "zh": "吊坠项链、PT950、钻石 0.20ct"
   },
   "gem": "dia",
   "new": true,
@@ -95,7 +95,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18PG",
-  "ct": 0.55,
+  "ct": "0.55",
   "price": 410000,
   "stock": 1,
   "names": {
@@ -125,7 +125,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950/K18YG",
-  "ct": null,
+  "ct": "0.18/0.12",
   "price": 260000,
   "stock": 1,
   "names": {
@@ -134,9 +134,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950/K18YG、ダイヤモンド",
-   "en": "Pendant Necklace, PT950/K18YG, Diamond",
-   "zh": "吊坠项链、PT950/K18YG、钻石"
+   "ja": "ペンダントネックレス、PT950/K18YG、ダイヤモンド 0.18/0.12ct",
+   "en": "Pendant Necklace, PT950/K18YG, Diamond 0.18/0.12ct",
+   "zh": "吊坠项链、PT950/K18YG、钻石 0.18/0.12ct"
   },
   "gem": "dia",
   "new": true,
@@ -155,7 +155,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950/K18YG",
-  "ct": null,
+  "ct": "YD0.20/D0.12",
   "price": 290000,
   "stock": 1,
   "names": {
@@ -164,9 +164,9 @@
    "zh": "黄钻吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950/K18YG、イエローダイヤモンド",
-   "en": "Pendant Necklace, PT950/K18YG, Yellow Diamond",
-   "zh": "吊坠项链、PT950/K18YG、黄钻"
+   "ja": "ペンダントネックレス、PT950/K18YG、イエローダイヤモンド YD0.20/D0.12ct",
+   "en": "Pendant Necklace, PT950/K18YG, Yellow Diamond YD0.20/D0.12ct",
+   "zh": "吊坠项链、PT950/K18YG、黄钻 YD0.20/D0.12ct"
   },
   "gem": "dia",
   "new": true,
@@ -185,7 +185,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950/K18YG",
-  "ct": null,
+  "ct": "D0.13/YD0.10",
   "price": 260000,
   "stock": 1,
   "names": {
@@ -194,9 +194,9 @@
    "zh": "黄钻吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950/K18YG、イエローダイヤモンド",
-   "en": "Pendant Necklace, PT950/K18YG, Yellow Diamond",
-   "zh": "吊坠项链、PT950/K18YG、黄钻"
+   "ja": "ペンダントネックレス、PT950/K18YG、イエローダイヤモンド D0.13/YD0.10ct",
+   "en": "Pendant Necklace, PT950/K18YG, Yellow Diamond D0.13/YD0.10ct",
+   "zh": "吊坠项链、PT950/K18YG、黄钻 D0.13/YD0.10ct"
   },
   "gem": "dia",
   "new": true,
@@ -215,7 +215,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950/K18PG",
-  "ct": null,
+  "ct": "D0.08/PD0.04",
   "price": 260000,
   "stock": 2,
   "names": {
@@ -224,9 +224,9 @@
    "zh": "粉钻吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950/K18PG、ピンクダイヤモンド",
-   "en": "Pendant Necklace, PT950/K18PG, Pink Diamond",
-   "zh": "吊坠项链、PT950/K18PG、粉钻"
+   "ja": "ペンダントネックレス、PT950/K18PG、ピンクダイヤモンド D0.08/PD0.04ct",
+   "en": "Pendant Necklace, PT950/K18PG, Pink Diamond D0.08/PD0.04ct",
+   "zh": "吊坠项链、PT950/K18PG、粉钻 D0.08/PD0.04ct"
   },
   "gem": "dia",
   "new": true,
@@ -245,7 +245,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": null,
+  "ct": "0.40/D0.38",
   "price": 410000,
   "stock": 1,
   "names": {
@@ -254,9 +254,9 @@
    "zh": "处理蓝钻吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、トリートブルーダイヤモンド",
-   "en": "Pendant Necklace, PT950, Treated Blue Diamond",
-   "zh": "吊坠项链、PT950、处理蓝钻"
+   "ja": "ペンダントネックレス、PT950、トリートブルーダイヤモンド 0.40/D0.38ct",
+   "en": "Pendant Necklace, PT950, Treated Blue Diamond 0.40/D0.38ct",
+   "zh": "吊坠项链、PT950、处理蓝钻 0.40/D0.38ct"
   },
   "gem": "dia",
   "new": true,
@@ -275,7 +275,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": null,
+  "ct": "D0.48/E0.46",
   "price": 390000,
   "stock": 1,
   "names": {
@@ -284,9 +284,9 @@
    "zh": "祖母绿与钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、エメラルド＆ダイヤモンド",
-   "en": "Pendant Necklace, PT950, Emerald & Diamond",
-   "zh": "吊坠项链、PT950、祖母绿与钻石"
+   "ja": "ペンダントネックレス、PT950、エメラルド＆ダイヤモンド D0.48/E0.46ct",
+   "en": "Pendant Necklace, PT950, Emerald & Diamond D0.48/E0.46ct",
+   "zh": "吊坠项链、PT950、祖母绿与钻石 D0.48/E0.46ct"
   },
   "gem": "dia",
   "new": true,
@@ -305,7 +305,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": 0.5,
+  "ct": "0.50",
   "price": 390000,
   "stock": 1,
   "names": {
@@ -314,9 +314,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.5ct",
-   "en": "Pendant Necklace, PT950, Diamond 0.5ct",
-   "zh": "吊坠项链、PT950、钻石 0.5ct"
+   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.50ct",
+   "en": "Pendant Necklace, PT950, Diamond 0.50ct",
+   "zh": "吊坠项链、PT950、钻石 0.50ct"
   },
   "gem": "dia",
   "new": true,
@@ -335,7 +335,7 @@
   "cat": "PENDANT",
   "group": "pendant",
   "mat": "PT950",
-  "ct": 0.2,
+  "ct": "0.20",
   "price": 100000,
   "stock": 7,
   "names": {
@@ -344,9 +344,9 @@
    "zh": "钻石马蹄吊坠"
   },
   "spec": {
-   "ja": "ペンダントトップ、PT950、ダイヤモンド 0.2ct",
-   "en": "Pendant Top, PT950, Diamond 0.2ct",
-   "zh": "吊坠、PT950、钻石 0.2ct"
+   "ja": "ペンダントトップ、PT950、ダイヤモンド 0.20ct",
+   "en": "Pendant Top, PT950, Diamond 0.20ct",
+   "zh": "吊坠、PT950、钻石 0.20ct"
   },
   "gem": "dia",
   "new": true,
@@ -366,7 +366,7 @@
   "cat": "PENDANT",
   "group": "pendant",
   "mat": "PT950",
-  "ct": 0.2,
+  "ct": "0.20",
   "price": 100000,
   "stock": 4,
   "names": {
@@ -375,9 +375,9 @@
    "zh": "钻石吊坠"
   },
   "spec": {
-   "ja": "ペンダントトップ、PT950、ダイヤモンド 0.2ct",
-   "en": "Pendant Top, PT950, Diamond 0.2ct",
-   "zh": "吊坠、PT950、钻石 0.2ct"
+   "ja": "ペンダントトップ、PT950、ダイヤモンド 0.20ct",
+   "en": "Pendant Top, PT950, Diamond 0.20ct",
+   "zh": "吊坠、PT950、钻石 0.20ct"
   },
   "gem": "dia",
   "new": true,
@@ -396,7 +396,7 @@
   "cat": "PENDANT",
   "group": "pendant",
   "mat": "K18YG",
-  "ct": 0.4,
+  "ct": "0.40",
   "price": 220000,
   "stock": 4,
   "names": {
@@ -405,9 +405,9 @@
    "zh": "玫瑰式切割钻石吊坠"
   },
   "spec": {
-   "ja": "ペンダントトップ、K18YG、ローズカットダイヤモンド 0.4ct",
-   "en": "Pendant Top, K18YG, Rose-cut Diamond 0.4ct",
-   "zh": "吊坠、K18YG、玫瑰式切割钻石 0.4ct"
+   "ja": "ペンダントトップ、K18YG、ローズカットダイヤモンド 0.40ct",
+   "en": "Pendant Top, K18YG, Rose-cut Diamond 0.40ct",
+   "zh": "吊坠、K18YG、玫瑰式切割钻石 0.40ct"
   },
   "gem": "dia",
   "new": true,
@@ -426,7 +426,7 @@
   "cat": "PIERCE",
   "group": "earrings",
   "mat": "PT950",
-  "ct": null,
+  "ct": "0.08/0.06",
   "price": 90000,
   "stock": 3,
   "names": {
@@ -435,9 +435,9 @@
    "zh": "处理蓝钻耳环"
   },
   "spec": {
-   "ja": "ピアス、PT950、トリートブルーダイヤモンド",
-   "en": "Pierced Earrings, PT950, Treated Blue Diamond",
-   "zh": "耳环、PT950、处理蓝钻"
+   "ja": "ピアス、PT950、トリートブルーダイヤモンド 0.08/0.06ct",
+   "en": "Pierced Earrings, PT950, Treated Blue Diamond 0.08/0.06ct",
+   "zh": "耳环、PT950、处理蓝钻 0.08/0.06ct"
   },
   "gem": "dia",
   "new": true,
@@ -456,7 +456,7 @@
   "cat": "PIERCE",
   "group": "earrings",
   "mat": "PT950",
-  "ct": 0.6,
+  "ct": "0.60",
   "price": 470000,
   "stock": 2,
   "names": {
@@ -465,9 +465,9 @@
    "zh": "钻石耳环"
   },
   "spec": {
-   "ja": "ピアス、PT950、ダイヤモンド 0.6ct",
-   "en": "Pierced Earrings, PT950, Diamond 0.6ct",
-   "zh": "耳环、PT950、钻石 0.6ct"
+   "ja": "ピアス、PT950、ダイヤモンド 0.60ct",
+   "en": "Pierced Earrings, PT950, Diamond 0.60ct",
+   "zh": "耳环、PT950、钻石 0.60ct"
   },
   "gem": "dia",
   "new": true,
@@ -486,7 +486,7 @@
   "cat": "PIERCE",
   "group": "earrings",
   "mat": "K18WG",
-  "ct": 0.34,
+  "ct": "0.34",
   "price": 540000,
   "stock": 1,
   "names": {
@@ -516,7 +516,7 @@
   "cat": "EAR CUFF",
   "group": "earrings",
   "mat": "K18WG/K18YG",
-  "ct": 0.3,
+  "ct": "0.30",
   "price": 220000,
   "stock": 1,
   "names": {
@@ -525,9 +525,9 @@
    "zh": "黄钻耳骨夹"
   },
   "spec": {
-   "ja": "イヤーカフ、K18WG/K18YG、イエローダイヤモンド 0.3ct",
-   "en": "Ear Cuff, K18WG/K18YG, Yellow Diamond 0.3ct",
-   "zh": "耳骨夹、K18WG/K18YG、黄钻 0.3ct"
+   "ja": "イヤーカフ、K18WG/K18YG、イエローダイヤモンド 0.30ct",
+   "en": "Ear Cuff, K18WG/K18YG, Yellow Diamond 0.30ct",
+   "zh": "耳骨夹、K18WG/K18YG、黄钻 0.30ct"
   },
   "gem": "dia",
   "new": true,
@@ -546,7 +546,7 @@
   "cat": "PENDANT",
   "group": "pendant",
   "mat": "K18WG",
-  "ct": 0.08,
+  "ct": "0.08",
   "price": 170000,
   "stock": 1,
   "names": {
@@ -579,7 +579,7 @@
   "cat": "PENDANT",
   "group": "pendant",
   "mat": "K18WG",
-  "ct": 0.26,
+  "ct": "0.26",
   "price": 500000,
   "stock": 1,
   "names": {
@@ -612,7 +612,7 @@
   "cat": "PENDANT",
   "group": "pendant",
   "mat": "K18WG",
-  "ct": 0.06,
+  "ct": "0.06",
   "price": 170000,
   "stock": 1,
   "names": {
@@ -645,7 +645,7 @@
   "cat": "PENDANT",
   "group": "pendant",
   "mat": "K18WG",
-  "ct": 0.08,
+  "ct": "0.08",
   "price": 155000,
   "stock": 1,
   "names": {
@@ -678,7 +678,7 @@
   "cat": "PENDANT",
   "group": "pendant",
   "mat": "K18WG",
-  "ct": 0.22,
+  "ct": "0.22",
   "price": 295000,
   "stock": 1,
   "names": {
@@ -711,7 +711,7 @@
   "cat": "PENDANT",
   "group": "pendant",
   "mat": "K18WG",
-  "ct": 0.11,
+  "ct": "0.11",
   "price": 200000,
   "stock": 1,
   "names": {
@@ -744,7 +744,7 @@
   "cat": "PENDANT",
   "group": "pendant",
   "mat": "K18WG",
-  "ct": 0.33,
+  "ct": "0.33",
   "price": 570000,
   "stock": 1,
   "names": {
@@ -776,7 +776,7 @@
   "cat": "PENDANT",
   "group": "pendant",
   "mat": "K18WG",
-  "ct": 0.1,
+  "ct": "0.10",
   "price": 335000,
   "stock": 1,
   "names": {
@@ -785,9 +785,9 @@
    "zh": "南洋白珍珠吊坠"
   },
   "spec": {
-   "ja": "ペンダントトップ、K18WG、南洋白蝶パール 0.1ct",
-   "en": "Pendant Top, K18WG, White South Sea Pearl 0.1ct",
-   "zh": "吊坠、K18WG、南洋白珍珠 0.1ct"
+   "ja": "ペンダントトップ、K18WG、南洋白蝶パール 0.10ct",
+   "en": "Pendant Top, K18WG, White South Sea Pearl 0.10ct",
+   "zh": "吊坠、K18WG、南洋白珍珠 0.10ct"
   },
   "gem": "pearl",
   "new": false,
@@ -808,7 +808,7 @@
   "cat": "PENDANT",
   "group": "pendant",
   "mat": "K18WG",
-  "ct": 0.3,
+  "ct": "0.30",
   "price": 420000,
   "stock": 1,
   "names": {
@@ -817,9 +817,9 @@
    "zh": "南洋白珍珠吊坠"
   },
   "spec": {
-   "ja": "ペンダントトップ、K18WG、南洋白蝶パール 0.3ct",
-   "en": "Pendant Top, K18WG, White South Sea Pearl 0.3ct",
-   "zh": "吊坠、K18WG、南洋白珍珠 0.3ct"
+   "ja": "ペンダントトップ、K18WG、南洋白蝶パール 0.30ct",
+   "en": "Pendant Top, K18WG, White South Sea Pearl 0.30ct",
+   "zh": "吊坠、K18WG、南洋白珍珠 0.30ct"
   },
   "gem": "pearl",
   "new": false,
@@ -840,7 +840,7 @@
   "cat": "PENDANT",
   "group": "pendant",
   "mat": "K18WG",
-  "ct": 0.113,
+  "ct": "0.11",
   "price": 420000,
   "stock": 1,
   "names": {
@@ -849,9 +849,9 @@
    "zh": "南洋白珍珠吊坠"
   },
   "spec": {
-   "ja": "ペンダントトップ、K18WG、南洋白蝶パール 0.113ct",
-   "en": "Pendant Top, K18WG, White South Sea Pearl 0.113ct",
-   "zh": "吊坠、K18WG、南洋白珍珠 0.113ct"
+   "ja": "ペンダントトップ、K18WG、南洋白蝶パール 0.11ct",
+   "en": "Pendant Top, K18WG, White South Sea Pearl 0.11ct",
+   "zh": "吊坠、K18WG、南洋白珍珠 0.11ct"
   },
   "gem": "pearl",
   "new": false,
@@ -900,7 +900,7 @@
   "cat": "PENDANT",
   "group": "pendant",
   "mat": "K18WG",
-  "ct": 0.1,
+  "ct": "0.10",
   "price": 170000,
   "stock": 1,
   "names": {
@@ -909,9 +909,9 @@
    "zh": "淡水珍珠吊坠"
   },
   "spec": {
-   "ja": "ペンダントトップ、K18WG、淡水パール 0.1ct",
-   "en": "Pendant Top, K18WG, Freshwater Pearl 0.1ct",
-   "zh": "吊坠、K18WG、淡水珍珠 0.1ct"
+   "ja": "ペンダントトップ、K18WG、淡水パール 0.10ct",
+   "en": "Pendant Top, K18WG, Freshwater Pearl 0.10ct",
+   "zh": "吊坠、K18WG、淡水珍珠 0.10ct"
   },
   "gem": "pearl",
   "new": false,
@@ -932,7 +932,7 @@
   "cat": "PENDANT",
   "group": "pendant",
   "mat": "K18WG",
-  "ct": 0.1,
+  "ct": "0.10",
   "price": 170000,
   "stock": 1,
   "names": {
@@ -941,9 +941,9 @@
    "zh": "淡水珍珠吊坠"
   },
   "spec": {
-   "ja": "ペンダントトップ、K18WG、淡水パール 0.1ct",
-   "en": "Pendant Top, K18WG, Freshwater Pearl 0.1ct",
-   "zh": "吊坠、K18WG、淡水珍珠 0.1ct"
+   "ja": "ペンダントトップ、K18WG、淡水パール 0.10ct",
+   "en": "Pendant Top, K18WG, Freshwater Pearl 0.10ct",
+   "zh": "吊坠、K18WG、淡水珍珠 0.10ct"
   },
   "gem": "pearl",
   "new": false,
@@ -964,7 +964,7 @@
   "cat": "PIERCE",
   "group": "earrings",
   "mat": "K18YG",
-  "ct": null,
+  "ct": "0.09/0.09",
   "price": 335000,
   "stock": 1,
   "names": {
@@ -973,9 +973,9 @@
    "zh": "Akoya珍珠耳环"
   },
   "spec": {
-   "ja": "ピアス、K18YG、アコヤパール 3-4.5mm",
-   "en": "Pierced Earrings, K18YG, Akoya Pearl 3-4.5mm",
-   "zh": "耳环、K18YG、Akoya珍珠 3-4.5mm"
+   "ja": "ピアス、K18YG、アコヤパール 0.09/0.09ct",
+   "en": "Pierced Earrings, K18YG, Akoya Pearl 0.09/0.09ct",
+   "zh": "耳环、K18YG、Akoya珍珠 0.09/0.09ct"
   },
   "gem": "pearl",
   "new": false,
@@ -1115,96 +1115,6 @@
   "badge": "classic"
  },
  {
-  "code": "278971",
-  "raw": "AKOYA PEARL RING",
-  "cat": "RING",
-  "group": "ring",
-  "mat": "K18YG",
-  "ct": null,
-  "price": 85000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール リング",
-   "en": "Akoya Pearl Ring",
-   "zh": "Akoya珍珠戒指"
-  },
-  "spec": {
-   "ja": "リング、K18YG、アコヤパール",
-   "en": "Ring, K18YG, Akoya Pearl",
-   "zh": "戒指、K18YG、Akoya珍珠"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "278728",
-  "raw": "AKOYA PEARL RING",
-  "cat": "RING",
-  "group": "ring",
-  "mat": "PT850",
-  "ct": null,
-  "price": 85000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール リング",
-   "en": "Akoya Pearl Ring",
-   "zh": "Akoya珍珠戒指"
-  },
-  "spec": {
-   "ja": "リング、PT850、アコヤパール",
-   "en": "Ring, PT850, Akoya Pearl",
-   "zh": "戒指、PT850、Akoya珍珠"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "278729",
-  "raw": "AKOYA PEARL RING",
-  "cat": "RING",
-  "group": "ring",
-  "mat": "PT850",
-  "ct": null,
-  "price": 85000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール リング",
-   "en": "Akoya Pearl Ring",
-   "zh": "Akoya珍珠戒指"
-  },
-  "spec": {
-   "ja": "リング、PT850、アコヤパール",
-   "en": "Ring, PT850, Akoya Pearl",
-   "zh": "戒指、PT850、Akoya珍珠"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
   "code": "277336",
   "raw": "STR0228-91P10mm BLACK PEARL RING",
   "cat": "RING",
@@ -1222,292 +1132,6 @@
    "ja": "リング、PT900/PT850/K18WG、ブラックパール",
    "en": "Ring, PT900/PT850/K18WG, Black Pearl",
    "zh": "戒指、PT900/PT850/K18WG、黑珍珠"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [],
-  "gem_names": {
-   "ja": "ブラックパール",
-   "en": "Black Pearl",
-   "zh": "黑珍珠"
-  },
-  "badge": null
- },
- {
-  "code": "257301",
-  "raw": "JCP 7-7.5mm AKOYA PEARL PIERCE",
-  "cat": "PIERCE",
-  "group": "earrings",
-  "mat": "K14WG",
-  "ct": null,
-  "price": 45000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール ピアス",
-   "en": "Akoya Pearl Pierced Earrings",
-   "zh": "Akoya珍珠耳环"
-  },
-  "spec": {
-   "ja": "ピアス、K14WG、アコヤパール 7-7.5mm",
-   "en": "Pierced Earrings, K14WG, Akoya Pearl 7-7.5mm",
-   "zh": "耳环、K14WG、Akoya珍珠 7-7.5mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [
-   "7-7.5mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "272873",
-  "raw": "4-4.5mm JCPK AKOYA PEARL PIERCE",
-  "cat": "PIERCE",
-  "group": "earrings",
-  "mat": "K10WG",
-  "ct": null,
-  "price": 25000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール ピアス",
-   "en": "Akoya Pearl Pierced Earrings",
-   "zh": "Akoya珍珠耳环"
-  },
-  "spec": {
-   "ja": "ピアス、K10WG、アコヤパール 4-4.5mm",
-   "en": "Pierced Earrings, K10WG, Akoya Pearl 4-4.5mm",
-   "zh": "耳环、K10WG、Akoya珍珠 4-4.5mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [
-   "4-4.5mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "257639",
-  "raw": "5-5.5mm JCP AKOYA PEARL PIERCE",
-  "cat": "PIERCE",
-  "group": "earrings",
-  "mat": "K10WG",
-  "ct": null,
-  "price": 25000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール ピアス",
-   "en": "Akoya Pearl Pierced Earrings",
-   "zh": "Akoya珍珠耳环"
-  },
-  "spec": {
-   "ja": "ピアス、K10WG、アコヤパール 5-5.5mm",
-   "en": "Pierced Earrings, K10WG, Akoya Pearl 5-5.5mm",
-   "zh": "耳环、K10WG、Akoya珍珠 5-5.5mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [
-   "5-5.5mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "272868",
-  "raw": "3-3.5mm JCP AKOYA PEARL PIERCE",
-  "cat": "PIERCE",
-  "group": "earrings",
-  "mat": "K10PG",
-  "ct": null,
-  "price": 15000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール ピアス",
-   "en": "Akoya Pearl Pierced Earrings",
-   "zh": "Akoya珍珠耳环"
-  },
-  "spec": {
-   "ja": "ピアス、K10PG、アコヤパール 3-3.5mm",
-   "en": "Pierced Earrings, K10PG, Akoya Pearl 3-3.5mm",
-   "zh": "耳环、K10PG、Akoya珍珠 3-3.5mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [
-   "3-3.5mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "272872",
-  "raw": "4-4.5mm JCPK AKOYA PEARL PIERCE",
-  "cat": "PIERCE",
-  "group": "earrings",
-  "mat": "K10WG",
-  "ct": null,
-  "price": 20000,
-  "stock": 2,
-  "names": {
-   "ja": "アコヤパール ピアス",
-   "en": "Akoya Pearl Pierced Earrings",
-   "zh": "Akoya珍珠耳环"
-  },
-  "spec": {
-   "ja": "ピアス、K10WG、アコヤパール 4-4.5mm",
-   "en": "Pierced Earrings, K10WG, Akoya Pearl 4-4.5mm",
-   "zh": "耳环、K10WG、Akoya珍珠 4-4.5mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [
-   "4-4.5mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "257641",
-  "raw": "5-5.5mm JCP AKOYA PEARL PIERCE",
-  "cat": "PIERCE",
-  "group": "earrings",
-  "mat": "K10PG",
-  "ct": null,
-  "price": 25000,
-  "stock": 2,
-  "names": {
-   "ja": "アコヤパール ピアス",
-   "en": "Akoya Pearl Pierced Earrings",
-   "zh": "Akoya珍珠耳环"
-  },
-  "spec": {
-   "ja": "ピアス、K10PG、アコヤパール 5-5.5mm",
-   "en": "Pierced Earrings, K10PG, Akoya Pearl 5-5.5mm",
-   "zh": "耳环、K10PG、Akoya珍珠 5-5.5mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [
-   "5-5.5mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "272867",
-  "raw": "3-3.5mm JCP AKOYA PEARL PIERCE",
-  "cat": "PIERCE",
-  "group": "earrings",
-  "mat": "K10",
-  "ct": null,
-  "price": 15000,
-  "stock": 2,
-  "names": {
-   "ja": "アコヤパール ピアス",
-   "en": "Akoya Pearl Pierced Earrings",
-   "zh": "Akoya珍珠耳环"
-  },
-  "spec": {
-   "ja": "ピアス、K10、アコヤパール 3-3.5mm",
-   "en": "Pierced Earrings, K10, Akoya Pearl 3-3.5mm",
-   "zh": "耳环、K10、Akoya珍珠 3-3.5mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [
-   "3-3.5mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "272869",
-  "raw": "3-3.5mm JCP AKOYA PEARL PIERCE",
-  "cat": "PIERCE",
-  "group": "earrings",
-  "mat": "K10WG",
-  "ct": null,
-  "price": 20000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール ピアス",
-   "en": "Akoya Pearl Pierced Earrings",
-   "zh": "Akoya珍珠耳环"
-  },
-  "spec": {
-   "ja": "ピアス、K10WG、アコヤパール 3-3.5mm",
-   "en": "Pierced Earrings, K10WG, Akoya Pearl 3-3.5mm",
-   "zh": "耳环、K10WG、Akoya珍珠 3-3.5mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [
-   "3-3.5mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "265513",
-  "raw": "BLACK PEARL PIERCE",
-  "cat": "PIERCE",
-  "group": "earrings",
-  "mat": "K18YG",
-  "ct": null,
-  "price": 60000,
-  "stock": 2,
-  "names": {
-   "ja": "ブラックパール ピアス",
-   "en": "Black Pearl Pierced Earrings",
-   "zh": "黑珍珠耳环"
-  },
-  "spec": {
-   "ja": "ピアス、K18YG、ブラックパール",
-   "en": "Pierced Earrings, K18YG, Black Pearl",
-   "zh": "耳环、K18YG、黑珍珠"
   },
   "gem": "pearl",
   "new": false,
@@ -1618,641 +1242,6 @@
    "zh": "淡水珍珠"
   },
   "badge": null
- },
- {
-  "code": "714911",
-  "raw": "AKOYA BAROQUE NECKLACE",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 95000,
-  "stock": 2,
-  "names": {
-   "ja": "アコヤパール バロック ネックレス",
-   "en": "Akoya Pearl Baroque Necklace",
-   "zh": "Akoya珍珠巴洛克项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、アコヤパール",
-   "en": "Necklace, SV, Akoya Pearl",
-   "zh": "项链、SV、Akoya珍珠"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "649568LAL",
-  "raw": "AKOYA BLACK FRESHWATER PEARL NECKLACE",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 80000,
-  "stock": 2,
-  "names": {
-   "ja": "ブラックパール ネックレス",
-   "en": "Black Pearl Necklace",
-   "zh": "黑珍珠项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、ブラックパール",
-   "en": "Necklace, SV, Black Pearl",
-   "zh": "项链、SV、黑珍珠"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [],
-  "gem_names": {
-   "ja": "ブラックパール",
-   "en": "Black Pearl",
-   "zh": "黑珍珠"
-  },
-  "badge": null
- },
- {
-  "code": "754929",
-  "raw": "AKOYA NATURAL NECKLACE",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 55000,
-  "stock": 2,
-  "names": {
-   "ja": "アコヤパール ナチュラル ネックレス",
-   "en": "Akoya Pearl Natural Necklace",
-   "zh": "Akoya珍珠天然项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、アコヤパール",
-   "en": "Necklace, SV, Akoya Pearl",
-   "zh": "项链、SV、Akoya珍珠"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "722141",
-  "raw": "16x19 FRESHWATER PEARL NECKLACE",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 170000,
-  "stock": 1,
-  "names": {
-   "ja": "淡水パール ネックレス",
-   "en": "Freshwater Pearl Necklace",
-   "zh": "淡水珍珠项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、淡水パール 16x19mm",
-   "en": "Necklace, SV, Freshwater Pearl 16x19mm",
-   "zh": "项链、SV、淡水珍珠 16x19mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [
-   "16x19mm"
-  ],
-  "gem_names": {
-   "ja": "淡水パール",
-   "en": "Freshwater Pearl",
-   "zh": "淡水珍珠"
-  },
-  "badge": null
- },
- {
-  "code": "722141-353",
-  "raw": "13x16 PURPLE NECKLACE",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 170000,
-  "stock": 1,
-  "names": {
-   "ja": "パープルパール ネックレス",
-   "en": "Purple Pearl Necklace",
-   "zh": "紫珍珠项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、パープルパール 13x16mm",
-   "en": "Necklace, SV, Purple Pearl 13x16mm",
-   "zh": "项链、SV、紫珍珠 13x16mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [
-   "13x16mm"
-  ],
-  "gem_names": {
-   "ja": "パープルパール",
-   "en": "Purple Pearl",
-   "zh": "紫珍珠"
-  },
-  "badge": null
- },
- {
-  "code": "729287",
-  "raw": "FRESHWATER PEARL NECKLACE MULTI 50cm",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 42000,
-  "stock": 1,
-  "names": {
-   "ja": "淡水パール マルチカラー ネックレス",
-   "en": "Freshwater Pearl Multicolor Necklace",
-   "zh": "淡水珍珠多彩项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、淡水パール、長さ50cm",
-   "en": "Necklace, SV, Freshwater Pearl, length 50cm",
-   "zh": "项链、SV、淡水珍珠、长度 50cm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [
-   "50cm"
-  ],
-  "gem_names": {
-   "ja": "淡水パール",
-   "en": "Freshwater Pearl",
-   "zh": "淡水珍珠"
-  },
-  "badge": null
- },
- {
-  "code": "273439",
-  "raw": "11-12 FRESHWATER PEARL NECKLACE",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 210000,
-  "stock": 1,
-  "names": {
-   "ja": "淡水パール ネックレス",
-   "en": "Freshwater Pearl Necklace",
-   "zh": "淡水珍珠项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、淡水パール 11-12mm",
-   "en": "Necklace, SV, Freshwater Pearl 11-12mm",
-   "zh": "项链、SV、淡水珍珠 11-12mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [
-   "11-12mm"
-  ],
-  "gem_names": {
-   "ja": "淡水パール",
-   "en": "Freshwater Pearl",
-   "zh": "淡水珍珠"
-  },
-  "badge": null
- },
- {
-  "code": "CBC1SCM1",
-  "raw": "10x12 FRESHWATER PEARL NECKLACE TSM-SYM",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 380000,
-  "stock": 1,
-  "names": {
-   "ja": "淡水パール ネックレス",
-   "en": "Freshwater Pearl Necklace",
-   "zh": "淡水珍珠项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、淡水パール 10x12mm",
-   "en": "Necklace, SV, Freshwater Pearl 10x12mm",
-   "zh": "项链、SV、淡水珍珠 10x12mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [
-   "10x12mm"
-  ],
-  "gem_names": {
-   "ja": "淡水パール",
-   "en": "Freshwater Pearl",
-   "zh": "淡水珍珠"
-  },
-  "badge": null
- },
- {
-  "code": "SQ25291",
-  "raw": "7-7.5mm AKOYA PEARL NECKLACE CNLE-CNM",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 555000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール ネックレス",
-   "en": "Akoya Pearl Necklace",
-   "zh": "Akoya珍珠项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、アコヤパール 7-7.5mm",
-   "en": "Necklace, SV, Akoya Pearl 7-7.5mm",
-   "zh": "项链、SV、Akoya珍珠 7-7.5mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": true,
-  "sizes": [
-   "7-7.5mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "SQ25290",
-  "raw": "7-7.5mm AKOYA PEARL NECKLACE CKM-CHLE",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 470000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール ネックレス",
-   "en": "Akoya Pearl Necklace",
-   "zh": "Akoya珍珠项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、アコヤパール 7-7.5mm",
-   "en": "Necklace, SV, Akoya Pearl 7-7.5mm",
-   "zh": "项链、SV、Akoya珍珠 7-7.5mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [
-   "7-7.5mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "SQ25324",
-  "raw": "7-8mm AKOYA PEARL NECKLACE CLM-CKLE",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 570000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール ネックレス",
-   "en": "Akoya Pearl Necklace",
-   "zh": "Akoya珍珠项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、アコヤパール 7-8mm",
-   "en": "Necklace, SV, Akoya Pearl 7-8mm",
-   "zh": "项链、SV、Akoya珍珠 7-8mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": true,
-  "sizes": [
-   "7-8mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "SQ15239",
-  "raw": "7-8mm AKOYA PEARL NECKLACE CPM-CNLE",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 610000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール ネックレス",
-   "en": "Akoya Pearl Necklace",
-   "zh": "Akoya珍珠项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、アコヤパール 7-8mm",
-   "en": "Necklace, SV, Akoya Pearl 7-8mm",
-   "zh": "项链、SV、Akoya珍珠 7-8mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": true,
-  "sizes": [
-   "7-8mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "SS151529",
-  "raw": "4.5-5 AKOYA PEARL NECKLACE BHM-WBM",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 570000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール ネックレス",
-   "en": "Akoya Pearl Necklace",
-   "zh": "Akoya珍珠项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、アコヤパール 4.5-5mm",
-   "en": "Necklace, SV, Akoya Pearl 4.5-5mm",
-   "zh": "项链、SV、Akoya珍珠 4.5-5mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": true,
-  "sizes": [
-   "4.5-5mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "SS151530",
-  "raw": "4.5-5 AKOYA PEARL NECKLACE BHM-WBM",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 570000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール ネックレス",
-   "en": "Akoya Pearl Necklace",
-   "zh": "Akoya珍珠项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、アコヤパール 4.5-5mm",
-   "en": "Necklace, SV, Akoya Pearl 4.5-5mm",
-   "zh": "项链、SV、Akoya珍珠 4.5-5mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": true,
-  "sizes": [
-   "4.5-5mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "MP-3KL2886",
-  "raw": "8-8.5mm AKOYA PEARL NECKLACE NYE-NLE",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 460000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール ネックレス",
-   "en": "Akoya Pearl Necklace",
-   "zh": "Akoya珍珠项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、アコヤパール 8-8.5mm",
-   "en": "Necklace, SV, Akoya Pearl 8-8.5mm",
-   "zh": "项链、SV、Akoya珍珠 8-8.5mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [
-   "8-8.5mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "JCP-16KL0901",
-  "raw": "8-8.5mm AKOYA PEARL NECKLACE TPM-NYE",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 420000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール ネックレス",
-   "en": "Akoya Pearl Necklace",
-   "zh": "Akoya珍珠项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、アコヤパール 8-8.5mm",
-   "en": "Necklace, SV, Akoya Pearl 8-8.5mm",
-   "zh": "项链、SV、Akoya珍珠 8-8.5mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [
-   "8-8.5mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "JCP-4CBL0705",
-  "raw": "8-8.5mm AKOYA PEARL NECKLACE CNYE-CNM",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 630000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール ネックレス",
-   "en": "Akoya Pearl Necklace",
-   "zh": "Akoya珍珠项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、アコヤパール 8-8.5mm",
-   "en": "Necklace, SV, Akoya Pearl 8-8.5mm",
-   "zh": "项链、SV、Akoya珍珠 8-8.5mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": true,
-  "sizes": [
-   "8-8.5mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "295736",
-  "raw": "7.5-8mm AKOYA PEARL NECKLACE LYE-WLE",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 250000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール ネックレス",
-   "en": "Akoya Pearl Necklace",
-   "zh": "Akoya珍珠项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、アコヤパール 7.5-8mm",
-   "en": "Necklace, SV, Akoya Pearl 7.5-8mm",
-   "zh": "项链、SV、Akoya珍珠 7.5-8mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": false,
-  "sizes": [
-   "7.5-8mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "265045",
-  "raw": "8-8.5mm AKOYA PEARL NECKLACE LBE-KYE",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 630000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール ネックレス",
-   "en": "Akoya Pearl Necklace",
-   "zh": "Akoya珍珠项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、アコヤパール 8-8.5mm",
-   "en": "Necklace, SV, Akoya Pearl 8-8.5mm",
-   "zh": "项链、SV、Akoya珍珠 8-8.5mm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": true,
-  "sizes": [
-   "8-8.5mm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
- },
- {
-  "code": "576093",
-  "raw": "6.5-7mm AKOYA PEARL NECKLACE 82cm",
-  "cat": "NECKLES",
-  "group": "necklace",
-  "mat": "SV",
-  "ct": null,
-  "price": 630000,
-  "stock": 1,
-  "names": {
-   "ja": "アコヤパール ネックレス",
-   "en": "Akoya Pearl Necklace",
-   "zh": "Akoya珍珠项链"
-  },
-  "spec": {
-   "ja": "ネックレス、SV、アコヤパール 6.5-7mm、長さ82cm",
-   "en": "Necklace, SV, Akoya Pearl 6.5-7mm, length 82cm",
-   "zh": "项链、SV、Akoya珍珠 6.5-7mm、长度 82cm"
-  },
-  "gem": "pearl",
-  "new": false,
-  "high": true,
-  "sizes": [
-   "6.5-7mm",
-   "82cm"
-  ],
-  "gem_names": {
-   "ja": "アコヤパール",
-   "en": "Akoya Pearl",
-   "zh": "Akoya珍珠"
-  },
-  "badge": "classic"
  },
  {
   "code": "254956",
@@ -2498,7 +1487,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT900",
-  "ct": 2,
+  "ct": "2.0",
   "price": 555000,
   "stock": 1,
   "names": {
@@ -2507,9 +1496,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT900、ダイヤモンド 2ct",
-   "en": "Pendant Necklace, PT900, Diamond 2ct",
-   "zh": "吊坠项链、PT900、钻石 2ct"
+   "ja": "ペンダントネックレス、PT900、ダイヤモンド 2.0ct",
+   "en": "Pendant Necklace, PT900, Diamond 2.0ct",
+   "zh": "吊坠项链、PT900、钻石 2.0ct"
   },
   "gem": "dia",
   "new": false,
@@ -2528,7 +1517,7 @@
   "cat": "NECKLES",
   "group": "necklace",
   "mat": "K18WG",
-  "ct": 2,
+  "ct": "2.0",
   "price": 1280000,
   "stock": 1,
   "names": {
@@ -2537,9 +1526,9 @@
    "zh": "钻石项链"
   },
   "spec": {
-   "ja": "ネックレス、K18WG、ダイヤモンド 2ct",
-   "en": "Necklace, K18WG, Diamond 2ct",
-   "zh": "项链、K18WG、钻石 2ct"
+   "ja": "ネックレス、K18WG、ダイヤモンド 2.0ct",
+   "en": "Necklace, K18WG, Diamond 2.0ct",
+   "zh": "项链、K18WG、钻石 2.0ct"
   },
   "gem": "dia",
   "new": false,
@@ -2558,7 +1547,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT900/K18",
-  "ct": null,
+  "ct": "D0.13/0.12/PPS0.192",
   "price": 260000,
   "stock": 1,
   "names": {
@@ -2567,9 +1556,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT900/K18、ダイヤモンド",
-   "en": "Pendant Necklace, PT900/K18, Diamond",
-   "zh": "吊坠项链、PT900/K18、钻石"
+   "ja": "ペンダントネックレス、PT900/K18、ダイヤモンド D0.13/0.12/PPS0.192ct",
+   "en": "Pendant Necklace, PT900/K18, Diamond D0.13/0.12/PPS0.192ct",
+   "zh": "吊坠项链、PT900/K18、钻石 D0.13/0.12/PPS0.192ct"
   },
   "gem": "dia",
   "new": false,
@@ -2588,7 +1577,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18YG",
-  "ct": 0.07,
+  "ct": "0.07",
   "price": 220000,
   "stock": 1,
   "names": {
@@ -2618,7 +1607,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18WG",
-  "ct": null,
+  "ct": "D0.20/R0.20/PS0.25",
   "price": 230000,
   "stock": 1,
   "names": {
@@ -2627,9 +1616,9 @@
    "zh": "粉钻吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、K18WG、ピンクダイヤモンド",
-   "en": "Pendant Necklace, K18WG, Pink Diamond",
-   "zh": "吊坠项链、K18WG、粉钻"
+   "ja": "ペンダントネックレス、K18WG、ピンクダイヤモンド D0.20/R0.20/PS0.25ct",
+   "en": "Pendant Necklace, K18WG, Pink Diamond D0.20/R0.20/PS0.25ct",
+   "zh": "吊坠项链、K18WG、粉钻 D0.20/R0.20/PS0.25ct"
   },
   "gem": "dia",
   "new": false,
@@ -2648,7 +1637,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": null,
+  "ct": "0.35/0.22",
   "price": 355000,
   "stock": 1,
   "names": {
@@ -2657,9 +1646,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、ダイヤモンド",
-   "en": "Pendant Necklace, PT950, Diamond",
-   "zh": "吊坠项链、PT950、钻石"
+   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.35/0.22ct",
+   "en": "Pendant Necklace, PT950, Diamond 0.35/0.22ct",
+   "zh": "吊坠项链、PT950、钻石 0.35/0.22ct"
   },
   "gem": "dia",
   "new": false,
@@ -2678,7 +1667,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": null,
+  "ct": "0.32/0.52",
   "price": 395000,
   "stock": 1,
   "names": {
@@ -2687,9 +1676,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、ダイヤモンド",
-   "en": "Pendant Necklace, PT950, Diamond",
-   "zh": "吊坠项链、PT950、钻石"
+   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.32/0.52ct",
+   "en": "Pendant Necklace, PT950, Diamond 0.32/0.52ct",
+   "zh": "吊坠项链、PT950、钻石 0.32/0.52ct"
   },
   "gem": "dia",
   "new": false,
@@ -2708,7 +1697,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18YG",
-  "ct": 0.83,
+  "ct": "0.83",
   "price": 410000,
   "stock": 1,
   "names": {
@@ -2738,7 +1727,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT900",
-  "ct": 2,
+  "ct": "2.00",
   "price": 630000,
   "stock": 1,
   "names": {
@@ -2747,9 +1736,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT900、ダイヤモンド 2ct",
-   "en": "Pendant Necklace, PT900, Diamond 2ct",
-   "zh": "吊坠项链、PT900、钻石 2ct"
+   "ja": "ペンダントネックレス、PT900、ダイヤモンド 2.00ct",
+   "en": "Pendant Necklace, PT900, Diamond 2.00ct",
+   "zh": "吊坠项链、PT900、钻石 2.00ct"
   },
   "gem": "dia",
   "new": false,
@@ -2768,7 +1757,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT900",
-  "ct": null,
+  "ct": "0.244/0.28",
   "price": 270000,
   "stock": 1,
   "names": {
@@ -2777,9 +1766,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT900、ダイヤモンド",
-   "en": "Pendant Necklace, PT900, Diamond",
-   "zh": "吊坠项链、PT900、钻石"
+   "ja": "ペンダントネックレス、PT900、ダイヤモンド 0.244/0.28ct",
+   "en": "Pendant Necklace, PT900, Diamond 0.244/0.28ct",
+   "zh": "吊坠项链、PT900、钻石 0.244/0.28ct"
   },
   "gem": "dia",
   "new": false,
@@ -2798,7 +1787,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18WG",
-  "ct": 0.3,
+  "ct": "0.30",
   "price": 275000,
   "stock": 1,
   "names": {
@@ -2807,9 +1796,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、K18WG、ダイヤモンド 0.3ct",
-   "en": "Pendant Necklace, K18WG, Diamond 0.3ct",
-   "zh": "吊坠项链、K18WG、钻石 0.3ct"
+   "ja": "ペンダントネックレス、K18WG、ダイヤモンド 0.30ct",
+   "en": "Pendant Necklace, K18WG, Diamond 0.30ct",
+   "zh": "吊坠项链、K18WG、钻石 0.30ct"
   },
   "gem": "dia",
   "new": false,
@@ -2828,7 +1817,7 @@
   "cat": "BRACELET",
   "group": "bracelet",
   "mat": "K18PG",
-  "ct": 1.88,
+  "ct": "1.88",
   "price": 400000,
   "stock": 1,
   "names": {
@@ -2858,7 +1847,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": null,
+  "ct": "0.352/0.55",
   "price": 600000,
   "stock": 1,
   "names": {
@@ -2867,9 +1856,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、ダイヤモンド",
-   "en": "Pendant Necklace, PT950, Diamond",
-   "zh": "吊坠项链、PT950、钻石"
+   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.352/0.55ct",
+   "en": "Pendant Necklace, PT950, Diamond 0.352/0.55ct",
+   "zh": "吊坠项链、PT950、钻石 0.352/0.55ct"
   },
   "gem": "dia",
   "new": false,
@@ -2888,7 +1877,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT900",
-  "ct": 0.304,
+  "ct": "0.32",
   "price": 285000,
   "stock": 1,
   "names": {
@@ -2897,9 +1886,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT900、ダイヤモンド 0.304ct",
-   "en": "Pendant Necklace, PT900, Diamond 0.304ct",
-   "zh": "吊坠项链、PT900、钻石 0.304ct"
+   "ja": "ペンダントネックレス、PT900、ダイヤモンド 0.32ct",
+   "en": "Pendant Necklace, PT900, Diamond 0.32ct",
+   "zh": "吊坠项链、PT900、钻石 0.32ct"
   },
   "gem": "dia",
   "new": false,
@@ -2918,7 +1907,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": null,
+  "ct": "0.35/0.17",
   "price": 485000,
   "stock": 1,
   "names": {
@@ -2927,9 +1916,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、ダイヤモンド",
-   "en": "Pendant Necklace, PT950, Diamond",
-   "zh": "吊坠项链、PT950、钻石"
+   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.35/0.17ct",
+   "en": "Pendant Necklace, PT950, Diamond 0.35/0.17ct",
+   "zh": "吊坠项链、PT950、钻石 0.35/0.17ct"
   },
   "gem": "dia",
   "new": false,
@@ -2948,7 +1937,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": 0.72,
+  "ct": "0.72",
   "price": 450000,
   "stock": 1,
   "names": {
@@ -3038,7 +2027,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": 0.8,
+  "ct": "0.80",
   "price": 275000,
   "stock": 1,
   "names": {
@@ -3047,9 +2036,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.8ct",
-   "en": "Pendant Necklace, PT950, Diamond 0.8ct",
-   "zh": "吊坠项链、PT950、钻石 0.8ct"
+   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.80ct",
+   "en": "Pendant Necklace, PT950, Diamond 0.80ct",
+   "zh": "吊坠项链、PT950、钻石 0.80ct"
   },
   "gem": "dia",
   "new": false,
@@ -3068,7 +2057,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": 0.7,
+  "ct": "0.70",
   "price": 375000,
   "stock": 1,
   "names": {
@@ -3077,9 +2066,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.7ct",
-   "en": "Pendant Necklace, PT950, Diamond 0.7ct",
-   "zh": "吊坠项链、PT950、钻石 0.7ct"
+   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.70ct",
+   "en": "Pendant Necklace, PT950, Diamond 0.70ct",
+   "zh": "吊坠项链、PT950、钻石 0.70ct"
   },
   "gem": "dia",
   "new": false,
@@ -3098,7 +2087,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": 0.45,
+  "ct": "0.45",
   "price": 295000,
   "stock": 1,
   "names": {
@@ -3128,7 +2117,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18YG",
-  "ct": null,
+  "ct": "0.50/0.07",
   "price": 325000,
   "stock": 1,
   "names": {
@@ -3137,9 +2126,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、K18YG、ダイヤモンド",
-   "en": "Pendant Necklace, K18YG, Diamond",
-   "zh": "吊坠项链、K18YG、钻石"
+   "ja": "ペンダントネックレス、K18YG、ダイヤモンド 0.50/0.07ct",
+   "en": "Pendant Necklace, K18YG, Diamond 0.50/0.07ct",
+   "zh": "吊坠项链、K18YG、钻石 0.50/0.07ct"
   },
   "gem": "dia",
   "new": false,
@@ -3158,7 +2147,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18PG",
-  "ct": 0.5,
+  "ct": "0.50",
   "price": 235000,
   "stock": 1,
   "names": {
@@ -3167,9 +2156,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、K18PG、ダイヤモンド 0.5ct",
-   "en": "Pendant Necklace, K18PG, Diamond 0.5ct",
-   "zh": "吊坠项链、K18PG、钻石 0.5ct"
+   "ja": "ペンダントネックレス、K18PG、ダイヤモンド 0.50ct",
+   "en": "Pendant Necklace, K18PG, Diamond 0.50ct",
+   "zh": "吊坠项链、K18PG、钻石 0.50ct"
   },
   "gem": "dia",
   "new": false,
@@ -3188,7 +2177,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": null,
+  "ct": "0.5/0.07",
   "price": 325000,
   "stock": 1,
   "names": {
@@ -3197,9 +2186,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、ダイヤモンド",
-   "en": "Pendant Necklace, PT950, Diamond",
-   "zh": "吊坠项链、PT950、钻石"
+   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.5/0.07ct",
+   "en": "Pendant Necklace, PT950, Diamond 0.5/0.07ct",
+   "zh": "吊坠项链、PT950、钻石 0.5/0.07ct"
   },
   "gem": "dia",
   "new": false,
@@ -3218,7 +2207,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": 2,
+  "ct": "2.00",
   "price": 500000,
   "stock": 1,
   "names": {
@@ -3227,9 +2216,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、ダイヤモンド 2ct",
-   "en": "Pendant Necklace, PT950, Diamond 2ct",
-   "zh": "吊坠项链、PT950、钻石 2ct"
+   "ja": "ペンダントネックレス、PT950、ダイヤモンド 2.00ct",
+   "en": "Pendant Necklace, PT950, Diamond 2.00ct",
+   "zh": "吊坠项链、PT950、钻石 2.00ct"
   },
   "gem": "dia",
   "new": false,
@@ -3248,7 +2237,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": 0.3,
+  "ct": "0.30",
   "price": 225000,
   "stock": 1,
   "names": {
@@ -3257,9 +2246,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.3ct",
-   "en": "Pendant Necklace, PT950, Diamond 0.3ct",
-   "zh": "吊坠项链、PT950、钻石 0.3ct"
+   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.30ct",
+   "en": "Pendant Necklace, PT950, Diamond 0.30ct",
+   "zh": "吊坠项链、PT950、钻石 0.30ct"
   },
   "gem": "dia",
   "new": false,
@@ -3278,7 +2267,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": null,
+  "ct": "0.322/0.05",
   "price": 300000,
   "stock": 1,
   "names": {
@@ -3287,9 +2276,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、ダイヤモンド",
-   "en": "Pendant Necklace, PT950, Diamond",
-   "zh": "吊坠项链、PT950、钻石"
+   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.322/0.05ct",
+   "en": "Pendant Necklace, PT950, Diamond 0.322/0.05ct",
+   "zh": "吊坠项链、PT950、钻石 0.322/0.05ct"
   },
   "gem": "dia",
   "new": false,
@@ -3308,7 +2297,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": null,
+  "ct": "0.10/0.3",
   "price": 250000,
   "stock": 1,
   "names": {
@@ -3317,9 +2306,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、ダイヤモンド",
-   "en": "Pendant Necklace, PT950, Diamond",
-   "zh": "吊坠项链、PT950、钻石"
+   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.10/0.3ct",
+   "en": "Pendant Necklace, PT950, Diamond 0.10/0.3ct",
+   "zh": "吊坠项链、PT950、钻石 0.10/0.3ct"
   },
   "gem": "dia",
   "new": false,
@@ -3338,7 +2327,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT900",
-  "ct": 0.48,
+  "ct": "0.48",
   "price": 185000,
   "stock": 1,
   "names": {
@@ -3368,7 +2357,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18WG",
-  "ct": null,
+  "ct": "0.35/0.02",
   "price": 295000,
   "stock": 1,
   "names": {
@@ -3377,9 +2366,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、K18WG、ダイヤモンド",
-   "en": "Pendant Necklace, K18WG, Diamond",
-   "zh": "吊坠项链、K18WG、钻石"
+   "ja": "ペンダントネックレス、K18WG、ダイヤモンド 0.35/0.02ct",
+   "en": "Pendant Necklace, K18WG, Diamond 0.35/0.02ct",
+   "zh": "吊坠项链、K18WG、钻石 0.35/0.02ct"
   },
   "gem": "dia",
   "new": false,
@@ -3398,7 +2387,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": 0.7,
+  "ct": "0.70",
   "price": 315000,
   "stock": 1,
   "names": {
@@ -3407,9 +2396,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.7ct",
-   "en": "Pendant Necklace, PT950, Diamond 0.7ct",
-   "zh": "吊坠项链、PT950、钻石 0.7ct"
+   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.70ct",
+   "en": "Pendant Necklace, PT950, Diamond 0.70ct",
+   "zh": "吊坠项链、PT950、钻石 0.70ct"
   },
   "gem": "dia",
   "new": false,
@@ -3428,7 +2417,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18WG",
-  "ct": 1,
+  "ct": "1.00",
   "price": 320000,
   "stock": 1,
   "names": {
@@ -3437,9 +2426,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、K18WG、ダイヤモンド 1ct",
-   "en": "Pendant Necklace, K18WG, Diamond 1ct",
-   "zh": "吊坠项链、K18WG、钻石 1ct"
+   "ja": "ペンダントネックレス、K18WG、ダイヤモンド 1.00ct",
+   "en": "Pendant Necklace, K18WG, Diamond 1.00ct",
+   "zh": "吊坠项链、K18WG、钻石 1.00ct"
   },
   "gem": "dia",
   "new": false,
@@ -3458,7 +2447,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT900",
-  "ct": 1,
+  "ct": "1.00",
   "price": 350000,
   "stock": 1,
   "names": {
@@ -3467,9 +2456,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT900、ダイヤモンド 1ct",
-   "en": "Pendant Necklace, PT900, Diamond 1ct",
-   "zh": "吊坠项链、PT900、钻石 1ct"
+   "ja": "ペンダントネックレス、PT900、ダイヤモンド 1.00ct",
+   "en": "Pendant Necklace, PT900, Diamond 1.00ct",
+   "zh": "吊坠项链、PT900、钻石 1.00ct"
   },
   "gem": "dia",
   "new": false,
@@ -3488,7 +2477,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": 0.8,
+  "ct": "0.80",
   "price": 285000,
   "stock": 1,
   "names": {
@@ -3497,9 +2486,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.8ct",
-   "en": "Pendant Necklace, PT950, Diamond 0.8ct",
-   "zh": "吊坠项链、PT950、钻石 0.8ct"
+   "ja": "ペンダントネックレス、PT950、ダイヤモンド 0.80ct",
+   "en": "Pendant Necklace, PT950, Diamond 0.80ct",
+   "zh": "吊坠项链、PT950、钻石 0.80ct"
   },
   "gem": "dia",
   "new": false,
@@ -3518,7 +2507,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT900",
-  "ct": 0.8,
+  "ct": "0.80",
   "price": 500000,
   "stock": 1,
   "names": {
@@ -3527,43 +2516,13 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT900、ダイヤモンド 0.8ct",
-   "en": "Pendant Necklace, PT900, Diamond 0.8ct",
-   "zh": "吊坠项链、PT900、钻石 0.8ct"
+   "ja": "ペンダントネックレス、PT900、ダイヤモンド 0.80ct",
+   "en": "Pendant Necklace, PT900, Diamond 0.80ct",
+   "zh": "吊坠项链、PT900、钻石 0.80ct"
   },
   "gem": "dia",
   "new": false,
   "high": true,
-  "sizes": [],
-  "gem_names": {
-   "ja": "ダイヤモンド",
-   "en": "Diamond",
-   "zh": "钻石"
-  },
-  "badge": null
- },
- {
-  "code": "LMTV0403PE-YG",
-  "raw": "DIAMONDS PIERCE",
-  "cat": "PIERCE",
-  "group": "earrings",
-  "mat": "K18YG",
-  "ct": null,
-  "price": 50000,
-  "stock": 1,
-  "names": {
-   "ja": "ダイヤモンド ピアス",
-   "en": "Diamond Pierced Earrings",
-   "zh": "钻石耳环"
-  },
-  "spec": {
-   "ja": "ピアス、K18YG、ダイヤモンド",
-   "en": "Pierced Earrings, K18YG, Diamond",
-   "zh": "耳环、K18YG、钻石"
-  },
-  "gem": "dia",
-  "new": false,
-  "high": false,
   "sizes": [],
   "gem_names": {
    "ja": "ダイヤモンド",
@@ -3603,42 +2562,12 @@
   "badge": null
  },
  {
-  "code": "ABLPR0506LE-YG",
-  "raw": "METAL PIERCE",
-  "cat": "PIERCE",
-  "group": "earrings",
-  "mat": "K18YG",
-  "ct": null,
-  "price": 25000,
-  "stock": 1,
-  "names": {
-   "ja": "メタル ピアス",
-   "en": "Metal Pierced Earrings",
-   "zh": "金属耳环"
-  },
-  "spec": {
-   "ja": "ピアス、K18YG、メタル",
-   "en": "Pierced Earrings, K18YG, Metal",
-   "zh": "耳环、K18YG、金属"
-  },
-  "gem": "dia",
-  "new": false,
-  "high": false,
-  "sizes": [],
-  "gem_names": {
-   "ja": "メタル",
-   "en": "Metal",
-   "zh": "金属"
-  },
-  "badge": null
- },
- {
   "code": "LMTV0515PE-PT",
   "raw": "DIAMONDS PIERCE",
   "cat": "PIERCE",
   "group": "earrings",
   "mat": "PT950",
-  "ct": null,
+  "ct": "0.16/0.16",
   "price": 70000,
   "stock": 1,
   "names": {
@@ -3647,9 +2576,9 @@
    "zh": "钻石耳环"
   },
   "spec": {
-   "ja": "ピアス、PT950、ダイヤモンド",
-   "en": "Pierced Earrings, PT950, Diamond",
-   "zh": "耳环、PT950、钻石"
+   "ja": "ピアス、PT950、ダイヤモンド 0.16/0.16ct",
+   "en": "Pierced Earrings, PT950, Diamond 0.16/0.16ct",
+   "zh": "耳环、PT950、钻石 0.16/0.16ct"
   },
   "gem": "dia",
   "new": false,
@@ -3668,7 +2597,7 @@
   "cat": "PIERCE",
   "group": "earrings",
   "mat": "PT950",
-  "ct": null,
+  "ct": "0.25/0.25",
   "price": 205000,
   "stock": 1,
   "names": {
@@ -3677,9 +2606,9 @@
    "zh": "钻石耳环"
   },
   "spec": {
-   "ja": "ピアス、PT950、ダイヤモンド",
-   "en": "Pierced Earrings, PT950, Diamond",
-   "zh": "耳环、PT950、钻石"
+   "ja": "ピアス、PT950、ダイヤモンド 0.25/0.25ct",
+   "en": "Pierced Earrings, PT950, Diamond 0.25/0.25ct",
+   "zh": "耳环、PT950、钻石 0.25/0.25ct"
   },
   "gem": "dia",
   "new": false,
@@ -3698,7 +2627,7 @@
   "cat": "PIERCE",
   "group": "earrings",
   "mat": "PT950",
-  "ct": null,
+  "ct": "0.80/0.80",
   "price": 720000,
   "stock": 1,
   "names": {
@@ -3707,9 +2636,9 @@
    "zh": "钻石耳环"
   },
   "spec": {
-   "ja": "ピアス、PT950、ダイヤモンド",
-   "en": "Pierced Earrings, PT950, Diamond",
-   "zh": "耳环、PT950、钻石"
+   "ja": "ピアス、PT950、ダイヤモンド 0.80/0.80ct",
+   "en": "Pierced Earrings, PT950, Diamond 0.80/0.80ct",
+   "zh": "耳环、PT950、钻石 0.80/0.80ct"
   },
   "gem": "dia",
   "new": false,
@@ -3728,7 +2657,7 @@
   "cat": "PIERCE",
   "group": "earrings",
   "mat": "PT950",
-  "ct": null,
+  "ct": "0.80/0.80",
   "price": 710000,
   "stock": 1,
   "names": {
@@ -3737,9 +2666,9 @@
    "zh": "钻石耳环"
   },
   "spec": {
-   "ja": "ピアス、PT950、ダイヤモンド",
-   "en": "Pierced Earrings, PT950, Diamond",
-   "zh": "耳环、PT950、钻石"
+   "ja": "ピアス、PT950、ダイヤモンド 0.80/0.80ct",
+   "en": "Pierced Earrings, PT950, Diamond 0.80/0.80ct",
+   "zh": "耳环、PT950、钻石 0.80/0.80ct"
   },
   "gem": "dia",
   "new": false,
@@ -3818,7 +2747,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT/K18",
-  "ct": 0.12,
+  "ct": "0.12",
   "price": 200000,
   "stock": 1,
   "names": {
@@ -3848,7 +2777,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18YG",
-  "ct": 0.2,
+  "ct": "0.20",
   "price": 150000,
   "stock": 1,
   "names": {
@@ -3857,9 +2786,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、K18YG、ダイヤモンド 0.2ct",
-   "en": "Pendant Necklace, K18YG, Diamond 0.2ct",
-   "zh": "吊坠项链、K18YG、钻石 0.2ct"
+   "ja": "ペンダントネックレス、K18YG、ダイヤモンド 0.20ct",
+   "en": "Pendant Necklace, K18YG, Diamond 0.20ct",
+   "zh": "吊坠项链、K18YG、钻石 0.20ct"
   },
   "gem": "dia",
   "new": false,
@@ -3878,7 +2807,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18YG",
-  "ct": 0.2,
+  "ct": "0.20",
   "price": 230000,
   "stock": 1,
   "names": {
@@ -3887,9 +2816,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、K18YG、ダイヤモンド 0.2ct",
-   "en": "Pendant Necklace, K18YG, Diamond 0.2ct",
-   "zh": "吊坠项链、K18YG、钻石 0.2ct"
+   "ja": "ペンダントネックレス、K18YG、ダイヤモンド 0.20ct",
+   "en": "Pendant Necklace, K18YG, Diamond 0.20ct",
+   "zh": "吊坠项链、K18YG、钻石 0.20ct"
   },
   "gem": "dia",
   "new": false,
@@ -3908,7 +2837,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18YG",
-  "ct": 0.01,
+  "ct": "0.01",
   "price": 145000,
   "stock": 1,
   "names": {
@@ -3938,7 +2867,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18YG",
-  "ct": 0.2,
+  "ct": "0.20",
   "price": 180000,
   "stock": 1,
   "names": {
@@ -3947,9 +2876,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、K18YG、ダイヤモンド 0.2ct",
-   "en": "Pendant Necklace, K18YG, Diamond 0.2ct",
-   "zh": "吊坠项链、K18YG、钻石 0.2ct"
+   "ja": "ペンダントネックレス、K18YG、ダイヤモンド 0.20ct",
+   "en": "Pendant Necklace, K18YG, Diamond 0.20ct",
+   "zh": "吊坠项链、K18YG、钻石 0.20ct"
   },
   "gem": "dia",
   "new": false,
@@ -3968,7 +2897,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18YG",
-  "ct": null,
+  "ct": "0.03/0.07",
   "price": 185000,
   "stock": 1,
   "names": {
@@ -3977,9 +2906,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、K18YG、ダイヤモンド",
-   "en": "Pendant Necklace, K18YG, Diamond",
-   "zh": "吊坠项链、K18YG、钻石"
+   "ja": "ペンダントネックレス、K18YG、ダイヤモンド 0.03/0.07ct",
+   "en": "Pendant Necklace, K18YG, Diamond 0.03/0.07ct",
+   "zh": "吊坠项链、K18YG、钻石 0.03/0.07ct"
   },
   "gem": "dia",
   "new": false,
@@ -3998,7 +2927,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18YG",
-  "ct": 0.3,
+  "ct": "0.30",
   "price": 275000,
   "stock": 1,
   "names": {
@@ -4007,9 +2936,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、K18YG、ダイヤモンド 0.3ct",
-   "en": "Pendant Necklace, K18YG, Diamond 0.3ct",
-   "zh": "吊坠项链、K18YG、钻石 0.3ct"
+   "ja": "ペンダントネックレス、K18YG、ダイヤモンド 0.30ct",
+   "en": "Pendant Necklace, K18YG, Diamond 0.30ct",
+   "zh": "吊坠项链、K18YG、钻石 0.30ct"
   },
   "gem": "dia",
   "new": false,
@@ -4028,7 +2957,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18YG",
-  "ct": 0.11,
+  "ct": "0.11",
   "price": 255000,
   "stock": 1,
   "names": {
@@ -4058,7 +2987,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18YG",
-  "ct": 0.2,
+  "ct": "0.20",
   "price": 200000,
   "stock": 1,
   "names": {
@@ -4067,9 +2996,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、K18YG、ダイヤモンド 0.2ct",
-   "en": "Pendant Necklace, K18YG, Diamond 0.2ct",
-   "zh": "吊坠项链、K18YG、钻石 0.2ct"
+   "ja": "ペンダントネックレス、K18YG、ダイヤモンド 0.20ct",
+   "en": "Pendant Necklace, K18YG, Diamond 0.20ct",
+   "zh": "吊坠项链、K18YG、钻石 0.20ct"
   },
   "gem": "dia",
   "new": false,
@@ -4088,7 +3017,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18YG",
-  "ct": 0.005,
+  "ct": "0.01",
   "price": 235000,
   "stock": 1,
   "names": {
@@ -4097,9 +3026,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、K18YG、ダイヤモンド 0.005ct",
-   "en": "Pendant Necklace, K18YG, Diamond 0.005ct",
-   "zh": "吊坠项链、K18YG、钻石 0.005ct"
+   "ja": "ペンダントネックレス、K18YG、ダイヤモンド 0.01ct",
+   "en": "Pendant Necklace, K18YG, Diamond 0.01ct",
+   "zh": "吊坠项链、K18YG、钻石 0.01ct"
   },
   "gem": "dia",
   "new": false,
@@ -4118,7 +3047,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "K18YG",
-  "ct": 1,
+  "ct": "1.00",
   "price": 515000,
   "stock": 1,
   "names": {
@@ -4127,9 +3056,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、K18YG、ダイヤモンド 1ct",
-   "en": "Pendant Necklace, K18YG, Diamond 1ct",
-   "zh": "吊坠项链、K18YG、钻石 1ct"
+   "ja": "ペンダントネックレス、K18YG、ダイヤモンド 1.00ct",
+   "en": "Pendant Necklace, K18YG, Diamond 1.00ct",
+   "zh": "吊坠项链、K18YG、钻石 1.00ct"
   },
   "gem": "dia",
   "new": false,
@@ -4148,7 +3077,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT/K18",
-  "ct": 0.12,
+  "ct": "0.12",
   "price": 200000,
   "stock": 1,
   "names": {
@@ -4178,7 +3107,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT900",
-  "ct": 0.3,
+  "ct": "0.30",
   "price": 220000,
   "stock": 1,
   "names": {
@@ -4187,9 +3116,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT900、ダイヤモンド 0.3ct",
-   "en": "Pendant Necklace, PT900, Diamond 0.3ct",
-   "zh": "吊坠项链、PT900、钻石 0.3ct"
+   "ja": "ペンダントネックレス、PT900、ダイヤモンド 0.30ct",
+   "en": "Pendant Necklace, PT900, Diamond 0.30ct",
+   "zh": "吊坠项链、PT900、钻石 0.30ct"
   },
   "gem": "dia",
   "new": false,
@@ -4208,7 +3137,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": 1,
+  "ct": "1.00",
   "price": 420000,
   "stock": 2,
   "names": {
@@ -4217,9 +3146,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT950、ダイヤモンド 1ct",
-   "en": "Pendant Necklace, PT950, Diamond 1ct",
-   "zh": "吊坠项链、PT950、钻石 1ct"
+   "ja": "ペンダントネックレス、PT950、ダイヤモンド 1.00ct",
+   "en": "Pendant Necklace, PT950, Diamond 1.00ct",
+   "zh": "吊坠项链、PT950、钻石 1.00ct"
   },
   "gem": "dia",
   "new": false,
@@ -4238,7 +3167,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT950",
-  "ct": 0.24,
+  "ct": "0.24",
   "price": 520000,
   "stock": 1,
   "names": {
@@ -4268,7 +3197,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT900",
-  "ct": 0.1,
+  "ct": "0.10",
   "price": 250000,
   "stock": 1,
   "names": {
@@ -4277,9 +3206,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT900、ダイヤモンド 0.1ct",
-   "en": "Pendant Necklace, PT900, Diamond 0.1ct",
-   "zh": "吊坠项链、PT900、钻石 0.1ct"
+   "ja": "ペンダントネックレス、PT900、ダイヤモンド 0.10ct",
+   "en": "Pendant Necklace, PT900, Diamond 0.10ct",
+   "zh": "吊坠项链、PT900、钻石 0.10ct"
   },
   "gem": "dia",
   "new": false,
@@ -4298,7 +3227,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT900",
-  "ct": 0.2,
+  "ct": "0.20",
   "price": 235000,
   "stock": 1,
   "names": {
@@ -4307,9 +3236,9 @@
    "zh": "钻石吊坠项链"
   },
   "spec": {
-   "ja": "ペンダントネックレス、PT900、ダイヤモンド 0.2ct",
-   "en": "Pendant Necklace, PT900, Diamond 0.2ct",
-   "zh": "吊坠项链、PT900、钻石 0.2ct"
+   "ja": "ペンダントネックレス、PT900、ダイヤモンド 0.20ct",
+   "en": "Pendant Necklace, PT900, Diamond 0.20ct",
+   "zh": "吊坠项链、PT900、钻石 0.20ct"
   },
   "gem": "dia",
   "new": false,
@@ -4328,7 +3257,7 @@
   "cat": "PD NECKLES",
   "group": "pendant",
   "mat": "PT900",
-  "ct": 0.13,
+  "ct": "0.13",
   "price": 170000,
   "stock": 1,
   "names": {

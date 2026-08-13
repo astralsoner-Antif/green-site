@@ -35,7 +35,7 @@ UI = {
   "more":       {"ja": "さらに表示", "en": "Load more", "zh": "加载更多"},
   "new":        {"ja": "新作", "en": "New", "zh": "新品"},
   "introTitle": {"ja": "ジュエリー", "en": "Jewellery", "zh": "珠宝"},
-  "introLead":  {"ja": "<span>かたちは、石のためにある。</span><span>ダイヤモンドのパヴェが光を放つ</span><span>モチーフペンダント、</span><span>照りで選び抜いたアコヤパールの連、</span><span>カラーダイヤモンドや南洋パールの一点物など、</span><span>プラチナとゴールドの地金で仕立てた</span><span>コレクションをご覧ください。</span>", "en": "<span>Form exists for the stone.</span> <span>Motif pendants paved with diamonds,</span> <span>strands of Akoya pearls chosen for their lustre,</span> <span>one-off coloured diamonds and South Sea pearls —</span> <span>a collection crafted in platinum and gold.</span>", "zh": "<span>造型，为宝石而生。</span><span>铺镶钻石的造型吊坠、</span><span>以光泽甄选的Akoya珍珠链、</span><span>彩钻与南洋珍珠的独件之作——</span><span>以铂金与K金精心打造的系列，</span><span>敬请鉴赏。</span>"},
+  "introLead":  {"ja": "<span>かたちは、石のためにある。</span><span>ダイヤモンドのパヴェが光を放つ</span><span>モチーフペンダント、</span><span>アコヤ・南洋・ブラックパールの一点物、</span><span>カラーダイヤモンドまで、</span><span>プラチナとゴールドの地金で仕立てた</span><span>コレクションをご覧ください。</span>", "en": "<span>Form exists for the stone.</span> <span>Motif pendants paved with diamonds,</span> <span>one-off Akoya, South Sea and black pearls,</span> <span>coloured diamonds —</span> <span>a collection crafted in platinum and gold.</span>", "zh": "<span>造型，为宝石而生。</span><span>铺镶钻石的造型吊坠、</span><span>Akoya·南洋·黑珍珠的独件之作、</span><span>以及各色彩钻——</span><span>以铂金与K金精心打造的系列，</span><span>敬请鉴赏。</span>"},
   # キャッチコピー(2026-08-13確定・動画モジュール実装時に使用):
   #   ja「石を、解き放つ。」 en "Set the stone free." zh「让宝石，自由。」
   "inquire":    {"ja": "お問い合わせ", "en": "Inquire", "zh": "咨询"},
@@ -113,9 +113,9 @@ CAT_INTROS = {
   },
   "earrings": {
     "h": {"ja": "ピアス", "en": "Earrings", "zh": "耳环"},
-    "l": {"ja": "<span>顔まわりを明るく照らす、光のスタッド。</span><span>粒を揃えたアコヤパールは3mmから7.5mm、</span><span>花モチーフの一点や、ダイヤモンド、</span><span>トリートブルーダイヤモンド、</span><span>イエローダイヤモンドのイヤーカフまで。</span><span>プラチナからK10まで、</span><span>その日の装いに合わせてお選びいただけます。</span>",
-          "en": "<span>Studs of light to frame the face.</span> <span>Matched Akoya pearls from 3mm to 7.5mm,</span> <span>floral pieces, diamond earrings,</span> <span>a treated-blue diamond pair</span> <span>and a yellow-diamond ear cuff —</span> <span>from platinum to 10-karat gold,</span> <span>a brilliance for every look.</span>",
-          "zh": "<span>点亮面庞的光之耳钉。</span><span>粒径齐整的Akoya珍珠从3mm到7.5mm，</span><span>亦有花朵造型、钻石耳环、</span><span>处理蓝钻与黄钻耳骨夹——</span><span>从铂金到K10，</span><span>随当日装扮自由挑选。</span>"},
+    "l": {"ja": "<span>顔まわりを明るく照らす、光のスタッド。</span><span>アコヤパールのピアスは3mmから8.5mm、</span><span>花モチーフの一点も。</span><span>0.16ctから0.8ctまで選べるダイヤモンドのピアス、</span><span>トリートブルーダイヤモンド、</span><span>イエローダイヤモンドのイヤーカフまで、</span><span>プラチナとゴールドの地金で揃えています。</span>",
+          "en": "<span>Studs of light to frame the face.</span> <span>Akoya pearl earrings from 3mm to 8.5mm,</span> <span>including floral pieces.</span> <span>Diamond studs from 0.16ct to 0.8ct,</span> <span>a treated-blue diamond pair</span> <span>and a yellow-diamond ear cuff —</span> <span>in platinum and gold.</span>",
+          "zh": "<span>点亮面庞的光之耳钉。</span><span>Akoya珍珠耳环从3mm到8.5mm，</span><span>亦有花朵造型。</span><span>钻石耳环从0.16克拉到0.8克拉，</span><span>另有处理蓝钻与黄钻耳骨夹——</span><span>铂金与K金打造。</span>"},
   },
   "pendant": {
     "h": {"ja": "ペンダント", "en": "Pendants", "zh": "吊坠"},
@@ -125,9 +125,9 @@ CAT_INTROS = {
   },
   "necklace": {
     "h": {"ja": "ネックレス", "en": "Necklaces", "zh": "项链"},
-    "l": {"ja": "<span>首もとに沿う、光の連なり。</span><span>照りを揃えたアコヤパールの連は4.5mmから8.5mm、</span><span>バロックやナチュラルカラー、</span><span>2.5mmの小粒淡水から16mm級の大珠まで。</span><span>45cmから85cmまでの長さが、</span><span>装いに合わせた表情を叶えます。</span>",
-          "en": "<span>A line of light along the neck.</span> <span>Akoya strands matched for lustre,</span> <span>4.5mm to 8.5mm, baroque and natural colours,</span> <span>freshwater pearls from 2.5mm to a bold 16mm —</span> <span>in lengths of 45cm to 85cm</span> <span>to suit the occasion.</span>",
-          "zh": "<span>沿颈而下的光之线条。</span><span>光泽齐整的Akoya珍珠链从4.5mm到8.5mm，</span><span>巴洛克与天然色、</span><span>2.5mm小珠至16mm大珠的淡水珍珠——</span><span>长度45cm至85cm，</span><span>随场合展现风情。</span>"},
+    "l": {"ja": "<span>首もとに沿う、光の連なり。</span><span>2.5mmの小粒淡水パールを連ねた45cmのネックレスから、</span><span>表情の異なるパールの連、</span><span>総カラット2.0のダイヤモンドネックレスまで。</span><span>首もとの主役を、連なりで選べます。</span>",
+          "en": "<span>A line of light along the neck.</span> <span>From delicate 2.5mm freshwater strands at 45cm</span> <span>to pearl necklaces of distinct character</span> <span>and a 2.0ct diamond necklace —</span> <span>a centrepiece chosen strand by strand.</span>",
+          "zh": "<span>沿颈而下的光之线条。</span><span>从2.5mm小珠淡水珍珠的45cm项链、</span><span>风格各异的珍珠串连，</span><span>到总重2.0克拉的钻石项链——</span><span>颈间的主角，由串连决定。</span>"},
   },
   "bracelet": {
     "h": {"ja": "ブレスレット", "en": "Bracelets", "zh": "手链"},
@@ -1132,6 +1132,11 @@ def main():
     build_info_pages()
     for p in PS:
         build_pdp(p)
+    import glob
+    keep = {p["code"] + ".html" for p in PS}
+    for f in glob.glob(os.path.join(ROOT, "products", "*.html")):
+        if os.path.basename(f) not in keep:
+            os.remove(f)
     print(f"built index + {len(PS)} product pages")
 
 if __name__ == "__main__":
