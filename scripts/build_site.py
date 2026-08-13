@@ -35,7 +35,7 @@ UI = {
   "more":       {"ja": "さらに表示", "en": "Load more", "zh": "加载更多"},
   "new":        {"ja": "新作", "en": "New", "zh": "新品"},
   "introTitle": {"ja": "ジュエリー", "en": "Jewellery", "zh": "珠宝"},
-  "introLead":  {"ja": "<span>かたちは、石のためにある。</span><span>ダイヤモンドのパヴェが光を放つモチーフペンダント、</span><span>照りで選び抜いたアコヤパールの連、</span><span>カラーダイヤモンドや南洋パールの一点物など、</span><span>プラチナとゴールドの地金で仕立てた</span><span>コレクションをご覧ください。</span>", "en": "<span>Form exists for the stone.</span> <span>Motif pendants paved with diamonds,</span> <span>strands of Akoya pearls chosen for their lustre,</span> <span>one-off coloured diamonds and South Sea pearls —</span> <span>a collection crafted in platinum and gold.</span>", "zh": "<span>造型，为宝石而生。</span><span>铺镶钻石的造型吊坠、</span><span>以光泽甄选的Akoya珍珠链、</span><span>彩钻与南洋珍珠的独件之作——</span><span>以铂金与K金精心打造的系列，</span><span>敬请鉴赏。</span>"},
+  "introLead":  {"ja": "<span>かたちは、石のためにある。</span><span>ダイヤモンドのパヴェが光を放つ</span><span>モチーフペンダント、</span><span>照りで選び抜いたアコヤパールの連、</span><span>カラーダイヤモンドや南洋パールの一点物など、</span><span>プラチナとゴールドの地金で仕立てた</span><span>コレクションをご覧ください。</span>", "en": "<span>Form exists for the stone.</span> <span>Motif pendants paved with diamonds,</span> <span>strands of Akoya pearls chosen for their lustre,</span> <span>one-off coloured diamonds and South Sea pearls —</span> <span>a collection crafted in platinum and gold.</span>", "zh": "<span>造型，为宝石而生。</span><span>铺镶钻石的造型吊坠、</span><span>以光泽甄选的Akoya珍珠链、</span><span>彩钻与南洋珍珠的独件之作——</span><span>以铂金与K金精心打造的系列，</span><span>敬请鉴赏。</span>"},
   # キャッチコピー(2026-08-13確定・動画モジュール実装時に使用):
   #   ja「石を、解き放つ。」 en "Set the stone free." zh「让宝石，自由。」
   "inquire":    {"ja": "お問い合わせ", "en": "Inquire", "zh": "咨询"},
@@ -174,6 +174,13 @@ img { max-width: 100%; }
 .topbar .tl { display: flex; gap: 18px; align-items: center; overflow-x: auto;
   scrollbar-width: none; white-space: nowrap; }
 .topbar .tl::-webkit-scrollbar { display: none; }
+@media (max-width: 700px) {
+  .topbar { flex-wrap: wrap; padding: 7px 14px 8px; }
+  .langs { margin-left: auto; }
+  .topbar .tl { order: 2; width: 100%; gap: 16px; justify-content: flex-start;
+    border-top: 1px solid var(--hairline); margin-top: 7px; padding-top: 8px;
+    -webkit-overflow-scrolling: touch; }
+}
 .catlink:hover { color: var(--emerald-deep); }
 .catlink #catcount { color: var(--emerald-deep); margin-left: 2px; }
 .langs { display: flex; gap: 14px; }
@@ -394,6 +401,12 @@ html[lang="en"] .intro .accent { display: none; } /* 英語時はH1と重複す�
 .stickybar .scta { flex: 0 0 auto; font-family: var(--sans); font-size: 10.5px;
   letter-spacing: 0.2em; padding: 9px 18px; background: var(--emerald-deep); color: #fff; }
 .stickybar .scta:hover { background: var(--emerald); }
+@media (max-width: 700px) {
+  .stickybar { padding: 8px 12px; gap: 8px; }
+  .stickybar .snm { font-size: 11.5px; }
+  .stickybar .spr { font-size: 11px; }
+  .stickybar .scta { font-size: 9px; letter-spacing: 0.12em; padding: 8px 12px; }
+}
 
 /* ---- ライトボックス ---- */
 .pdp .tile { cursor: zoom-in; }
@@ -1007,8 +1020,8 @@ def build_catalog_page():
     var body = SUBJ[l].replace("{n}", list.length) + "\\n" + lines.join("\\n");
     lineBtn.href = "https://line.me/R/oaMessage/%40641wknmy/?" + encodeURIComponent(body);
     mail.href = "mailto:info@cumulus2026.com?subject=" +
-      encodeURIComponent(SUBJ[l].replace("{n}", list.length)) +
-      "&body=" + encodeURIComponent(lines.join("\\n") + "\\n\\n");
+      encodeURIComponent(MSUBJ[l].replace("{n}", list.length)) +
+      "&body=" + encodeURIComponent(SUBJ[l].replace("{n}", list.length) + "\\n" + lines.join("\\n") + "\\n\\n");
     el.querySelectorAll(".crm").forEach(function (b) {
       b.addEventListener("click", function () {
         window.greenFav.toggle(b.getAttribute("data-c"));

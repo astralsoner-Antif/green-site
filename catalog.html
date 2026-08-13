@@ -84,8 +84,8 @@ var FX = {"cny": 0.042406, "usd": 0.006278, "date_iso": "2026-08-13"};</script><
     var body = SUBJ[l].replace("{n}", list.length) + "\n" + lines.join("\n");
     lineBtn.href = "https://line.me/R/oaMessage/%40641wknmy/?" + encodeURIComponent(body);
     mail.href = "mailto:info@cumulus2026.com?subject=" +
-      encodeURIComponent(SUBJ[l].replace("{n}", list.length)) +
-      "&body=" + encodeURIComponent(lines.join("\n") + "\n\n");
+      encodeURIComponent(MSUBJ[l].replace("{n}", list.length)) +
+      "&body=" + encodeURIComponent(SUBJ[l].replace("{n}", list.length) + "\n" + lines.join("\n") + "\n\n");
     el.querySelectorAll(".crm").forEach(function (b) {
       b.addEventListener("click", function () {
         window.greenFav.toggle(b.getAttribute("data-c"));
