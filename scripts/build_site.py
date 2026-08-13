@@ -19,7 +19,9 @@ UI = {
   "more":       {"ja": "さらに表示", "en": "Load more", "zh": "加载更多"},
   "new":        {"ja": "新作", "en": "New", "zh": "新品"},
   "introTitle": {"ja": "ジュエリー", "en": "Jewellery", "zh": "珠宝"},
-  "introLead":  {"ja": "<span>ダイヤモンドから、</span><span>アコヤ・南洋・淡水のパールまで。</span><span>プラチナやゴールドの地金で仕立てた</span><span>ペンダント、ネックレス、ピアス、</span><span>リング、ブレスレットのコレクションを、</span><span>東京・東日本橋のショールームで</span><span>ご覧いただけます。</span>", "en": "<span>From diamonds to Akoya,</span> <span>South Sea and freshwater pearls —</span> <span>a collection of pendants, necklaces,</span> <span>earrings, rings and bracelets</span> <span>in platinum and gold,</span> <span>at our showroom in Higashi-Nihonbashi, Tokyo.</span>", "zh": "<span>从钻石到Akoya珍珠、</span><span>南洋珍珠与淡水珍珠——</span><span>铂金与K金打造的吊坠、项链、</span><span>耳环、戒指与手链系列，</span><span>尽在东京东日本桥陈列室。</span>"},
+  "introLead":  {"ja": "<span>かたちは、石のためにある。</span><span>ダイヤモンドの硬質な光、</span><span>パールの深い艶。</span><span>素材の表情を最も美しく引き立てる</span><span>デザインだけを見極め、</span><span>一点ずつコレクションに加えています。</span><span>石とかたちが響き合う瞬間を</span><span>ご覧ください。</span>", "en": "<span>Design exists for the stone.</span> <span>The crisp light of diamonds,</span> <span>the deep lustre of pearls —</span> <span>only forms that bring out</span> <span>each material's finest expression</span> <span>join the collection, one piece at a time.</span> <span>Discover the moment</span> <span>stone and form resonate.</span>", "zh": "<span>造型，为宝石而生。</span><span>钻石的冷冽之光，</span><span>珍珠的深邃光泽——</span><span>唯有最能衬托材质之美的设计，</span><span>才被逐一纳入系列。</span><span>请欣赏宝石与造型</span><span>交相辉映的瞬间。</span>"},
+  # キャッチコピー(2026-08-13確定・動画モジュール実装時に使用):
+  #   ja「石を、解き放つ。」 en "Set the stone free." zh「让宝石，自由。」
   "inquire":    {"ja": "お問い合わせ", "en": "Inquire", "zh": "咨询"},
   "inquireNote":{"ja": "在庫・ご来店のご相談は、品番を添えてご連絡ください。", "en": "For availability or a showroom visit, please contact us with the reference number.", "zh": "如需确认库存或预约到店，请附上产品编号与我们联系。"},
   "specH":      {"ja": "説明および仕様", "en": "Description & Specifications", "zh": "描述与规格"},
