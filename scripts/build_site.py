@@ -67,6 +67,40 @@ CHIPS = [
   ("pearl", {"ja": "パール", "en": "Pearls", "zh": "珍珠"}),
 ]
 
+# 大分類ごとの見出し+リード文(2026-08-13 Koki指示: カテゴリ別に出し分け)
+CAT_INTROS = {
+  "ring": {
+    "h": {"ja": "リング", "en": "Rings", "zh": "戒指"},
+    "l": {"ja": "<span>石を、いちばん近くに。</span><span>ふと落ちる視線の先で、</span><span>ダイヤモンドが光を返す。</span><span>指の上で石が最も美しく見えるかたちを、</span><span>一点ずつ選んでいます。</span>",
+          "en": "<span>The stone, at its closest.</span> <span>Light answers every glance</span> <span>that falls upon the hand.</span> <span>Each ring is chosen for how the stone</span> <span>lives upon the finger.</span>",
+          "zh": "<span>与宝石，最近的距离。</span><span>目光落下，</span><span>钻石便以光回应。</span><span>每一枚戒指，</span><span>都为宝石在指间的美而选。</span>"},
+  },
+  "earrings": {
+    "h": {"ja": "ピアス", "en": "Earrings", "zh": "耳环"},
+    "l": {"ja": "<span>顔まわりに、光を。</span><span>揺れるたびに石がきらめき、</span><span>表情を明るく引き立てる。</span><span>ピアスは、動きとともに輝くジュエリーです。</span>",
+          "en": "<span>Light, framing the face.</span> <span>Stones that catch the light</span> <span>with every movement —</span> <span>earrings are jewellery in motion.</span>",
+          "zh": "<span>为面庞，点亮光芒。</span><span>随动作摇曳生辉，</span><span>映亮神采。</span><span>耳环，是随动而闪耀的珠宝。</span>"},
+  },
+  "pendant": {
+    "h": {"ja": "ペンダント", "en": "Pendants", "zh": "吊坠"},
+    "l": {"ja": "<span>胸もとに、一点の光を。</span><span>鎖の先で静かに揺れる石が、</span><span>装いの印象を決める。</span><span>石の存在感が最も素直に伝わるかたちを</span><span>選びました。</span>",
+          "en": "<span>A single point of light at the chest.</span> <span>A stone resting quietly on its chain</span> <span>defines the whole impression —</span> <span>chosen for the honest presence of the stone.</span>",
+          "zh": "<span>胸前，一点光。</span><span>链端静垂的宝石，</span><span>定义整体印象。</span><span>为宝石最真实的存在感而选。</span>"},
+  },
+  "necklace": {
+    "h": {"ja": "ネックレス", "en": "Necklaces", "zh": "项链"},
+    "l": {"ja": "<span>連なりが、光になる。</span><span>首すじに沿って重なるパールの艶、</span><span>石の列が描くライン。</span><span>一粒では出せない美しさを、</span><span>連なりに求めました。</span>",
+          "en": "<span>A line of light.</span> <span>Pearl upon pearl along the neckline,</span> <span>lustre deepening strand by strand —</span> <span>a beauty no single stone can hold.</span>",
+          "zh": "<span>连缀成光。</span><span>沿颈线层叠的珍珠光泽，</span><span>宝石连成的弧线。</span><span>这是单颗宝石无法呈现的美。</span>"},
+  },
+  "bracelet": {
+    "h": {"ja": "ブレスレット", "en": "Bracelets", "zh": "手链"},
+    "l": {"ja": "<span>仕草が、きらめきに変わる。</span><span>手首の動きにあわせて、</span><span>石が光を揺らす。</span><span>腕もとで最も生きるかたちを選んでいます。</span>",
+          "en": "<span>Every gesture becomes light.</span> <span>Stones that move with the wrist,</span> <span>scattering brilliance —</span> <span>chosen for how they come alive in motion.</span>",
+          "zh": "<span>举手投足，皆成光芒。</span><span>宝石随腕间的动作</span><span>摇曳生辉。</span><span>为动态之美而选。</span>"},
+  },
+}
+
 def yen(p):
     return "¥ {:,}".format(int(p)) if p else ""
 
@@ -348,8 +382,8 @@ def build_index():
     doc += f"""<nav class="mainnav" id="mainnav">{nav_html}</nav>
 <section class="intro">
   <p class="eyebrow">HIGASHI-NIHONBASHI · TOKYO</p>
-  <h1 {tri("introTitle")}>{UI["introTitle"]["ja"]}</h1>
-  <p class="lead" {tri("introLead")}>{UI["introLead"]["ja"]}</p>
+  <h1 id="introH">{UI["introTitle"]["ja"]}</h1>
+  <p class="lead" id="introLead">{UI["introLead"]["ja"]}</p>
 </section>
 <div class="chipswrap"><div class="chips">{chips_html}</div></div>
 <p class="count" id="count"></p>
@@ -358,7 +392,11 @@ def build_index():
 """
     doc += shop_section(0)
     doc += FOOTER
-    doc += "<script>var PRODUCTS = %s;</script>" % json.dumps(items, ensure_ascii=False, separators=(",", ":"))
+    intros = {"all": {"h": UI["introTitle"], "l": UI["introLead"]}}
+    intros.update(CAT_INTROS)
+    doc += "<script>var PRODUCTS = %s;\nvar INTROS = %s;</script>" % (
+        json.dumps(items, ensure_ascii=False, separators=(",", ":")),
+        json.dumps(intros, ensure_ascii=False, separators=(",", ":")))
     doc += """<script>
 (function () {
   var PAGE = 24, shown = PAGE, cat = "all", filter = "all";
@@ -389,6 +427,12 @@ def build_index():
   function toTop() {
     window.scrollTo({top: document.querySelector(".chipswrap").offsetTop - 60, behavior: "smooth"});
   }
+  function updateIntro() {
+    var l = window.GREEN_LANG || "ja";
+    var d = INTROS[cat] || INTROS.all;
+    document.getElementById("introH").innerHTML = d.h[l];
+    document.getElementById("introLead").innerHTML = d.l[l];
+  }
   document.querySelectorAll("#mainnav button").forEach(function (b) {
     b.addEventListener("click", function () {
       document.querySelectorAll("#mainnav button").forEach(function (x) { x.classList.remove("on"); });
@@ -396,8 +440,9 @@ def build_index():
       cat = b.getAttribute("data-g");
       if (history.replaceState) history.replaceState(null, "", cat === "all" ? "index.html" : "#" + cat);
       shown = PAGE;
+      updateIntro();
       render();
-      toTop();
+      window.scrollTo({top: 0, behavior: "smooth"});
     });
   });
   document.querySelectorAll(".chip").forEach(function (b) {
@@ -418,8 +463,8 @@ def build_index():
       x.classList.toggle("on", x.getAttribute("data-g") === h);
     });
   }
-  window.onLangChange = render;
-  document.addEventListener("DOMContentLoaded", render);
+  window.onLangChange = function () { updateIntro(); render(); };
+  document.addEventListener("DOMContentLoaded", function () { updateIntro(); render(); });
 })();
 </script>
 """
