@@ -71,33 +71,33 @@ CHIPS = [
 CAT_INTROS = {
   "ring": {
     "h": {"ja": "リング", "en": "Rings", "zh": "戒指"},
-    "l": {"ja": "<span>石を、いちばん近くに。</span><span>ふと落ちる視線の先で、</span><span>ダイヤモンドが光を返す。</span><span>指の上で石が最も美しく見えるかたちを、</span><span>一点ずつ選んでいます。</span>",
-          "en": "<span>The stone, at its closest.</span> <span>Light answers every glance</span> <span>that falls upon the hand.</span> <span>Each ring is chosen for how the stone</span> <span>lives upon the finger.</span>",
-          "zh": "<span>与宝石，最近的距离。</span><span>目光落下，</span><span>钻石便以光回应。</span><span>每一枚戒指，</span><span>都为宝石在指间的美而选。</span>"},
+    "l": {"ja": "<span>一粒のパールを、指もとの主役に。</span><span>4mmの小粒から8mm、</span><span>そして10mmのブラックパールまで、</span><span>照りの良いアコヤを中心に選びました。</span><span>プラチナとゴールドの地金が、</span><span>真珠の艶を静かに引き立てます。</span>",
+          "en": "<span>A single pearl as the centrepiece of the hand.</span> <span>From 4mm to 8mm,</span> <span>to a 10mm black pearl —</span> <span>Akoya pearls chosen for their lustre,</span> <span>set in platinum and gold.</span>",
+          "zh": "<span>一粒珍珠，成为指间的主角。</span><span>从4mm到8mm，</span><span>再到10mm黑珍珠——</span><span>以光泽出众的Akoya珍珠为主，</span><span>配以铂金与K金底座。</span>"},
   },
   "earrings": {
     "h": {"ja": "ピアス", "en": "Earrings", "zh": "耳环"},
-    "l": {"ja": "<span>顔まわりに、光を。</span><span>揺れるたびに石がきらめき、</span><span>表情を明るく引き立てる。</span><span>ピアスは、動きとともに輝くジュエリーです。</span>",
-          "en": "<span>Light, framing the face.</span> <span>Stones that catch the light</span> <span>with every movement —</span> <span>earrings are jewellery in motion.</span>",
-          "zh": "<span>为面庞，点亮光芒。</span><span>随动作摇曳生辉，</span><span>映亮神采。</span><span>耳环，是随动而闪耀的珠宝。</span>"},
+    "l": {"ja": "<span>耳もとには、粒の揃ったアコヤパールを。</span><span>3mmから7.5mmまでサイズで選べるスタッドに、</span><span>花モチーフの一点も。</span><span>ダイヤモンドのピアス、</span><span>トリートブルーダイヤモンドや</span><span>イエローダイヤモンドのイヤーカフまで、</span><span>プラチナからK10まで幅広く揃えています。</span>",
+          "en": "<span>Akoya pearl studs in matched sizes,</span> <span>3mm to 7.5mm, including floral pieces.</span> <span>Diamond earrings in platinum and white gold,</span> <span>a treated-blue diamond pair,</span> <span>a yellow-diamond ear cuff —</span> <span>in settings from platinum to 10-karat gold.</span>",
+          "zh": "<span>耳畔，是粒径齐整的Akoya珍珠。</span><span>3mm至7.5mm任您挑选，</span><span>亦有花朵造型。</span><span>另有铂金与白金的钻石耳环、</span><span>处理蓝钻耳环、黄钻耳骨夹——</span><span>材质从铂金到K10，选择丰富。</span>"},
   },
   "pendant": {
     "h": {"ja": "ペンダント", "en": "Pendants", "zh": "吊坠"},
-    "l": {"ja": "<span>胸もとに、一点の光を。</span><span>鎖の先で静かに揺れる石が、</span><span>装いの印象を決める。</span><span>石の存在感が最も素直に伝わるかたちを</span><span>選びました。</span>",
-          "en": "<span>A single point of light at the chest.</span> <span>A stone resting quietly on its chain</span> <span>defines the whole impression —</span> <span>chosen for the honest presence of the stone.</span>",
-          "zh": "<span>胸前，一点光。</span><span>链端静垂的宝石，</span><span>定义整体印象。</span><span>为宝石最真实的存在感而选。</span>"},
+    "l": {"ja": "<span>クロス、フラワー、ホースシュー。</span><span>ダイヤモンドを敷き詰めた</span><span>モチーフのペンダントネックレスを中心に、</span><span>イエローやピンクのカラーダイヤモンド、</span><span>エメラルドの一点物、</span><span>12mm級の南洋白蝶パールやブラックパールまで。</span><span>胸もとの一点は、最も広く選べるコレクションです。</span>",
+          "en": "<span>Cross, flower, horseshoe —</span> <span>motif pendant necklaces paved with diamonds,</span> <span>alongside yellow and pink coloured diamonds,</span> <span>a one-off emerald,</span> <span>and 12mm-class White South Sea and black pearls.</span> <span>Our widest collection, chosen piece by piece.</span>",
+          "zh": "<span>十字、花朵、马蹄——</span><span>以铺镶钻石的造型吊坠项链为主，</span><span>另有黄钻、粉钻等彩钻，</span><span>独一件的祖母绿，</span><span>以及12mm级南洋白珠与黑珍珠。</span><span>这是选择最丰富的胸前系列。</span>"},
   },
   "necklace": {
     "h": {"ja": "ネックレス", "en": "Necklaces", "zh": "项链"},
-    "l": {"ja": "<span>連なりが、光になる。</span><span>首すじに沿って重なるパールの艶、</span><span>石の列が描くライン。</span><span>一粒では出せない美しさを、</span><span>連なりに求めました。</span>",
-          "en": "<span>A line of light.</span> <span>Pearl upon pearl along the neckline,</span> <span>lustre deepening strand by strand —</span> <span>a beauty no single stone can hold.</span>",
-          "zh": "<span>连缀成光。</span><span>沿颈线层叠的珍珠光泽，</span><span>宝石连成的弧线。</span><span>这是单颗宝石无法呈现的美。</span>"},
+    "l": {"ja": "<span>照りを揃えたアコヤパールの連を、</span><span>4.5mmから8.5mmまで。</span><span>バロックやナチュラルカラーの個性、</span><span>2.5mmの小粒淡水から16mm級の大珠まで。</span><span>長さは45cmから85cmのロングまで、</span><span>連なりの表情で選べます。</span>",
+          "en": "<span>Strands of Akoya pearls matched for lustre,</span> <span>4.5mm to 8.5mm.</span> <span>Baroque and natural-colour strands,</span> <span>freshwater pearls from delicate 2.5mm</span> <span>to bold 16mm —</span> <span>in lengths from 45cm to 85cm.</span>",
+          "zh": "<span>光泽齐整的Akoya珍珠链，</span><span>从4.5mm到8.5mm。</span><span>另有巴洛克与天然色珍珠、</span><span>2.5mm小珠至16mm级大珠的淡水珍珠——</span><span>长度45cm至85cm，</span><span>以串连之美任您挑选。</span>"},
   },
   "bracelet": {
     "h": {"ja": "ブレスレット", "en": "Bracelets", "zh": "手链"},
-    "l": {"ja": "<span>仕草が、きらめきに変わる。</span><span>手首の動きにあわせて、</span><span>石が光を揺らす。</span><span>腕もとで最も生きるかたちを選んでいます。</span>",
-          "en": "<span>Every gesture becomes light.</span> <span>Stones that move with the wrist,</span> <span>scattering brilliance —</span> <span>chosen for how they come alive in motion.</span>",
-          "zh": "<span>举手投足，皆成光芒。</span><span>宝石随腕间的动作</span><span>摇曳生辉。</span><span>为动态之美而选。</span>"},
+    "l": {"ja": "<span>腕もとには、確かな光を。</span><span>総カラット1.88のダイヤモンドブレスレットと、</span><span>K18のメタルブレスレットをご用意しています。</span>",
+          "en": "<span>A certain light for the wrist:</span> <span>a diamond bracelet totalling 1.88 carats,</span> <span>and a metal bracelet in 18-karat gold.</span>",
+          "zh": "<span>腕间，确凿的光芒：</span><span>总重1.88克拉的钻石手链，</span><span>与K18金属手链。</span>"},
   },
 }
 
