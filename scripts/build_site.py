@@ -624,10 +624,7 @@ def fx_block(p):
     if not p["price"]:
         return ""
     line = fx_line(p["price"], bool(p.get("price_max")))
-    notes = {k: (UI["fxNote"][k] % FX["date_iso"]) for k in ("ja", "en", "zh")}
-    note_attr = ('data-i data-ja="%s" data-en="%s" data-zh="%s"' %
-                 (html.escape(notes["ja"], quote=True), html.escape(notes["en"], quote=True), html.escape(notes["zh"], quote=True)))
-    return ('<p class="pricefx">%s</p>\n    <p class="pricefxnote" %s>%s</p>' % (line, note_attr, notes["ja"]))
+    return '<p class="pricefx">%s</p>' % line
 
 def related(p):
     def score(q):
