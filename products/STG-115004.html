@@ -11,9 +11,12 @@
 <script src="../assets/site.js"></script>
 </head>
 <body>
-<div class="annbar" data-i data-ja="東京・東日本橋ショールーム ｜ ご来店・お問い合わせを承ります" data-en="Showroom in Higashi-Nihonbashi, Tokyo — visits and enquiries welcome" data-zh="东京·东日本桥陈列室 ｜ 欢迎到店与咨询">東京・東日本橋ショールーム ｜ ご来店・お問い合わせを承ります</div>
+<div class="annbar" data-i data-ja="東京・東日本橋ショールーム ｜ 海外への発送に対応しています" data-en="Showroom in Higashi-Nihonbashi, Tokyo — international shipping available" data-zh="东京·东日本桥陈列室 ｜ 支持海外配送">東京・東日本橋ショールーム ｜ 海外への発送に対応しています</div>
 <div class="topbar">
-  <a href="mailto:info@cumulus2026.com" data-i data-ja="お問い合わせ" data-en="Contact" data-zh="联系我们">お問い合わせ</a>
+  <div class="tl">
+    <a href="mailto:info@cumulus2026.com" data-i data-ja="お問い合わせ" data-en="Contact" data-zh="联系我们">お問い合わせ</a>
+    <a class="catlink" href="../catalog.html"><span data-i data-ja="カタログ" data-en="Catalogue" data-zh="目录">カタログ</span><span id="catcount"></span></a>
+  </div>
   <div class="langs"><button data-l="ja" onclick="setLang('ja')">日本語</button><button data-l="en" onclick="setLang('en')">English</button><button data-l="zh" onclick="setLang('zh')">简体中文</button></div>
 </div>
 <div class="brandbar"><a href="../index.html"><img src="../img/logo-bar.png" alt="GReEN"></a></div>
@@ -28,7 +31,8 @@
     <p class="price">¥ 235,000</p>
     <p class="pricefx">≈ CNY 9,970 · USD 1,480</p>
     <a class="cta" href="mailto:info@cumulus2026.com?subject=STG-115004%20お問い合わせ" data-i data-ja="お問い合わせ" data-en="Inquire" data-zh="咨询">お問い合わせ</a>
-    <p class="ctanote" data-i data-ja="在庫・ご来店のご相談は、品番を添えてご連絡ください。" data-en="For availability or a showroom visit, please contact us with the reference number." data-zh="如需确认库存或预约到店，请附上产品编号与我们联系。">在庫・ご来店のご相談は、品番を添えてご連絡ください。</p>
+    <button class="favbtn" id="favbtn">♡ カタログに追加</button>
+    <p class="ctanote" data-i data-ja="在庫・ご来店のご相談は、品番を添えてご連絡ください。海外への発送にも対応しています。" data-en="For availability or a showroom visit, please contact us with the reference number. International shipping is available." data-zh="如需确认库存或预约到店，请附上产品编号与我们联系。支持海外配送。">在庫・ご来店のご相談は、品番を添えてご連絡ください。海外への発送にも対応しています。</p>
     <div class="acc">
       <details open>
         <summary data-i data-ja="説明および仕様" data-en="Description &amp; Specifications" data-zh="描述与规格">説明および仕様</summary>
@@ -63,10 +67,10 @@
   <div class="recorow">
 <a class="card" href="ABLMTV0149P-PG.html"><div class="tile"><img src="../img/products/t/ABLMTV0149P-PG.jpg" alt="ダイヤモンド ペンダントネックレス" loading="lazy"></div><p class="nm" data-i data-ja="ダイヤモンド ペンダントネックレス" data-en="Diamond Pendant Necklace" data-zh="钻石吊坠项链">ダイヤモンド ペンダントネックレス</p><p class="sp" data-i data-ja="ペンダントネックレス、K18PG、ダイヤモンド 0.5ct" data-en="Pendant Necklace, K18PG, Diamond 0.5ct" data-zh="吊坠项链、K18PG、钻石 0.5ct">ペンダントネックレス、K18PG、ダイヤモンド 0.5ct</p><p class="pr">¥ 235,000</p></a>
 <a class="card" href="STG-121213.html"><div class="tile"><img src="../img/products/t/STG-121213.jpg" alt="ダイヤモンド ペンダントネックレス" loading="lazy"></div><p class="nm" data-i data-ja="ダイヤモンド ペンダントネックレス" data-en="Diamond Pendant Necklace" data-zh="钻石吊坠项链">ダイヤモンド ペンダントネックレス</p><p class="sp" data-i data-ja="ペンダントネックレス、K18YG、ダイヤモンド 0.005ct" data-en="Pendant Necklace, K18YG, Diamond 0.005ct" data-zh="吊坠项链、K18YG、钻石 0.005ct">ペンダントネックレス、K18YG、ダイヤモンド 0.005ct</p><p class="pr">¥ 235,000</p></a>
-<a class="card" href="ABLP06148P-WG.html"><div class="tile"><img src="../img/products/t/ABLP06148P-WG.jpg" alt="ピンクダイヤモンド ペンダントネックレス" loading="lazy"></div><p class="nm" data-i data-ja="ピンクダイヤモンド ペンダントネックレス" data-en="Pink Diamond Pendant Necklace" data-zh="粉钻吊坠项链">ピンクダイヤモンド ペンダントネックレス</p><p class="sp" data-i data-ja="ペンダントネックレス、K18WG、ピンクダイヤモンド" data-en="Pendant Necklace, K18WG, Pink Diamond" data-zh="吊坠项链、K18WG、粉钻">ペンダントネックレス、K18WG、ピンクダイヤモンド</p><p class="pr">¥ 230,000</p></a>
+<a class="card" href="ABLP06148P-WG.html"><div class="tile"><span class="badge popular" data-i data-ja="人気" data-en="Popular" data-zh="热卖">人気</span><img src="../img/products/t/ABLP06148P-WG.jpg" alt="ピンクダイヤモンド ペンダントネックレス" loading="lazy"></div><p class="nm" data-i data-ja="ピンクダイヤモンド ペンダントネックレス" data-en="Pink Diamond Pendant Necklace" data-zh="粉钻吊坠项链">ピンクダイヤモンド ペンダントネックレス</p><p class="sp" data-i data-ja="ペンダントネックレス、K18WG、ピンクダイヤモンド" data-en="Pendant Necklace, K18WG, Pink Diamond" data-zh="吊坠项链、K18WG、粉钻">ペンダントネックレス、K18WG、ピンクダイヤモンド</p><p class="pr">¥ 230,000</p></a>
 <a class="card" href="STG-114990.html"><div class="tile"><img src="../img/products/t/STG-114990.jpg" alt="ダイヤモンド ペンダントネックレス" loading="lazy"></div><p class="nm" data-i data-ja="ダイヤモンド ペンダントネックレス" data-en="Diamond Pendant Necklace" data-zh="钻石吊坠项链">ダイヤモンド ペンダントネックレス</p><p class="sp" data-i data-ja="ペンダントネックレス、K18YG、ダイヤモンド 0.2ct" data-en="Pendant Necklace, K18YG, Diamond 0.2ct" data-zh="吊坠项链、K18YG、钻石 0.2ct">ペンダントネックレス、K18YG、ダイヤモンド 0.2ct</p><p class="pr">¥ 230,000</p></a>
 <a class="card" href="ABLMTV0413P-PT.html"><div class="tile"><img src="../img/products/t/ABLMTV0413P-PT.jpg" alt="ダイヤモンド ペンダントネックレス" loading="lazy"></div><p class="nm" data-i data-ja="ダイヤモンド ペンダントネックレス" data-en="Diamond Pendant Necklace" data-zh="钻石吊坠项链">ダイヤモンド ペンダントネックレス</p><p class="sp" data-i data-ja="ペンダントネックレス、PT950、ダイヤモンド 0.3ct" data-en="Pendant Necklace, PT950, Diamond 0.3ct" data-zh="吊坠项链、PT950、钻石 0.3ct">ペンダントネックレス、PT950、ダイヤモンド 0.3ct</p><p class="pr">¥ 225,000</p></a>
-<a class="card" href="JP5169.html"><div class="tile"><span class="badge" data-i data-ja="新作" data-en="New" data-zh="新品">新作</span><img src="../img/products/t/JP5169.jpg" alt="ローズカットダイヤモンド ペンダントトップ" loading="lazy"></div><p class="nm" data-i data-ja="ローズカットダイヤモンド ペンダントトップ" data-en="Rose-cut Diamond Pendant Top" data-zh="玫瑰式切割钻石吊坠">ローズカットダイヤモンド ペンダントトップ</p><p class="sp" data-i data-ja="ペンダントトップ、K18YG、ローズカットダイヤモンド 0.4ct" data-en="Pendant Top, K18YG, Rose-cut Diamond 0.4ct" data-zh="吊坠、K18YG、玫瑰式切割钻石 0.4ct">ペンダントトップ、K18YG、ローズカットダイヤモンド 0.4ct</p><p class="pr">¥ 220,000</p></a>
+<a class="card" href="JP5169.html"><div class="tile"><span class="badge new" data-i data-ja="新作" data-en="New" data-zh="新品">新作</span><img src="../img/products/t/JP5169.jpg" alt="ローズカットダイヤモンド ペンダントトップ" loading="lazy"></div><p class="nm" data-i data-ja="ローズカットダイヤモンド ペンダントトップ" data-en="Rose-cut Diamond Pendant Top" data-zh="玫瑰式切割钻石吊坠">ローズカットダイヤモンド ペンダントトップ</p><p class="sp" data-i data-ja="ペンダントトップ、K18YG、ローズカットダイヤモンド 0.4ct" data-en="Pendant Top, K18YG, Rose-cut Diamond 0.4ct" data-zh="吊坠、K18YG、玫瑰式切割钻石 0.4ct">ペンダントトップ、K18YG、ローズカットダイヤモンド 0.4ct</p><p class="pr">¥ 220,000</p></a>
 </div>
 </section>
 <section class="recent" id="recent">
@@ -93,6 +97,18 @@
   var tileImg = document.querySelector(".pdp .tile img");
   if (tileImg) tileImg.addEventListener("click", function () { lb.classList.add("on"); });
   lb.addEventListener("click", function () { lb.classList.remove("on"); });
+  var fb = document.getElementById("favbtn");
+  var FT = {add: {ja: "♡ カタログに追加", en: "♡ Add to catalogue", zh: "♡ 加入目录"},
+            has: {ja: "♥ カタログに追加済み", en: "♥ In catalogue", zh: "♥ 已加入目录"}};
+  var fbr = function () {
+    var l = window.GREEN_LANG || "ja";
+    fb.textContent = window.greenFav.has(ME.c) ? FT.has[l] : FT.add[l];
+  };
+  fb.addEventListener("click", function () { window.greenFav.toggle(ME.c); fbr(); });
+  document.addEventListener("DOMContentLoaded", fbr);
+  var prevF = window.onLangChange;
+  window.onLangChange = function () { if (prevF) prevF(); fbr(); };
+  fbr();
   var KEY = "green-recent";
   try {
     var arr = JSON.parse(localStorage.getItem(KEY) || "[]");
@@ -111,7 +127,7 @@
       };
       render();
       var prev = window.onLangChange;
-      window.onLangChange = function () { if (prev) prev(); render(); };
+      window.onLangChange = function () { if (prev) prev(); render(); fbr(); };
       document.getElementById("recent").classList.add("on");
     }
   } catch (e) {}

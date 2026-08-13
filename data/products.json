@@ -26,7 +26,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "new"
  },
  {
   "code": "DPC0479",
@@ -55,7 +56,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "new"
  },
  {
   "code": "JP4455",
@@ -84,7 +86,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "new"
  },
  {
   "code": "JP4776",
@@ -113,7 +116,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "new"
  },
  {
   "code": "DP0552",
@@ -142,7 +146,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "new"
  },
  {
   "code": "DP0594-M",
@@ -171,7 +176,8 @@
    "ja": "イエローダイヤモンド",
    "en": "Yellow Diamond",
    "zh": "黄钻"
-  }
+  },
+  "badge": "new"
  },
  {
   "code": "DP0586",
@@ -200,7 +206,8 @@
    "ja": "イエローダイヤモンド",
    "en": "Yellow Diamond",
    "zh": "黄钻"
-  }
+  },
+  "badge": "new"
  },
  {
   "code": "DP0562",
@@ -229,7 +236,8 @@
    "ja": "ピンクダイヤモンド",
    "en": "Pink Diamond",
    "zh": "粉钻"
-  }
+  },
+  "badge": "new"
  },
  {
   "code": "DP0491",
@@ -258,7 +266,8 @@
    "ja": "トリートブルーダイヤモンド",
    "en": "Treated Blue Diamond",
    "zh": "处理蓝钻"
-  }
+  },
+  "badge": "new"
  },
  {
   "code": "JPC5378",
@@ -287,7 +296,8 @@
    "ja": "エメラルド＆ダイヤモンド",
    "en": "Emerald & Diamond",
    "zh": "祖母绿与钻石"
-  }
+  },
+  "badge": "new"
  },
  {
   "code": "DP0577",
@@ -316,7 +326,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "new"
  },
  {
   "code": "JP5401",
@@ -346,6 +357,7 @@
    "en": "Diamond",
    "zh": "钻石"
   },
+  "badge": "new",
   "price_max": 110000
  },
  {
@@ -375,7 +387,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "new"
  },
  {
   "code": "JP5169",
@@ -404,7 +417,8 @@
    "ja": "ローズカットダイヤモンド",
    "en": "Rose-cut Diamond",
    "zh": "玫瑰式切割钻石"
-  }
+  },
+  "badge": "new"
  },
  {
   "code": "JE1712A",
@@ -433,7 +447,8 @@
    "ja": "トリートブルーダイヤモンド",
    "en": "Treated Blue Diamond",
    "zh": "处理蓝钻"
-  }
+  },
+  "badge": "new"
  },
  {
   "code": "DE0159",
@@ -462,7 +477,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "new"
  },
  {
   "code": "DE0157",
@@ -491,7 +507,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "new"
  },
  {
   "code": "DE0148",
@@ -520,7 +537,8 @@
    "ja": "イエローダイヤモンド",
    "en": "Yellow Diamond",
    "zh": "黄钻"
-  }
+  },
+  "badge": "new"
  },
  {
   "code": "260899",
@@ -552,7 +570,8 @@
    "ja": "ブラックパール",
    "en": "Black Pearl",
    "zh": "黑珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "260898",
@@ -584,7 +603,8 @@
    "ja": "ブラックパール",
    "en": "Black Pearl",
    "zh": "黑珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "260905",
@@ -616,7 +636,8 @@
    "ja": "ブラックパール",
    "en": "Black Pearl",
    "zh": "黑珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "260900",
@@ -648,7 +669,8 @@
    "ja": "ブラックパール",
    "en": "Black Pearl",
    "zh": "黑珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "260895",
@@ -680,7 +702,8 @@
    "ja": "ブラックパール",
    "en": "Black Pearl",
    "zh": "黑珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "260906",
@@ -712,7 +735,8 @@
    "ja": "ブラックパール",
    "en": "Black Pearl",
    "zh": "黑珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "260918",
@@ -743,7 +767,8 @@
    "ja": "南洋白蝶パール",
    "en": "White South Sea Pearl",
    "zh": "南洋白珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "258459",
@@ -774,7 +799,8 @@
    "ja": "南洋白蝶パール",
    "en": "White South Sea Pearl",
    "zh": "南洋白珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "289389",
@@ -805,7 +831,8 @@
    "ja": "南洋白蝶パール",
    "en": "White South Sea Pearl",
    "zh": "南洋白珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "289394",
@@ -834,7 +861,8 @@
    "ja": "南洋白蝶パール",
    "en": "White South Sea Pearl",
    "zh": "南洋白珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "251257",
@@ -863,7 +891,8 @@
    "ja": "南洋白蝶パール",
    "en": "White South Sea Pearl",
    "zh": "南洋白珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "288436",
@@ -894,7 +923,8 @@
    "ja": "淡水パール",
    "en": "Freshwater Pearl",
    "zh": "淡水珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "288435",
@@ -925,7 +955,8 @@
    "ja": "淡水パール",
    "en": "Freshwater Pearl",
    "zh": "淡水珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "273331",
@@ -956,7 +987,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "227002",
@@ -987,7 +1019,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "224325",
@@ -1018,7 +1051,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "249133",
@@ -1047,7 +1081,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "271594",
@@ -1076,7 +1111,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "278971",
@@ -1105,7 +1141,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "278728",
@@ -1134,7 +1171,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "278729",
@@ -1163,7 +1201,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "277336",
@@ -1192,7 +1231,8 @@
    "ja": "ブラックパール",
    "en": "Black Pearl",
    "zh": "黑珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "257301",
@@ -1223,7 +1263,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "272873",
@@ -1254,7 +1295,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "257639",
@@ -1285,7 +1327,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "272868",
@@ -1316,7 +1359,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "272872",
@@ -1347,7 +1391,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "257641",
@@ -1378,7 +1423,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "272867",
@@ -1409,7 +1455,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "272869",
@@ -1440,7 +1487,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "265513",
@@ -1469,7 +1517,8 @@
    "ja": "ブラックパール",
    "en": "Black Pearl",
    "zh": "黑珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "294356",
@@ -1501,7 +1550,8 @@
    "ja": "淡水パール",
    "en": "Freshwater Pearl",
    "zh": "淡水珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "294355",
@@ -1533,7 +1583,8 @@
    "ja": "淡水パール",
    "en": "Freshwater Pearl",
    "zh": "淡水珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "294357",
@@ -1565,7 +1616,8 @@
    "ja": "淡水パール",
    "en": "Freshwater Pearl",
    "zh": "淡水珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "714911",
@@ -1594,7 +1646,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "649568LAL",
@@ -1623,7 +1676,8 @@
    "ja": "ブラックパール",
    "en": "Black Pearl",
    "zh": "黑珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "754929",
@@ -1652,7 +1706,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "722141",
@@ -1683,7 +1738,8 @@
    "ja": "淡水パール",
    "en": "Freshwater Pearl",
    "zh": "淡水珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "722141-353",
@@ -1714,7 +1770,8 @@
    "ja": "パープルパール",
    "en": "Purple Pearl",
    "zh": "紫珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "729287",
@@ -1745,7 +1802,8 @@
    "ja": "淡水パール",
    "en": "Freshwater Pearl",
    "zh": "淡水珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "273439",
@@ -1776,7 +1834,8 @@
    "ja": "淡水パール",
    "en": "Freshwater Pearl",
    "zh": "淡水珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "CBC1SCM1",
@@ -1807,7 +1866,8 @@
    "ja": "淡水パール",
    "en": "Freshwater Pearl",
    "zh": "淡水珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "SQ25291",
@@ -1838,7 +1898,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "SQ25290",
@@ -1869,7 +1930,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "SQ25324",
@@ -1900,7 +1962,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "SQ15239",
@@ -1931,7 +1994,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "SS151529",
@@ -1962,7 +2026,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "SS151530",
@@ -1993,7 +2058,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "MP-3KL2886",
@@ -2024,7 +2090,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "JCP-16KL0901",
@@ -2055,7 +2122,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "JCP-4CBL0705",
@@ -2086,7 +2154,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "295736",
@@ -2117,7 +2186,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "265045",
@@ -2148,7 +2218,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "576093",
@@ -2180,7 +2251,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "254956",
@@ -2205,7 +2277,8 @@
   "new": false,
   "high": false,
   "sizes": [],
-  "gem_names": null
+  "gem_names": null,
+  "badge": null
  },
  {
   "code": "252119",
@@ -2230,7 +2303,8 @@
   "new": false,
   "high": false,
   "sizes": [],
-  "gem_names": null
+  "gem_names": null,
+  "badge": null
  },
  {
   "code": "212684",
@@ -2261,7 +2335,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "716300",
@@ -2292,7 +2367,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "KFPH00040",
@@ -2321,7 +2397,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "682525-976",
@@ -2352,7 +2429,8 @@
    "ja": "アコヤパール",
    "en": "Akoya Pearl",
    "zh": "Akoya珍珠"
-  }
+  },
+  "badge": "classic"
  },
  {
   "code": "BKL1PA1P",
@@ -2381,7 +2459,8 @@
    "ja": "ブラックパール",
    "en": "Black Pearl",
    "zh": "黑珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "275657",
@@ -2410,7 +2489,8 @@
    "ja": "淡水パール",
    "en": "Freshwater Pearl",
    "zh": "淡水珍珠"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLP7500P-PT",
@@ -2439,7 +2519,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLP2026006N-WG",
@@ -2468,7 +2549,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLP23040044P-PT",
@@ -2497,7 +2579,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLMKY48-LR09YG",
@@ -2526,7 +2609,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLP06148P-WG",
@@ -2555,7 +2639,8 @@
    "ja": "ピンクダイヤモンド",
    "en": "Pink Diamond",
    "zh": "粉钻"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLMTV0241P-PT",
@@ -2584,7 +2669,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLM2208064P-PT",
@@ -2613,7 +2699,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "AB2604K828P-60",
@@ -2642,7 +2729,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLP58300P-PT1",
@@ -2671,7 +2759,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLP1410P-PT",
@@ -2700,7 +2789,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLPR0800P-WG",
@@ -2729,7 +2819,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLM20180BL-PG",
@@ -2758,7 +2849,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLMGG-1475P-LUMI025",
@@ -2787,7 +2879,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLP277067P-PT",
@@ -2816,7 +2909,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLMGG-1405P-LUMI025",
@@ -2845,7 +2939,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLMTV0476P-PT",
@@ -2874,7 +2969,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLP00555P-YG",
@@ -2903,7 +2999,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLP00549P-YG",
@@ -2932,7 +3029,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLMTV0600P-PT",
@@ -2961,7 +3059,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLMTV0261P-PT01",
@@ -2990,7 +3089,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLMTV0372P-PT",
@@ -3019,7 +3119,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLMTV0395P-YG",
@@ -3048,7 +3149,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLMTV0149P-PG",
@@ -3077,7 +3179,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLMTV0395P-PT",
@@ -3106,7 +3209,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLMTV0514P-PT",
@@ -3135,7 +3239,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLMTV0413P-PT",
@@ -3164,7 +3269,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLMTV0470P-PT07",
@@ -3193,7 +3299,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLMTV0394P-PT",
@@ -3222,7 +3329,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLP29403P-PT",
@@ -3251,7 +3359,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLMTV0146P-WG",
@@ -3280,7 +3389,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLMTV0413N-PT",
@@ -3309,7 +3419,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLMTV009OP-WG",
@@ -3338,7 +3449,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLPR0104P-PT",
@@ -3367,7 +3479,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLMWAKU-363P-PTBENE07",
@@ -3396,7 +3509,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLP62100P-PT",
@@ -3425,7 +3539,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "LMTV0403PE-YG",
@@ -3454,7 +3569,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLPR0506ME-YG",
@@ -3483,7 +3599,8 @@
    "ja": "メタル",
    "en": "Metal",
    "zh": "金属"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLPR0506LE-YG",
@@ -3512,7 +3629,8 @@
    "ja": "メタル",
    "en": "Metal",
    "zh": "金属"
-  }
+  },
+  "badge": null
  },
  {
   "code": "LMTV0515PE-PT",
@@ -3541,7 +3659,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "LMTV0468PE-PT",
@@ -3570,7 +3689,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "LMTV0620PE-PT",
@@ -3599,7 +3719,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLM8197PE-PT",
@@ -3628,7 +3749,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "ABLPR060BR-YG",
@@ -3657,7 +3779,8 @@
    "ja": "メタル",
    "en": "Metal",
    "zh": "金属"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "ABLPR0501E-PT.WG2",
@@ -3686,7 +3809,8 @@
    "ja": "メタル",
    "en": "Metal",
    "zh": "金属"
-  }
+  },
+  "badge": null
  },
  {
   "code": "STG-115929",
@@ -3715,7 +3839,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "STG-113874",
@@ -3744,7 +3869,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "STG-114990",
@@ -3773,7 +3899,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "STG-117893",
@@ -3802,7 +3929,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "STG-123804",
@@ -3831,7 +3959,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "FINE-109700",
@@ -3860,7 +3989,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "STG-117888",
@@ -3889,7 +4019,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "FINE-115921",
@@ -3918,7 +4049,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "STG-114994",
@@ -3947,7 +4079,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "STG-121213",
@@ -3976,7 +4109,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "STG-118697",
@@ -4005,7 +4139,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "STG-115928",
@@ -4034,7 +4169,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "STG-117889",
@@ -4063,7 +4199,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "STG-117932",
@@ -4092,7 +4229,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "STG-118696",
@@ -4121,7 +4259,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "STG-117881",
@@ -4150,7 +4289,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": "popular"
  },
  {
   "code": "STG-115004",
@@ -4179,7 +4319,8 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  },
  {
   "code": "STG-114987",
@@ -4208,6 +4349,7 @@
    "ja": "ダイヤモンド",
    "en": "Diamond",
    "zh": "钻石"
-  }
+  },
+  "badge": null
  }
 ]

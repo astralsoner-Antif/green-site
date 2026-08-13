@@ -35,7 +35,7 @@ UI = {
   # キャッチコピー(2026-08-13確定・動画モジュール実装時に使用):
   #   ja「石を、解き放つ。」 en "Set the stone free." zh「让宝石，自由。」
   "inquire":    {"ja": "お問い合わせ", "en": "Inquire", "zh": "咨询"},
-  "inquireNote":{"ja": "在庫・ご来店のご相談は、品番を添えてご連絡ください。", "en": "For availability or a showroom visit, please contact us with the reference number.", "zh": "如需确认库存或预约到店，请附上产品编号与我们联系。"},
+  "inquireNote":{"ja": "在庫・ご来店のご相談は、品番を添えてご連絡ください。海外への発送にも対応しています。", "en": "For availability or a showroom visit, please contact us with the reference number. International shipping is available.", "zh": "如需确认库存或预约到店，请附上产品编号与我们联系。支持海外配送。"},
   "specH":      {"ja": "説明および仕様", "en": "Description & Specifications", "zh": "描述与规格"},
   "shopH":      {"ja": "ショールーム情報", "en": "Showroom", "zh": "陈列室信息"},
   "ref":        {"ja": "品番", "en": "Reference", "zh": "编号"},
@@ -59,11 +59,17 @@ UI = {
   "coContact":  {"ja": "お問い合わせ", "en": "Contact", "zh": "联系方式"},
   "backAll":    {"ja": "ジュエリー一覧", "en": "All jewellery", "zh": "全部珠宝"},
   "fxNote":     {"ja": "参考換算（%sレート）", "en": "Approx. conversion (rate as of %s)", "zh": "参考换算（%s汇率）"},
-  "annBar":     {"ja": "東京・東日本橋ショールーム ｜ ご来店・お問い合わせを承ります", "en": "Showroom in Higashi-Nihonbashi, Tokyo — visits and enquiries welcome", "zh": "东京·东日本桥陈列室 ｜ 欢迎到店与咨询"},
+  "annBar":     {"ja": "東京・東日本橋ショールーム ｜ 海外への発送に対応しています", "en": "Showroom in Higashi-Nihonbashi, Tokyo — international shipping available", "zh": "东京·东日本桥陈列室 ｜ 支持海外配送"},
   "gemRow":     {"ja": "宝石", "en": "Gemstone", "zh": "宝石"},
   "sizeRow":    {"ja": "サイズ", "en": "Size", "zh": "尺寸"},
   "stockOne":   {"ja": "在庫一点限りです。", "en": "One piece available.", "zh": "仅此一件。"},
   "recent":     {"ja": "最近ご覧になったアイテム", "en": "Recently viewed", "zh": "最近浏览"},
+  "popular":    {"ja": "人気", "en": "Popular", "zh": "热卖"},
+  "classic":    {"ja": "定番", "en": "Classic", "zh": "经典"},
+  "catalog":    {"ja": "カタログ", "en": "Catalogue", "zh": "目录"},
+  "catLead":    {"ja": "気になる商品を集めて、まとめてお問い合わせいただけます。", "en": "Collect the pieces you are interested in and send a single enquiry.", "zh": "收藏感兴趣的商品，一键统一咨询。"},
+  "catEmpty":   {"ja": "カタログはまだ空です。商品の ♡ から追加できます。", "en": "Your catalogue is empty. Tap ♡ on any piece to add it.", "zh": "目录还是空的。点击商品上的 ♡ 即可加入。"},
+  "catMail":    {"ja": "まとめてお問い合わせ", "en": "Send enquiry for all", "zh": "一键咨询全部"},
 }
 
 # 大分類(メインナビ・Chopardのウォッチ/ジュエリー/アクセサリーに相当)
@@ -153,6 +159,9 @@ img { max-width: 100%; }
   padding: 9px 20px; border-bottom: 1px solid var(--hairline);
   font-family: var(--sans); font-size: 11px; letter-spacing: 0.08em; color: var(--muted); }
 .topbar a:hover { color: var(--emerald-deep); }
+.topbar .tl { display: flex; gap: 18px; align-items: center; }
+.catlink:hover { color: var(--emerald-deep); }
+.catlink #catcount { color: var(--emerald-deep); margin-left: 2px; }
 .langs { display: flex; gap: 14px; }
 .langs button { background: none; border: none; cursor: pointer; font: inherit;
   color: var(--muted); letter-spacing: 0.08em; padding: 0; }
@@ -218,21 +227,56 @@ html[lang="en"] .intro .accent { display: none; } /* 英語時はH1と重複す�
 .card:hover .tile img { transform: scale(1.045); }
 .badge { position: absolute; top: 10px; left: 12px; font-family: var(--sans);
   font-size: 10px; letter-spacing: 0.22em; color: var(--emerald-deep); }
+.badge.popular { color: #a8873f; }
+.badge.classic { color: var(--muted); }
+.fav { position: absolute; top: 7px; right: 9px; z-index: 2; background: none; border: none;
+  cursor: pointer; font-size: 15px; line-height: 1; color: var(--muted); padding: 4px; }
+.fav.on { color: #b3542f; }
+.favbtn { display: block; width: 100%; text-align: center; font-family: var(--sans);
+  font-size: 11px; letter-spacing: 0.18em; padding: 13px 10px; margin-top: 10px;
+  background: none; border: 1px solid var(--hairline); color: var(--ink); cursor: pointer; }
+.favbtn:hover { border-color: var(--emerald-deep); color: var(--emerald-deep); }
 .card .nm { font-family: var(--display); font-size: 14px; font-weight: 600;
   letter-spacing: 0.08em; line-height: 1.6; margin: 13px 2px 0;
   word-break: keep-all; overflow-wrap: anywhere; }
-.card .sp { font-family: var(--sans); font-size: 10.5px; letter-spacing: 0.1em;
-  color: var(--muted); margin: 3px 2px 0; line-height: 1.6;
+.card .sp { font-family: var(--sans); font-size: 9.5px; letter-spacing: 0.03em;
+  color: var(--muted); opacity: 0.9; margin: 3px 2px 0; line-height: 1.55;
   word-break: keep-all; overflow-wrap: anywhere; }
 .card .pr { font-family: var(--sans); font-size: 12.5px; letter-spacing: 0.06em;
   margin: 6px 2px 0; font-variant-numeric: tabular-nums; }
 .card .prfx { font-family: var(--sans); font-size: 10px; letter-spacing: 0.05em;
   color: var(--muted); margin: 2px 2px 0; font-variant-numeric: tabular-nums; }
-.morewrap { text-align: center; padding: 30px 20px 64px; }
-.morebtn { font-family: var(--sans); font-size: 11.5px; letter-spacing: 0.24em;
-  padding: 13px 44px; border: 1px solid var(--emerald-deep); color: var(--emerald-deep);
-  background: none; cursor: pointer; }
-.morebtn:hover { background: var(--emerald-deep); color: #fff; }
+.pager { display: flex; gap: 7px; justify-content: center; align-items: center;
+  padding: 30px 20px 64px; flex-wrap: wrap; }
+.pager button { min-width: 34px; height: 34px; border: 1px solid var(--hairline);
+  background: none; font-family: var(--sans); font-size: 11.5px; letter-spacing: 0.04em;
+  cursor: pointer; color: var(--ink); }
+.pager button.on { background: var(--emerald-deep); border-color: var(--emerald-deep); color: #fff; }
+.pager button:disabled { opacity: 0.35; cursor: default; }
+
+/* ---- カタログページ ---- */
+.catwrap { max-width: 860px; margin: 0 auto; padding: 10px 20px 70px; }
+.catrow { display: grid; grid-template-columns: 84px 1fr auto auto; gap: 16px;
+  align-items: center; border-bottom: 1px solid var(--hairline); padding: 14px 0; }
+.catrow .cimg { width: 84px; height: 84px; background: var(--tile);
+  display: flex; align-items: center; justify-content: center; }
+.catrow .cimg img { width: 88%; height: 88%; object-fit: contain; mix-blend-mode: multiply; }
+.catrow .cnm { font-family: var(--display); font-size: 13.5px; font-weight: 600; letter-spacing: 0.05em; }
+.catrow .csp { font-family: var(--sans); font-size: 9.5px; color: var(--muted); margin-top: 3px; }
+.catrow .cpr { font-family: var(--sans); font-size: 12.5px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.catrow .crm { background: none; border: none; cursor: pointer; font-size: 15px; color: var(--muted); padding: 6px; }
+.catrow .crm:hover { color: #b3542f; }
+.catsum { font-family: var(--sans); font-size: 12.5px; letter-spacing: 0.06em; text-align: right;
+  padding: 18px 2px 6px; font-variant-numeric: tabular-nums; }
+.catsum .cfx { display: block; font-size: 10.5px; color: var(--muted); margin-top: 3px; }
+.catcta { display: block; text-align: center; font-family: var(--sans); font-size: 12px;
+  letter-spacing: 0.28em; padding: 16px 10px; margin-top: 18px;
+  background: var(--emerald-deep); color: #fff; }
+.catcta:hover { background: var(--emerald); }
+.catempty { font-family: var(--sans); font-size: 12px; color: var(--muted);
+  text-align: center; padding: 46px 10px; letter-spacing: 0.08em; }
+@media (max-width: 560px) { .catrow { grid-template-columns: 64px 1fr auto; }
+  .catrow .cpr { grid-column: 2; justify-self: start; } .catrow .cimg { width: 64px; height: 64px; } }
 
 /* ---- PDP ---- */
 .crumbs { font-family: var(--sans); font-size: 10.5px; letter-spacing: 0.14em; color: var(--muted);
@@ -375,6 +419,15 @@ JS = """
   }
   document.addEventListener("DOMContentLoaded", apply);
 })();
+window.greenFav = {
+  key: "green-fav",
+  get: function () { try { return JSON.parse(localStorage.getItem(this.key) || "[]"); } catch (e) { return []; } },
+  set: function (a) { try { localStorage.setItem(this.key, JSON.stringify(a)); } catch (e) {} this.badge(); },
+  has: function (c) { return this.get().indexOf(c) >= 0; },
+  toggle: function (c) { var a = this.get(); var i = a.indexOf(c); if (i >= 0) a.splice(i, 1); else a.unshift(c); this.set(a); },
+  badge: function () { var el = document.getElementById("catcount"); if (el) { var n = this.get().length; el.textContent = n > 0 ? "(" + n + ")" : ""; } }
+};
+document.addEventListener("DOMContentLoaded", function () { window.greenFav.badge(); });
 """
 
 def lang_buttons():
@@ -410,7 +463,10 @@ def topbars(depth):
     p = "../" * depth
     return f"""<div class="annbar" {tri("annBar")}>{UI["annBar"]["ja"]}</div>
 <div class="topbar">
-  <a href="mailto:info@cumulus2026.com" {tri("contact")}>お問い合わせ</a>
+  <div class="tl">
+    <a href="mailto:info@cumulus2026.com" {tri("contact")}>お問い合わせ</a>
+    <a class="catlink" href="{p}catalog.html"><span {tri("catalog")}>カタログ</span><span id="catcount"></span></a>
+  </div>
   {lang_buttons()}
 </div>
 <div class="brandbar"><a href="{p}index.html"><img src="{p}img/logo-bar.png" alt="GReEN"></a></div>
@@ -447,6 +503,7 @@ def build_index():
             "c": p["code"], "n": p["names"], "s": p["spec"], "p": price_disp(p),
             "pr": p["price"], "rng": bool(p.get("price_max")),
             "g": p["group"], "gem": p["gem"], "new": p["new"], "high": p["high"],
+            "b": p.get("badge"),
         })
     chips_html = "".join(
         '<button class="chip%s" data-f="%s" data-i data-ja="%s" data-en="%s" data-zh="%s">%s</button>' %
@@ -468,7 +525,7 @@ def build_index():
 <div class="chipswrap"><div class="chips">{chips_html}</div></div>
 <p class="count" id="count"></p>
 <div class="grid" id="grid"></div>
-<div class="morewrap"><button class="morebtn" id="more" {tri("more")}>{UI["more"]["ja"]}</button></div>
+<div class="pager" id="pager"></div>
 """
     doc += shop_section(0)
     doc += FOOTER
@@ -480,10 +537,20 @@ def build_index():
         json.dumps(FX))
     doc += """<script>
 (function () {
-  var PAGE = 24, shown = PAGE, cat = "all", filter = "all";
+  var PAGE = 24, page = 1, cat = "all", filter = "all";
   var grid = document.getElementById("grid"), count = document.getElementById("count"),
-      more = document.getElementById("more");
-  var NEW = {ja: "新作", en: "New", zh: "新品"};
+      pager = document.getElementById("pager");
+  var BDG = {"new": {ja: "新作", en: "New", zh: "新品"},
+             "popular": {ja: "人気", en: "Popular", zh: "热卖"},
+             "classic": {ja: "定番", en: "Classic", zh: "经典"}};
+  var FMT = {ja: "{total} 点中 {from}–{to} 点を表示中", en: "Showing {from}–{to} of {total}", zh: "显示 {from}–{to} / {total} 件"};
+  function match(p) {
+    if (cat !== "all" && p.g !== cat) return false;
+    if (filter === "all") return true;
+    if (filter === "new") return p.new;
+    if (filter === "high") return p.high;
+    return p.gem === filter;
+  }
   function sig3(x) {
     if (x <= 0) return 0;
     var d = Math.pow(10, Math.max(0, Math.floor(Math.log10(x)) - 2));
@@ -493,28 +560,6 @@ def build_index():
     var t = rng ? "〜" : "";
     return "≈ CNY " + sig3(jpy * FX.cny).toLocaleString() + t +
            " · USD " + sig3(jpy * FX.usd).toLocaleString() + t;
-  }
-  var FMT = {ja: "{total} 点中 {shown} 点を表示中", en: "Showing {shown} of {total}", zh: "显示 {shown} / {total} 件"};
-  function match(p) {
-    if (cat !== "all" && p.g !== cat) return false;
-    if (filter === "all") return true;
-    if (filter === "new") return p.new;
-    if (filter === "high") return p.high;
-    return p.gem === filter;
-  }
-  function render() {
-    var l = window.GREEN_LANG || "ja";
-    var list = PRODUCTS.filter(match);
-    var vis = list.slice(0, shown);
-    grid.innerHTML = vis.map(function (p) {
-      return '<a class="card" href="products/' + encodeURIComponent(p.c) + '.html">' +
-        '<div class="tile">' + (p.new ? '<span class="badge">' + NEW[l] + "</span>" : "") +
-        '<img src="img/products/t/' + encodeURIComponent(p.c) + '.jpg" alt="' + p.n[l] + '" loading="lazy"></div>' +
-        '<p class="nm">' + p.n[l] + '</p><p class="sp">' + p.s[l] + '</p><p class="pr">' + p.p + "</p>" +
-        (p.pr ? '<p class="prfx">' + fxLine(p.pr, p.rng) + "</p>" : "") + "</a>";
-    }).join("");
-    count.textContent = FMT[l].replace("{shown}", vis.length).replace("{total}", list.length);
-    more.style.display = list.length > shown ? "" : "none";
   }
   function toTop() {
     window.scrollTo({top: document.querySelector(".chipswrap").offsetTop - 60, behavior: "smooth"});
@@ -526,13 +571,58 @@ def build_index():
     document.getElementById("introH").innerHTML = d.h[l];
     document.getElementById("introLead").innerHTML = d.l[l];
   }
+  function render() {
+    var l = window.GREEN_LANG || "ja";
+    var list = PRODUCTS.filter(match);
+    var pages = Math.max(1, Math.ceil(list.length / PAGE));
+    if (page > pages) page = pages;
+    var from = (page - 1) * PAGE;
+    var vis = list.slice(from, from + PAGE);
+    var fav = window.greenFav.get();
+    grid.innerHTML = vis.map(function (p) {
+      var b = p.b ? '<span class="badge ' + p.b + '">' + BDG[p.b][l] + "</span>" : "";
+      var on = fav.indexOf(p.c) >= 0;
+      return '<a class="card" href="products/' + encodeURIComponent(p.c) + '.html">' +
+        '<div class="tile">' + b +
+        '<button class="fav' + (on ? " on" : "") + '" data-c="' + p.c + '" aria-label="catalogue">' + (on ? "♥" : "♡") + "</button>" +
+        '<img src="img/products/t/' + encodeURIComponent(p.c) + '.jpg" alt="' + p.n[l] + '" loading="lazy"></div>' +
+        '<p class="nm">' + p.n[l] + '</p><p class="sp">' + p.s[l] + '</p><p class="pr">' + p.p + "</p>" +
+        (p.pr ? '<p class="prfx">' + fxLine(p.pr, p.rng) + "</p>" : "") + "</a>";
+    }).join("");
+    count.textContent = list.length ? FMT[l].replace("{from}", from + 1).replace("{to}", from + vis.length).replace("{total}", list.length)
+                                    : FMT[l].replace("{from}", 0).replace("{to}", 0).replace("{total}", 0);
+    var ph = "";
+    if (pages > 1) {
+      ph += '<button data-pg="prev"' + (page === 1 ? " disabled" : "") + '>‹</button>';
+      for (var i = 1; i <= pages; i++) ph += '<button data-pg="' + i + '"' + (i === page ? ' class="on"' : "") + ">" + i + "</button>";
+      ph += '<button data-pg="next"' + (page === pages ? " disabled" : "") + '>›</button>';
+    }
+    pager.innerHTML = ph;
+    pager.querySelectorAll("button").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var v = b.getAttribute("data-pg");
+        if (v === "prev") page--; else if (v === "next") page++; else page = parseInt(v, 10);
+        render();
+        toTop();
+      });
+    });
+    grid.querySelectorAll(".fav").forEach(function (b) {
+      b.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        window.greenFav.toggle(b.getAttribute("data-c"));
+        var on = b.classList.toggle("on");
+        b.textContent = on ? "♥" : "♡";
+      });
+    });
+  }
   document.querySelectorAll("#mainnav button").forEach(function (b) {
     b.addEventListener("click", function () {
       document.querySelectorAll("#mainnav button").forEach(function (x) { x.classList.remove("on"); });
       b.classList.add("on");
       cat = b.getAttribute("data-g");
       if (history.replaceState) history.replaceState(null, "", cat === "all" ? "index.html" : "#" + cat);
-      shown = PAGE;
+      page = 1;
       updateIntro();
       render();
       window.scrollTo({top: 0, behavior: "smooth"});
@@ -543,12 +633,11 @@ def build_index():
       document.querySelectorAll(".chip").forEach(function (x) { x.classList.remove("on"); });
       b.classList.add("on");
       filter = b.getAttribute("data-f");
-      shown = PAGE;
+      page = 1;
       render();
       toTop();
     });
   });
-  more.addEventListener("click", function () { shown += PAGE; render(); });
   var h = (location.hash || "").replace("#", "");
   if (["ring", "earrings", "pendant", "necklace", "bracelet"].indexOf(h) >= 0) {
     cat = h;
@@ -649,7 +738,8 @@ def build_pdp(p):
     desc = f'{p["spec"]["ja"]} — GReEN 東京・東日本橋のジュエリーショールーム'
     doc = head(title, desc, 1, og_img=f'img/products/{code}.jpg')
     doc += topbars(1)
-    badge = f'<span class="badge" {tri("new")}>{UI["new"]["ja"]}</span>' if p["new"] else ""
+    bk = p.get("badge")
+    badge = f'<span class="badge {bk}" {tri(bk)}>{UI[bk]["ja"]}</span>' if bk else ""
     ct_row = ""
     if p["ct"]:
         ct_row = f'<tr><th {tri("carat")}>{UI["carat"]["ja"]}</th><td>{p["ct"]}ct</td></tr>'
@@ -674,6 +764,7 @@ def build_pdp(p):
     <p class="price">{price_disp(p)}</p>
     {fx_block(p)}
     <a class="cta" href="mailto:info@cumulus2026.com{subject}" {tri("inquire")}>{UI["inquire"]["ja"]}</a>
+    <button class="favbtn" id="favbtn">♡ カタログに追加</button>
     <p class="ctanote" {tri("inquireNote")}>{UI["inquireNote"]["ja"]}</p>
     <div class="acc">
       <details open>
@@ -709,7 +800,8 @@ def build_pdp(p):
   <div class="recorow">
 """
     for q in related(p):
-        qb = f'<span class="badge" {tri("new")}>{UI["new"]["ja"]}</span>' if q["new"] else ""
+        qbk = q.get("badge")
+        qb = f'<span class="badge {qbk}" {tri(qbk)}>{UI[qbk]["ja"]}</span>' if qbk else ""
         doc += (f'<a class="card" href="{q["code"]}.html"><div class="tile">{qb}'
                 f'<img src="../img/products/t/{q["code"]}.jpg" alt="{html.escape(q["names"]["ja"])}" loading="lazy"></div>'
                 f'<p class="nm" {tri_txt(q["names"])}>{q["names"]["ja"]}</p>'
@@ -742,6 +834,18 @@ def build_pdp(p):
   var tileImg = document.querySelector(".pdp .tile img");
   if (tileImg) tileImg.addEventListener("click", function () { lb.classList.add("on"); });
   lb.addEventListener("click", function () { lb.classList.remove("on"); });
+  var fb = document.getElementById("favbtn");
+  var FT = {add: {ja: "♡ カタログに追加", en: "♡ Add to catalogue", zh: "♡ 加入目录"},
+            has: {ja: "♥ カタログに追加済み", en: "♥ In catalogue", zh: "♥ 已加入目录"}};
+  var fbr = function () {
+    var l = window.GREEN_LANG || "ja";
+    fb.textContent = window.greenFav.has(ME.c) ? FT.has[l] : FT.add[l];
+  };
+  fb.addEventListener("click", function () { window.greenFav.toggle(ME.c); fbr(); });
+  document.addEventListener("DOMContentLoaded", fbr);
+  var prevF = window.onLangChange;
+  window.onLangChange = function () { if (prevF) prevF(); fbr(); };
+  fbr();
   var KEY = "green-recent";
   try {
     var arr = JSON.parse(localStorage.getItem(KEY) || "[]");
@@ -760,7 +864,7 @@ def build_pdp(p):
       };
       render();
       var prev = window.onLangChange;
-      window.onLangChange = function () { if (prev) prev(); render(); };
+      window.onLangChange = function () { if (prev) prev(); render(); fbr(); };
       document.getElementById("recent").classList.add("on");
     }
   } catch (e) {}
@@ -770,12 +874,91 @@ def build_pdp(p):
     doc += BEACON + "\n</body>\n</html>\n"
     open(os.path.join(ROOT, "products", f"{code}.html"), "w").write(doc)
 
+def build_catalog_page():
+    items = []
+    for p in PS:
+        items.append({"c": p["code"], "n": p["names"], "s": p["spec"], "p": price_disp(p),
+                      "pr": p["price"], "b": p.get("badge")})
+    doc = head("カタログ | GReEN", "気になる商品を集めて、まとめてお問い合わせ。", 0)
+    doc += topbars(0)
+    doc += f"""<section class="intro">
+  <p class="accent" aria-hidden="true">Catalogue</p>
+  <h1 {tri("catalog")}>{UI["catalog"]["ja"]}</h1>
+  <p class="lead" {tri("catLead")}>{UI["catLead"]["ja"]}</p>
+</section>
+<div class="catwrap">
+  <div id="catlist"></div>
+  <div class="catsum" id="catsum" style="display:none"></div>
+  <a class="catcta" id="catmail" href="#" style="display:none" {tri("catMail")}>{UI["catMail"]["ja"]}</a>
+  <p class="catempty" id="catempty" {tri("catEmpty")}>{UI["catEmpty"]["ja"]}</p>
+</div>
+"""
+    doc += FOOTER
+    doc += "<script>var PRODUCTS = %s;\nvar FX = %s;</script>" % (
+        json.dumps(items, ensure_ascii=False, separators=(",", ":")), json.dumps(FX))
+    doc += """<script>
+(function () {
+  var SUM = {ja: "{n}点 ・ 合計 {sum}", en: "{n} items · Total {sum}", zh: "{n}件 ・ 合计 {sum}"};
+  var SUBJ = {ja: "カタログお問い合わせ（{n}点）", en: "Catalogue enquiry ({n} items)", zh: "目录咨询（{n}件）"};
+  var byCode = {};
+  PRODUCTS.forEach(function (p) { byCode[p.c] = p; });
+  function sig3(x) {
+    if (x <= 0) return 0;
+    var d = Math.pow(10, Math.max(0, Math.floor(Math.log10(x)) - 2));
+    return Math.round(x / d) * d;
+  }
+  function render() {
+    var l = window.GREEN_LANG || "ja";
+    var codes = window.greenFav.get().filter(function (c) { return byCode[c]; });
+    var list = codes.map(function (c) { return byCode[c]; });
+    var el = document.getElementById("catlist"), sum = document.getElementById("catsum"),
+        mail = document.getElementById("catmail"), emp = document.getElementById("catempty");
+    if (!list.length) {
+      el.innerHTML = ""; sum.style.display = "none"; mail.style.display = "none"; emp.style.display = "";
+      return;
+    }
+    emp.style.display = "none"; sum.style.display = ""; mail.style.display = "";
+    el.innerHTML = list.map(function (p) {
+      return '<div class="catrow"><a class="cimg" href="products/' + encodeURIComponent(p.c) + '.html">' +
+        '<img src="img/products/t/' + encodeURIComponent(p.c) + '.jpg" alt=""></a>' +
+        '<div><a href="products/' + encodeURIComponent(p.c) + '.html"><p class="cnm">' + p.n[l] + '</p>' +
+        '<p class="csp">REF. ' + p.c + " ｜ " + p.s[l] + '</p></a></div>' +
+        '<p class="cpr">' + p.p + '</p>' +
+        '<button class="crm" data-c="' + p.c + '" aria-label="remove">×</button></div>';
+    }).join("");
+    var total = list.reduce(function (a, p) { return a + (p.pr || 0); }, 0);
+    var yen = "¥ " + total.toLocaleString();
+    sum.innerHTML = SUM[l].replace("{n}", list.length).replace("{sum}", yen) +
+      '<span class="cfx">≈ CNY ' + sig3(total * FX.cny).toLocaleString() +
+      " · USD " + sig3(total * FX.usd).toLocaleString() + "</span>";
+    var lines = list.map(function (p, i) {
+      return (i + 1) + ". " + p.c + " " + p.n[l] + " " + p.p;
+    });
+    mail.href = "mailto:info@cumulus2026.com?subject=" +
+      encodeURIComponent(SUBJ[l].replace("{n}", list.length)) +
+      "&body=" + encodeURIComponent(lines.join("\\n") + "\\n\\n");
+    el.querySelectorAll(".crm").forEach(function (b) {
+      b.addEventListener("click", function () {
+        window.greenFav.toggle(b.getAttribute("data-c"));
+        render();
+      });
+    });
+  }
+  window.onLangChange = render;
+  document.addEventListener("DOMContentLoaded", render);
+})();
+</script>
+"""
+    doc += BEACON + "\n</body>\n</html>\n"
+    open(os.path.join(ROOT, "catalog.html"), "w").write(doc)
+
 def main():
     os.makedirs(os.path.join(ROOT, "assets"), exist_ok=True)
     os.makedirs(os.path.join(ROOT, "products"), exist_ok=True)
     open(os.path.join(ROOT, "assets", "site.css"), "w").write(CSS)
     open(os.path.join(ROOT, "assets", "site.js"), "w").write(JS)
     build_index()
+    build_catalog_page()
     for p in PS:
         build_pdp(p)
     print(f"built index + {len(PS)} product pages")

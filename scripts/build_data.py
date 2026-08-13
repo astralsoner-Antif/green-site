@@ -124,6 +124,18 @@ def spec_line(gem, ty, mat, ct, sizes):
         return sep.join(p)
     return {"ja": one(0, "、"), "en": one(1, ", "), "zh": one(2, "、")}
 
+def badge_of(sheet, ja, gemgrp, price):
+    """マーチャンダイジングバッジ(仮ルール・要調整): 新作>人気>定番"""
+    if sheet == "写真":
+        return "new"
+    if any(k in ja for k in ("クロス", "フラワー", "ホースシュー", "イエロー", "ピンク", "トリートブルー", "エメラルド", "ローズカット")):
+        return "popular"
+    if gemgrp == "dia" and price and 250000 <= price <= 400000:
+        return "popular"
+    if "アコヤ" in ja:
+        return "classic"
+    return None
+
 def main():
     code_sheet = map_photo_sheets(XLSX)
     wb = openpyxl.load_workbook(XLSX, data_only=True)
@@ -162,6 +174,7 @@ def main():
             "high": bool(price and price >= 500000),
             "sizes": sizes,
             "gem_names": {"ja": gem[0], "en": gem[1], "zh": gem[2]} if gem else None,
+            "badge": badge_of(sheet, names["ja"], gemgrp, price),
         }
     out = list(products.values())
     os.makedirs(os.path.join(ROOT, "data"), exist_ok=True)
