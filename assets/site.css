@@ -114,6 +114,10 @@ html[lang="en"] .intro .accent { display: none; } /* 英語時はH1と重複す�
   font-size: 11px; letter-spacing: 0.18em; padding: 13px 10px; margin-top: 10px;
   background: none; border: 1px solid var(--hairline); color: var(--ink); cursor: pointer; }
 .favbtn:hover { border-color: var(--emerald-deep); color: var(--emerald-deep); }
+.ctamail { text-align: center; margin-top: 10px; }
+.ctamail a { font-family: var(--sans); font-size: 10.5px; letter-spacing: 0.12em;
+  color: var(--muted); border-bottom: 1px solid var(--hairline); padding-bottom: 1px; }
+.ctamail a:hover { color: var(--emerald-deep); border-color: var(--emerald-deep); }
 .card .nm { font-family: var(--display); font-size: 14px; font-weight: 600;
   letter-spacing: 0.08em; line-height: 1.6; margin: 13px 2px 0;
   word-break: keep-all; overflow-wrap: anywhere; }

@@ -17,7 +17,7 @@
     <a href="about.html" data-i data-ja="GReENについて" data-en="About GReEN" data-zh="关于GReEN">GReENについて</a>
     <a href="showroom.html" data-i data-ja="ショールーム" data-en="Showroom" data-zh="陈列室">ショールーム</a>
     <a href="shipping.html" data-i data-ja="配送・海外発送" data-en="Shipping" data-zh="配送">配送・海外発送</a>
-    <a href="mailto:info@cumulus2026.com" data-i data-ja="お問い合わせ" data-en="Contact" data-zh="联系我们">お問い合わせ</a>
+    <a href="https://line.me/R/ti/p/%40641wknmy" target="_blank" rel="noopener" data-i data-ja="お問い合わせ" data-en="Contact" data-zh="联系我们">お問い合わせ</a>
     <a class="catlink" href="catalog.html"><span data-i data-ja="カタログ" data-en="Catalogue" data-zh="目录">カタログ</span><span id="catcount"></span></a>
   </div>
   <div class="langs"><button data-l="ja" onclick="setLang('ja')">日本語</button><button data-l="en" onclick="setLang('en')">English</button><button data-l="zh" onclick="setLang('zh')">简体中文</button></div>
@@ -31,11 +31,12 @@
 <div class="catwrap">
   <div id="catlist"></div>
   <div class="catsum" id="catsum" style="display:none"></div>
-  <a class="catcta" id="catmail" href="#" style="display:none" data-i data-ja="まとめてお問い合わせ" data-en="Send enquiry for all" data-zh="一键咨询全部">まとめてお問い合わせ</a>
+  <a class="catcta" id="catline" href="#" target="_blank" rel="noopener" style="display:none" data-i data-ja="LINEでまとめてお問い合わせ" data-en="Send all via LINE" data-zh="LINE一键咨询全部">LINEでまとめてお問い合わせ</a>
+  <p class="ctamail" id="catmailwrap" style="display:none"><a id="catmail" href="#" data-i data-ja="メールでのお問い合わせ" data-en="Enquire by email" data-zh="邮件咨询">メールでのお問い合わせ</a></p>
   <p class="catempty" id="catempty" data-i data-ja="カタログはまだ空です。商品の ♡ から追加できます。" data-en="Your catalogue is empty. Tap ♡ on any piece to add it." data-zh="目录还是空的。点击商品上的 ♡ 即可加入。">カタログはまだ空です。商品の ♡ から追加できます。</p>
 </div>
 <footer>
-  <nav class="fnav"><a href="index.html" data-i data-ja="ジュエリー一覧" data-en="All Jewellery" data-zh="全部珠宝">ジュエリー一覧</a><a href="about.html" data-i data-ja="GReENについて" data-en="About GReEN" data-zh="关于GReEN">GReENについて</a><a href="showroom.html" data-i data-ja="ショールーム" data-en="Showroom" data-zh="陈列室">ショールーム</a><a href="shipping.html" data-i data-ja="配送・海外発送" data-en="Shipping" data-zh="配送">配送・海外発送</a><a href="catalog.html" data-i data-ja="カタログ" data-en="Catalogue" data-zh="目录">カタログ</a><a href="mailto:info@cumulus2026.com" data-i data-ja="お問い合わせ" data-en="Contact" data-zh="联系我们">お問い合わせ</a></nav>
+  <nav class="fnav"><a href="index.html" data-i data-ja="ジュエリー一覧" data-en="All Jewellery" data-zh="全部珠宝">ジュエリー一覧</a><a href="about.html" data-i data-ja="GReENについて" data-en="About GReEN" data-zh="关于GReEN">GReENについて</a><a href="showroom.html" data-i data-ja="ショールーム" data-en="Showroom" data-zh="陈列室">ショールーム</a><a href="shipping.html" data-i data-ja="配送・海外発送" data-en="Shipping" data-zh="配送">配送・海外発送</a><a href="catalog.html" data-i data-ja="カタログ" data-en="Catalogue" data-zh="目录">カタログ</a><a href="https://line.me/R/ti/p/%40641wknmy" target="_blank" rel="noopener" data-i data-ja="お問い合わせ" data-en="Contact" data-zh="联系我们">お問い合わせ</a></nav>
   <p class="mark">GReEN</p>
   <p>© 2026 GReEN — CUMULUS INC.</p>
 </footer>
@@ -56,12 +57,14 @@ var FX = {"cny": 0.042406, "usd": 0.006278, "date_iso": "2026-08-13"};</script><
     var codes = window.greenFav.get().filter(function (c) { return byCode[c]; });
     var list = codes.map(function (c) { return byCode[c]; });
     var el = document.getElementById("catlist"), sum = document.getElementById("catsum"),
-        mail = document.getElementById("catmail"), emp = document.getElementById("catempty");
+        mail = document.getElementById("catmail"), emp = document.getElementById("catempty"),
+        lineBtn = document.getElementById("catline"), mailWrap = document.getElementById("catmailwrap");
     if (!list.length) {
-      el.innerHTML = ""; sum.style.display = "none"; mail.style.display = "none"; emp.style.display = "";
+      el.innerHTML = ""; sum.style.display = "none"; lineBtn.style.display = "none";
+      mailWrap.style.display = "none"; emp.style.display = "";
       return;
     }
-    emp.style.display = "none"; sum.style.display = ""; mail.style.display = "";
+    emp.style.display = "none"; sum.style.display = ""; lineBtn.style.display = ""; mailWrap.style.display = "";
     el.innerHTML = list.map(function (p) {
       return '<div class="catrow"><a class="cimg" href="products/' + encodeURIComponent(p.c) + '.html">' +
         '<img src="img/products/t/' + encodeURIComponent(p.c) + '.jpg" alt=""></a>' +
@@ -78,6 +81,8 @@ var FX = {"cny": 0.042406, "usd": 0.006278, "date_iso": "2026-08-13"};</script><
     var lines = list.map(function (p, i) {
       return (i + 1) + ". " + p.c + " " + p.n[l] + " " + p.p;
     });
+    var body = SUBJ[l].replace("{n}", list.length) + "\n" + lines.join("\n");
+    lineBtn.href = "https://line.me/R/oaMessage/%40641wknmy/?" + encodeURIComponent(body);
     mail.href = "mailto:info@cumulus2026.com?subject=" +
       encodeURIComponent(SUBJ[l].replace("{n}", list.length)) +
       "&body=" + encodeURIComponent(lines.join("\n") + "\n\n");

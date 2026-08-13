@@ -23,6 +23,10 @@ FONTFACE = open(os.path.join(ROOT, "scripts", "fontface.css")).read()
 
 BEACON = '<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{"token": "ac6972d86f8941fc8c3107604cccd97c"}\'></script>'
 
+# LINE公式アカウント (2026-08-13 Koki提供: @641wknmy)
+LINE_ADD = "https://line.me/R/ti/p/%40641wknmy"
+LINE_OA = "https://line.me/R/oaMessage/%40641wknmy/?"
+
 UI = {
   "brand":      {"ja": "GReEN", "en": "GReEN", "zh": "GReEN"},
   "contact":    {"ja": "お問い合わせ", "en": "Contact", "zh": "联系我们"},
@@ -75,6 +79,9 @@ UI = {
   "navShip":    {"ja": "配送・海外発送", "en": "Shipping", "zh": "配送"},
   "navHome":    {"ja": "ジュエリー一覧", "en": "All Jewellery", "zh": "全部珠宝"},
   "mapLink":    {"ja": "Googleマップで見る", "en": "Open in Google Maps", "zh": "在Google地图中查看"},
+  "inquireLine":{"ja": "LINEでお問い合わせ", "en": "Contact via LINE", "zh": "通过LINE咨询"},
+  "inquireMail":{"ja": "メールでのお問い合わせ", "en": "Enquire by email", "zh": "邮件咨询"},
+  "catMailLine":{"ja": "LINEでまとめてお問い合わせ", "en": "Send all via LINE", "zh": "LINE一键咨询全部"},
 }
 
 # 大分類(メインナビ・Chopardのウォッチ/ジュエリー/アクセサリーに相当)
@@ -243,6 +250,10 @@ html[lang="en"] .intro .accent { display: none; } /* 英語時はH1と重複す�
   font-size: 11px; letter-spacing: 0.18em; padding: 13px 10px; margin-top: 10px;
   background: none; border: 1px solid var(--hairline); color: var(--ink); cursor: pointer; }
 .favbtn:hover { border-color: var(--emerald-deep); color: var(--emerald-deep); }
+.ctamail { text-align: center; margin-top: 10px; }
+.ctamail a { font-family: var(--sans); font-size: 10.5px; letter-spacing: 0.12em;
+  color: var(--muted); border-bottom: 1px solid var(--hairline); padding-bottom: 1px; }
+.ctamail a:hover { color: var(--emerald-deep); border-color: var(--emerald-deep); }
 .card .nm { font-family: var(--display); font-size: 14px; font-weight: 600;
   letter-spacing: 0.08em; line-height: 1.6; margin: 13px 2px 0;
   word-break: keep-all; overflow-wrap: anywhere; }
@@ -499,7 +510,7 @@ def topbars(depth):
     <a href="{p}about.html" {tri("navAbout")}>GReENについて</a>
     <a href="{p}showroom.html" {tri("navShowroom")}>ショールーム</a>
     <a href="{p}shipping.html" {tri("navShip")}>配送・海外発送</a>
-    <a href="mailto:info@cumulus2026.com" {tri("contact")}>お問い合わせ</a>
+    <a href="{LINE_ADD}" target="_blank" rel="noopener" {tri("contact")}>お問い合わせ</a>
     <a class="catlink" href="{p}catalog.html"><span {tri("catalog")}>カタログ</span><span id="catcount"></span></a>
   </div>
   {lang_buttons()}
@@ -530,7 +541,7 @@ def footer(depth):
              (f"{pp}showroom.html", "navShowroom"), (f"{pp}shipping.html", "navShip"),
              (f"{pp}catalog.html", "catalog")]
     row = "".join(f'<a href="{h}" {tri(k)}>{UI[k]["ja"]}</a>' for h, k in links)
-    row += '<a href="mailto:info@cumulus2026.com" ' + tri("contact") + f'>{UI["contact"]["ja"]}</a>'
+    row += f'<a href="{LINE_ADD}" target="_blank" rel="noopener" ' + tri("contact") + f'>{UI["contact"]["ja"]}</a>'
     return f"""<footer>
   <nav class="fnav">{row}</nav>
   <p class="mark">GReEN</p>
@@ -806,8 +817,9 @@ def build_pdp(p):
     <p class="spec" {tri_txt(p["spec"])}>{p["spec"]["ja"]}</p>
     <p class="price">{price_disp(p)}</p>
     {fx_block(p)}
-    <a class="cta" href="mailto:info@cumulus2026.com{subject}" {tri("inquire")}>{UI["inquire"]["ja"]}</a>
+    <a class="cta" id="ctaline" href="{LINE_ADD}" target="_blank" rel="noopener" {tri("inquireLine")}>{UI["inquireLine"]["ja"]}</a>
     <button class="favbtn" id="favbtn">♡ カタログに追加</button>
+    <p class="ctamail"><a href="mailto:info@cumulus2026.com{subject}" {tri("inquireMail")}>{UI["inquireMail"]["ja"]}</a></p>
     <p class="ctanote" {tri("inquireNote")}>{UI["inquireNote"]["ja"]}</p>
     <div class="acc">
       <details open>
@@ -862,7 +874,7 @@ def build_pdp(p):
     doc += f"""<div class="stickybar" id="stickybar">
   <p class="snm" {tri_txt(p["names"])}>{p["names"]["ja"]}</p>
   <p class="spr">{price_disp(p)}</p>
-  <a class="scta" href="mailto:info@cumulus2026.com{subject}" {tri("inquire")}>{UI["inquire"]["ja"]}</a>
+  <a class="scta" id="sctaline" href="{LINE_ADD}" target="_blank" rel="noopener" {tri("inquireLine")}>{UI["inquireLine"]["ja"]}</a>
 </div>
 <div class="lightbox" id="lightbox"><span class="lbx">×</span><img src="../img/products/{code}.jpg" alt=""></div>
 """
@@ -877,6 +889,18 @@ def build_pdp(p):
   var tileImg = document.querySelector(".pdp .tile img");
   if (tileImg) tileImg.addEventListener("click", function () { lb.classList.add("on"); });
   lb.addEventListener("click", function () { lb.classList.remove("on"); });
+  var LINE_OA = "https://line.me/R/oaMessage/%40641wknmy/?";
+  var LMSG = {ja: "【" + ME.c + "】" + ME.n.ja + " についてお問い合わせします。",
+              en: "Enquiry about " + ME.c + " " + ME.n.en + ".",
+              zh: "咨询 " + ME.c + " " + ME.n.zh + "。"};
+  var setLine = function () {
+    var l = window.GREEN_LANG || "ja";
+    var u = LINE_OA + encodeURIComponent(LMSG[l]);
+    var a = document.getElementById("ctaline"), b = document.getElementById("sctaline");
+    if (a) a.href = u;
+    if (b) b.href = u;
+  };
+  setLine();
   var fb = document.getElementById("favbtn");
   var FT = {add: {ja: "♡ カタログに追加", en: "♡ Add to catalogue", zh: "♡ 加入目录"},
             has: {ja: "♥ カタログに追加済み", en: "♥ In catalogue", zh: "♥ 已加入目录"}};
@@ -887,7 +911,7 @@ def build_pdp(p):
   fb.addEventListener("click", function () { window.greenFav.toggle(ME.c); fbr(); });
   document.addEventListener("DOMContentLoaded", fbr);
   var prevF = window.onLangChange;
-  window.onLangChange = function () { if (prevF) prevF(); fbr(); };
+  window.onLangChange = function () { if (prevF) prevF(); fbr(); setLine(); };
   fbr();
   var KEY = "green-recent";
   try {
@@ -932,7 +956,8 @@ def build_catalog_page():
 <div class="catwrap">
   <div id="catlist"></div>
   <div class="catsum" id="catsum" style="display:none"></div>
-  <a class="catcta" id="catmail" href="#" style="display:none" {tri("catMail")}>{UI["catMail"]["ja"]}</a>
+  <a class="catcta" id="catline" href="#" target="_blank" rel="noopener" style="display:none" {tri("catMailLine")}>{UI["catMailLine"]["ja"]}</a>
+  <p class="ctamail" id="catmailwrap" style="display:none"><a id="catmail" href="#" {tri("inquireMail")}>{UI["inquireMail"]["ja"]}</a></p>
   <p class="catempty" id="catempty" {tri("catEmpty")}>{UI["catEmpty"]["ja"]}</p>
 </div>
 """
@@ -955,12 +980,14 @@ def build_catalog_page():
     var codes = window.greenFav.get().filter(function (c) { return byCode[c]; });
     var list = codes.map(function (c) { return byCode[c]; });
     var el = document.getElementById("catlist"), sum = document.getElementById("catsum"),
-        mail = document.getElementById("catmail"), emp = document.getElementById("catempty");
+        mail = document.getElementById("catmail"), emp = document.getElementById("catempty"),
+        lineBtn = document.getElementById("catline"), mailWrap = document.getElementById("catmailwrap");
     if (!list.length) {
-      el.innerHTML = ""; sum.style.display = "none"; mail.style.display = "none"; emp.style.display = "";
+      el.innerHTML = ""; sum.style.display = "none"; lineBtn.style.display = "none";
+      mailWrap.style.display = "none"; emp.style.display = "";
       return;
     }
-    emp.style.display = "none"; sum.style.display = ""; mail.style.display = "";
+    emp.style.display = "none"; sum.style.display = ""; lineBtn.style.display = ""; mailWrap.style.display = "";
     el.innerHTML = list.map(function (p) {
       return '<div class="catrow"><a class="cimg" href="products/' + encodeURIComponent(p.c) + '.html">' +
         '<img src="img/products/t/' + encodeURIComponent(p.c) + '.jpg" alt=""></a>' +
@@ -977,6 +1004,8 @@ def build_catalog_page():
     var lines = list.map(function (p, i) {
       return (i + 1) + ". " + p.c + " " + p.n[l] + " " + p.p;
     });
+    var body = SUBJ[l].replace("{n}", list.length) + "\\n" + lines.join("\\n");
+    lineBtn.href = "https://line.me/R/oaMessage/%40641wknmy/?" + encodeURIComponent(body);
     mail.href = "mailto:info@cumulus2026.com?subject=" +
       encodeURIComponent(SUBJ[l].replace("{n}", list.length)) +
       "&body=" + encodeURIComponent(lines.join("\\n") + "\\n\\n");
@@ -1065,7 +1094,8 @@ def build_info_pages():
         if pg["map"]:
             doc += f'<p style="margin-bottom:26px"><a class="maplink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%9D%B1%E6%97%A5%E6%9C%AC%E6%A9%8B2-11-5" {tri("mapLink")}>{UI["mapLink"]["ja"]}</a></p>' + NL
         if pg["cta"]:
-            doc += f'<a class="cta" href="mailto:info@cumulus2026.com" {tri("contact")}>{UI["contact"]["ja"]}</a>' + NL
+            doc += f'<a class="cta" href="{LINE_ADD}" target="_blank" rel="noopener" {tri("inquireLine")}>{UI["inquireLine"]["ja"]}</a>' + NL
+            doc += f'<p class="ctamail"><a href="mailto:info@cumulus2026.com" {tri("inquireMail")}>{UI["inquireMail"]["ja"]}</a></p>' + NL
         doc += "</div>" + NL
         doc += footer(0)
         doc += BEACON + NL + "</body>" + NL + "</html>" + NL
