@@ -7,6 +7,18 @@ import json, os, html
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PS = json.load(open(os.path.join(ROOT, "data", "products.json")))
+FX = json.load(open(os.path.join(ROOT, "data", "fx.json")))  # scripts/update_fx.py で更新
+
+def sig3(x):
+    from math import log10, floor
+    if x <= 0: return 0
+    d = 2 - int(floor(log10(abs(x))))
+    return int(round(x, min(d, 0))) if d <= 0 else int(round(x))
+
+def fx_line(jpy, rng=False):
+    cny = sig3(jpy * FX["cny"]); usd = sig3(jpy * FX["usd"])
+    tail = "〜" if rng else ""
+    return "≈ CNY {:,}{} · USD {:,}{}".format(cny, tail, usd, tail)
 FONTFACE = open(os.path.join(ROOT, "scripts", "fontface.css")).read()
 
 BEACON = '<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{"token": "ac6972d86f8941fc8c3107604cccd97c"}\'></script>'
@@ -46,6 +58,7 @@ UI = {
   "coBizV":     {"ja": "ジュエリーの販売・ライブコマース事業", "en": "Jewellery retail and live commerce", "zh": "珠宝销售与直播电商"},
   "coContact":  {"ja": "お問い合わせ", "en": "Contact", "zh": "联系方式"},
   "backAll":    {"ja": "ジュエリー一覧", "en": "All jewellery", "zh": "全部珠宝"},
+  "fxNote":     {"ja": "参考換算（%sレート）", "en": "Approx. conversion (rate as of %s)", "zh": "参考换算（%s汇率）"},
 }
 
 # 大分類(メインナビ・Chopardのウォッチ/ジュエリー/アクセサリーに相当)
@@ -153,17 +166,18 @@ img { max-width: 100%; }
 @media (max-width: 760px) { .mainnav { gap: 22px; justify-content: flex-start; } }
 
 /* ---- listing intro (カテゴリ紹介パース) ----
-   階層: 筆記体アクセント(Great Vibes/金) → 見出し(しっぽり明朝) → リード(明朝) → 詳細(サンセリフ) */
-.intro { text-align: center; padding: 40px 24px 10px; }
-.intro .script { font-family: var(--script); font-size: 31px; font-weight: 400; color: var(--gold);
-  line-height: 1.25; margin-bottom: 4px; }
+   階層: 彫刻体アクセント(Engravers風caps/金) → 見出し(しっぽり明朝) → リード(明朝) → 詳細(サンセリフ) */
+.intro { text-align: center; padding: 42px 24px 10px; }
+.intro .accent { font-family: Palatino, "Palatino Linotype", Georgia, serif;
+  font-size: 12.5px; font-weight: 400; letter-spacing: 0.55em; padding-left: 0.55em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
 .intro h1 { font-family: var(--display); font-weight: 600; font-size: 32px; letter-spacing: 0.24em; line-height: 1.6; }
 .intro .lead { font-family: var(--display); font-size: 15px; letter-spacing: 0.07em; line-height: 2.15;
   color: var(--ink); max-width: 660px; margin: 20px auto 0; }
 .intro .lead span { display: inline-block; }
-html[lang="en"] .intro .script { display: none; } /* 英語時はH1と重複するため */
+html[lang="en"] .intro .accent { display: none; } /* 英語時はH1と重複するため */
 @media (max-width: 700px) { .intro h1 { font-size: 24px; } .intro { padding-top: 30px; }
-  .intro .script { font-size: 25px; } .intro .lead { font-size: 13px; } }
+  .intro .accent { font-size: 11px; } .intro .lead { font-size: 13px; } }
 
 /* ---- chips ---- */
 .chipswrap { position: sticky; top: 0; z-index: 30; background: var(--paper);
@@ -199,6 +213,8 @@ html[lang="en"] .intro .script { display: none; } /* 英語時はH1と重複す�
   word-break: keep-all; overflow-wrap: anywhere; }
 .card .pr { font-family: var(--sans); font-size: 12.5px; letter-spacing: 0.06em;
   margin: 6px 2px 0; font-variant-numeric: tabular-nums; }
+.card .prfx { font-family: var(--sans); font-size: 10px; letter-spacing: 0.05em;
+  color: var(--muted); margin: 2px 2px 0; font-variant-numeric: tabular-nums; }
 .morewrap { text-align: center; padding: 30px 20px 64px; }
 .morebtn { font-family: var(--sans); font-size: 11.5px; letter-spacing: 0.24em;
   padding: 13px 44px; border: 1px solid var(--emerald-deep); color: var(--emerald-deep);
@@ -227,6 +243,10 @@ html[lang="en"] .intro .script { display: none; } /* 英語時はH1と重複す�
   word-break: keep-all; overflow-wrap: anywhere; }
 .pinfo .price { font-family: var(--sans); font-size: 19px; letter-spacing: 0.04em;
   margin-top: 22px; font-variant-numeric: tabular-nums; }
+.pinfo .pricefx { font-family: var(--sans); font-size: 12px; letter-spacing: 0.05em;
+  color: var(--muted); margin-top: 5px; font-variant-numeric: tabular-nums; }
+.pinfo .pricefxnote { font-family: var(--sans); font-size: 9.5px; letter-spacing: 0.04em;
+  color: var(--muted); opacity: 0.75; margin-top: 3px; }
 .pinfo .cta { display: block; text-align: center; font-family: var(--sans); font-size: 12px;
   letter-spacing: 0.28em; padding: 16px 10px; margin-top: 26px;
   background: var(--emerald-deep); color: #fff; }
@@ -370,6 +390,7 @@ def build_index():
     for p in PS:
         items.append({
             "c": p["code"], "n": p["names"], "s": p["spec"], "p": price_disp(p),
+            "pr": p["price"], "rng": bool(p.get("price_max")),
             "g": p["group"], "gem": p["gem"], "new": p["new"], "high": p["high"],
         })
     chips_html = "".join(
@@ -385,7 +406,7 @@ def build_index():
     doc += topbars(0)
     doc += f"""<nav class="mainnav" id="mainnav">{nav_html}</nav>
 <section class="intro">
-  <p class="script" id="introScript" aria-hidden="true">Jewellery</p>
+  <p class="accent" id="introAccent" aria-hidden="true">Jewellery</p>
   <h1 id="introH">{UI["introTitle"]["ja"]}</h1>
   <p class="lead" id="introLead">{UI["introLead"]["ja"]}</p>
 </section>
@@ -398,15 +419,26 @@ def build_index():
     doc += FOOTER
     intros = {"all": {"h": UI["introTitle"], "l": UI["introLead"]}}
     intros.update(CAT_INTROS)
-    doc += "<script>var PRODUCTS = %s;\nvar INTROS = %s;</script>" % (
+    doc += "<script>var PRODUCTS = %s;\nvar INTROS = %s;\nvar FX = %s;</script>" % (
         json.dumps(items, ensure_ascii=False, separators=(",", ":")),
-        json.dumps(intros, ensure_ascii=False, separators=(",", ":")))
+        json.dumps(intros, ensure_ascii=False, separators=(",", ":")),
+        json.dumps(FX))
     doc += """<script>
 (function () {
   var PAGE = 24, shown = PAGE, cat = "all", filter = "all";
   var grid = document.getElementById("grid"), count = document.getElementById("count"),
       more = document.getElementById("more");
   var NEW = {ja: "新作", en: "New", zh: "新品"};
+  function sig3(x) {
+    if (x <= 0) return 0;
+    var d = Math.pow(10, Math.max(0, Math.floor(Math.log10(x)) - 2));
+    return Math.round(x / d) * d;
+  }
+  function fxLine(jpy, rng) {
+    var t = rng ? "〜" : "";
+    return "≈ CNY " + sig3(jpy * FX.cny).toLocaleString() + t +
+           " · USD " + sig3(jpy * FX.usd).toLocaleString() + t;
+  }
   var FMT = {ja: "{total} 点中 {shown} 点を表示中", en: "Showing {shown} of {total}", zh: "显示 {shown} / {total} 件"};
   function match(p) {
     if (cat !== "all" && p.g !== cat) return false;
@@ -423,7 +455,8 @@ def build_index():
       return '<a class="card" href="products/' + encodeURIComponent(p.c) + '.html">' +
         '<div class="tile">' + (p.new ? '<span class="badge">' + NEW[l] + "</span>" : "") +
         '<img src="img/products/t/' + encodeURIComponent(p.c) + '.jpg" alt="' + p.n[l] + '" loading="lazy"></div>' +
-        '<p class="nm">' + p.n[l] + '</p><p class="sp">' + p.s[l] + '</p><p class="pr">' + p.p + "</p></a>";
+        '<p class="nm">' + p.n[l] + '</p><p class="sp">' + p.s[l] + '</p><p class="pr">' + p.p + "</p>" +
+        (p.pr ? '<p class="prfx">' + fxLine(p.pr, p.rng) + "</p>" : "") + "</a>";
     }).join("");
     count.textContent = FMT[l].replace("{shown}", vis.length).replace("{total}", list.length);
     more.style.display = list.length > shown ? "" : "none";
@@ -434,7 +467,7 @@ def build_index():
   function updateIntro() {
     var l = window.GREEN_LANG || "ja";
     var d = INTROS[cat] || INTROS.all;
-    document.getElementById("introScript").textContent = d.h.en;
+    document.getElementById("introAccent").textContent = d.h.en;
     document.getElementById("introH").innerHTML = d.h[l];
     document.getElementById("introLead").innerHTML = d.l[l];
   }
@@ -491,6 +524,15 @@ TYPE_LABEL = {"PD NECKLES": {"ja": "ペンダントネックレス", "en": "Pend
               "RING": {"ja": "リング", "en": "Ring", "zh": "戒指"},
               "BRACELET": {"ja": "ブレスレット", "en": "Bracelet", "zh": "手链"}}
 
+def fx_block(p):
+    if not p["price"]:
+        return ""
+    line = fx_line(p["price"], bool(p.get("price_max")))
+    notes = {k: (UI["fxNote"][k] % FX["date_iso"]) for k in ("ja", "en", "zh")}
+    note_attr = ('data-i data-ja="%s" data-en="%s" data-zh="%s"' %
+                 (html.escape(notes["ja"], quote=True), html.escape(notes["en"], quote=True), html.escape(notes["zh"], quote=True)))
+    return ('<p class="pricefx">%s</p>\n    <p class="pricefxnote" %s>%s</p>' % (line, note_attr, notes["ja"]))
+
 def related(p):
     def score(q):
         s = 0
@@ -529,6 +571,7 @@ def build_pdp(p):
     <h1 {tri_txt(p["names"])}>{p["names"]["ja"]}</h1>
     <p class="spec" {tri_txt(p["spec"])}>{p["spec"]["ja"]}</p>
     <p class="price">{price_disp(p)}</p>
+    {fx_block(p)}
     <a class="cta" href="mailto:info@cumulus2026.com{subject}" {tri("inquire")}>{UI["inquire"]["ja"]}</a>
     <p class="ctanote" {tri("inquireNote")}>{UI["inquireNote"]["ja"]}</p>
     <div class="acc">

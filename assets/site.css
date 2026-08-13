@@ -53,17 +53,18 @@ img { max-width: 100%; }
 @media (max-width: 760px) { .mainnav { gap: 22px; justify-content: flex-start; } }
 
 /* ---- listing intro (カテゴリ紹介パース) ----
-   階層: 筆記体アクセント(Great Vibes/金) → 見出し(しっぽり明朝) → リード(明朝) → 詳細(サンセリフ) */
-.intro { text-align: center; padding: 40px 24px 10px; }
-.intro .script { font-family: var(--script); font-size: 31px; font-weight: 400; color: var(--gold);
-  line-height: 1.25; margin-bottom: 4px; }
+   階層: 彫刻体アクセント(Engravers風caps/金) → 見出し(しっぽり明朝) → リード(明朝) → 詳細(サンセリフ) */
+.intro { text-align: center; padding: 42px 24px 10px; }
+.intro .accent { font-family: Palatino, "Palatino Linotype", Georgia, serif;
+  font-size: 12.5px; font-weight: 400; letter-spacing: 0.55em; padding-left: 0.55em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
 .intro h1 { font-family: var(--display); font-weight: 600; font-size: 32px; letter-spacing: 0.24em; line-height: 1.6; }
 .intro .lead { font-family: var(--display); font-size: 15px; letter-spacing: 0.07em; line-height: 2.15;
   color: var(--ink); max-width: 660px; margin: 20px auto 0; }
 .intro .lead span { display: inline-block; }
-html[lang="en"] .intro .script { display: none; } /* 英語時はH1と重複するため */
+html[lang="en"] .intro .accent { display: none; } /* 英語時はH1と重複するため */
 @media (max-width: 700px) { .intro h1 { font-size: 24px; } .intro { padding-top: 30px; }
-  .intro .script { font-size: 25px; } .intro .lead { font-size: 13px; } }
+  .intro .accent { font-size: 11px; } .intro .lead { font-size: 13px; } }
 
 /* ---- chips ---- */
 .chipswrap { position: sticky; top: 0; z-index: 30; background: var(--paper);
@@ -99,6 +100,8 @@ html[lang="en"] .intro .script { display: none; } /* 英語時はH1と重複す�
   word-break: keep-all; overflow-wrap: anywhere; }
 .card .pr { font-family: var(--sans); font-size: 12.5px; letter-spacing: 0.06em;
   margin: 6px 2px 0; font-variant-numeric: tabular-nums; }
+.card .prfx { font-family: var(--sans); font-size: 10px; letter-spacing: 0.05em;
+  color: var(--muted); margin: 2px 2px 0; font-variant-numeric: tabular-nums; }
 .morewrap { text-align: center; padding: 30px 20px 64px; }
 .morebtn { font-family: var(--sans); font-size: 11.5px; letter-spacing: 0.24em;
   padding: 13px 44px; border: 1px solid var(--emerald-deep); color: var(--emerald-deep);
@@ -127,6 +130,10 @@ html[lang="en"] .intro .script { display: none; } /* 英語時はH1と重複す�
   word-break: keep-all; overflow-wrap: anywhere; }
 .pinfo .price { font-family: var(--sans); font-size: 19px; letter-spacing: 0.04em;
   margin-top: 22px; font-variant-numeric: tabular-nums; }
+.pinfo .pricefx { font-family: var(--sans); font-size: 12px; letter-spacing: 0.05em;
+  color: var(--muted); margin-top: 5px; font-variant-numeric: tabular-nums; }
+.pinfo .pricefxnote { font-family: var(--sans); font-size: 9.5px; letter-spacing: 0.04em;
+  color: var(--muted); opacity: 0.75; margin-top: 3px; }
 .pinfo .cta { display: block; text-align: center; font-family: var(--sans); font-size: 12px;
   letter-spacing: 0.28em; padding: 16px 10px; margin-top: 26px;
   background: var(--emerald-deep); color: #fff; }
